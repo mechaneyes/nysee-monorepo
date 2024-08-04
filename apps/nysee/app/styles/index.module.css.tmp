@@ -1,0 +1,503 @@
+.rayWeitzenberg {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+.heading3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem 5.181rem;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0rem 0rem 0.187rem;
+}
+.item {
+  width: 2.625rem;
+  border-radius: 40px;
+  background-color: #e0ffff;
+  height: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 0.75rem 0.562rem;
+  box-sizing: border-box;
+}
+.itemmargin {
+  width: 3.063rem;
+  height: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0.437rem 0rem 0rem;
+  box-sizing: border-box;
+}
+.icon1 {
+  width: 1.131rem;
+  position: relative;
+  height: 1.125rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.item1 {
+  width: 2.625rem;
+  border-radius: 40px;
+  background-color: #e0ffff;
+  height: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 0.75rem 0.562rem 0.743rem;
+  box-sizing: border-box;
+}
+.icon2 {
+  width: 1.5rem;
+  position: relative;
+  height: 1.125rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.link2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0rem 0rem 0.187rem;
+  cursor: pointer;
+}
+.item2 {
+  width: 2.625rem;
+  border-radius: 40px;
+  background-color: #e0ffff;
+  height: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 0.562rem 0.562rem;
+  box-sizing: border-box;
+}
+.icon3 {
+  width: 0.75rem;
+  position: relative;
+  height: 1.125rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.item3 {
+  width: 2.625rem;
+  border-radius: 40px;
+  background-color: #e0ffff;
+  height: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 0.937rem 0.562rem;
+  box-sizing: border-box;
+}
+.container8 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0.937rem;
+  box-sizing: border-box;
+  max-width: 24.375rem;
+  min-height: 0.063rem;
+}
+.container7 {
+}
+.mechaneyesvialinkedingifIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 11.813rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.link4 {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
+}
+.overlayshadow {
+  align-self: stretch;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.yp2t0MjpgIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 11.525rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.zgs2obMjpgIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 28.125rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.nxdMjpgIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 22.5rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.akgkoMjpgIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 16.875rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.h86s10MjpgIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 20.831rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.container13 {
+  position: absolute;
+  width: 100%;
+  top: 78.599rem;
+  right: 0rem;
+  left: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.937rem;
+}
+.container14 {
+  position: absolute;
+  top: 0.938rem;
+  left: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact {
+  position: absolute;
+  top: 0.75rem;
+  left: 2.875rem;
+  line-height: 1.688rem;
+  display: flex;
+  align-items: center;
+  width: 4.363rem;
+  height: 1.688rem;
+}
+.background2 {
+  align-self: stretch;
+  position: relative;
+  border-radius: 3px 3px 0px 0px;
+  background-color: #fff;
+  height: 3.188rem;
+  z-index: 0;
+  font-size: 1.125rem;
+}
+.name {
+  position: relative;
+  line-height: 1.125rem;
+}
+.container16 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 0.875rem;
+  color: #141a22;
+}
+.div {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.313rem;
+}
+.raymechaneyescom {
+  position: relative;
+  line-height: 1.313rem;
+  color: inherit;
+  text-decoration: none;
+}
+.container18 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 0.875rem;
+  color: #4d77fa;
+}
+.item9 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.75rem 0rem 0.625rem;
+  gap: 0.062rem;
+}
+.container15 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.312rem 1.25rem 0.625rem;
+  z-index: 1;
+  color: #808ea7;
+}
+.saveTo {
+  margin: 0;
+}
+.saveToContactsContainer {
+  position: relative;
+  line-height: 1.125rem;
+  color: inherit;
+  text-decoration: none;
+}
+.icon5 {
+  width: 1.119rem;
+  position: relative;
+  height: 1.25rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.overlay {
+}
+.margin1 {
+  align-self: stretch;
+  width: 2.019rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0rem 0rem 0rem 0.25rem;
+  box-sizing: border-box;
+}
+.summary {
+  position: absolute;
+  top: 0.75rem;
+  left: 2.873rem;
+  line-height: 1.688rem;
+  display: flex;
+  align-items: center;
+  width: 5.25rem;
+  height: 1.688rem;
+}
+.background3 {
+  align-self: stretch;
+  position: relative;
+  border-radius: 3px 3px 0px 0px;
+  background-color: #fff;
+  height: 3.188rem;
+}
+.container24 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 1.25rem 1.25rem;
+  font-size: 0.875rem;
+  color: #808ea7;
+}
+.backgroundbordershadow1 {
+  position: absolute;
+  width: 100%;
+  top: 43.224rem;
+  right: 0rem;
+  left: 0rem;
+  box-shadow: 0px 0px 3px rgba(136, 136, 138, 0.23);
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(136, 136, 138, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.062rem;
+}
+.location {
+  position: absolute;
+  top: 0.75rem;
+  left: 2.501rem;
+  line-height: 1.688rem;
+  display: flex;
+  align-items: center;
+  width: 4.738rem;
+  height: 1.688rem;
+}
+.showOnMap {
+  position: relative;
+  line-height: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+.link14 {
+  border-radius: 4px;
+  border: 1px solid #6c757d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.437rem 0.812rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #6c757d;
+}
+.container26 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 1.25rem 1.25rem;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #808ea7;
+}
+.backgroundbordershadow2 {
+  position: absolute;
+  width: 100%;
+  top: 50.912rem;
+  right: 0rem;
+  left: 0rem;
+  box-shadow: 0px 0px 3px rgba(136, 136, 138, 0.23);
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(136, 136, 138, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.062rem;
+}
+.webLinks {
+  position: absolute;
+  top: 0.75rem;
+  left: 2.875rem;
+  line-height: 1.688rem;
+  display: flex;
+  align-items: center;
+  width: 5.688rem;
+  height: 1.688rem;
+}
+.item10 {
+  align-self: stretch;
+  border-bottom: 1px solid #eceef7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.625rem 0rem 0.687rem;
+}
+.item14 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.625rem 0rem 0rem;
+}
+.list2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0.625rem;
+}
+.container29 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.312rem 1.25rem 0.625rem;
+  font-size: 0.875rem;
+}
+.backgroundbordershadow3 {
+  position: absolute;
+  width: 100%;
+  top: 60.662rem;
+  right: 0rem;
+  left: 0rem;
+  box-shadow: 0px 0px 3px rgba(136, 136, 138, 0.23);
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(136, 136, 138, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.062rem;
+}
+.container3 {
+  align-self: stretch;
+  position: relative;
+  height: 253.075rem;
+}
+.background1 {
+}
+.vcard {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 35.438rem;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #374793;
+  font-family: "Work Sans";
+}

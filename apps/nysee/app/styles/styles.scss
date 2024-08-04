@@ -1,0 +1,71 @@
+@import "mixins";
+
+@import "gossamer";
+@import "homepage";
+@import "project";
+@import "scopus-ex-machina";
+@import "typography";
+@import "vcard";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: white;
+  background-color: #121212;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  color: #fff;
+  border-bottom: 1px solid #656565;
+  background-color: black;
+
+  @include bp("small") {
+    padding-left: 2rem;
+  }
+
+  a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #00f3ff;
+      transition: color 0.3s ease;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 0.5rem 0 0;
+    }
+  }
+}

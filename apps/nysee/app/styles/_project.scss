@@ -1,0 +1,109 @@
+.project {
+  padding: 0 1rem;
+
+  @include bp("small") {
+    padding: 0 2rem 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+
+    & + p {
+      padding-top: 1rem;
+    }
+  }
+
+  .hero {
+    &__copy {
+      width: 100%;
+      max-width: 720px;
+      padding: 1rem 0 2rem;
+
+      @include bp("small") {
+        padding: 1.5rem 0 3rem;
+      }
+
+      &__title {
+        padding-bottom: 1rem;
+
+        h1 {
+          font-size: 2.45rem;
+
+          @include bp("small") {
+            font-size: 4rem;
+          }
+        }
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 400;
+
+          @include bp("small") {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__iteration {
+    width: 100%;
+    padding-bottom: 2rem;
+
+    @include bp("small") {
+      padding-bottom: 3rem;
+    }
+
+    .project__img--duotone-options {
+      width: 90%;
+      // max-wdith that is 60% of 960px
+      max-width: 576px;
+      padding-top: 0.25rem;
+      padding-bottom: 0.75rem;
+
+      @include bp("small") {
+        width: 60%;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 720px;
+    padding-top: 1rem;
+
+    h5 {
+      padding-top: 0.25rem;
+      color: #a8a8a8;
+    }
+
+    &__title {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &--duotone.project,
+  &--gossamer.project {
+    padding-top: 1rem;
+
+    @include bp("small") {
+      padding-top: 2rem;
+    }
+  }
+
+  &--gossamer {
+    .gossamer-img--poster {
+        aspect-ratio: 83 / 128;
+        width: 100%;
+        height: auto;
+
+        @include bp("small") {
+            height: 80vh;
+            width: auto;
+        }
+    }
+  }
+}

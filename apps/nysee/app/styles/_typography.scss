@@ -1,0 +1,67 @@
+@mixin mobleySerif {
+  font-family: mobley-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin prometo($weight: 200) {
+  font-family: prometo, sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+  //   font-weight: 200;
+  //   font-weight: 300;
+  //   font-weight: 400;
+  //   font-weight: 500;
+  //   font-weight: 700;
+  //   font-style: italic;
+}
+
+body {
+  @include prometo;
+}
+
+nav {
+  @include prometo;
+}
+
+h1 {
+  @include mobleySerif;
+  font-size: 4rem;
+}
+
+h2 {
+  @include prometo(400);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+p {
+    padding-bottom: 0.75rem;
+    font-size: 1.125rem;
+    line-height: 1.375;
+}
+
+a {
+  color: #00f3ff;
+  text-decoration: underline;
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.2em;
+
+  &:hover {
+    color: white;
+    text-decoration-color: white;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+}
+
+.italics {
+  font-style: italic;
+}
