@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  const opticURL = process.env.NEXT_PUBLIC_OPTIC_DOMAIN;
+
   return (
     <div className="homepage">
       <div className="homepage__header">
@@ -27,7 +29,7 @@ export default function Home() {
 
       <article className="project">
         <Image
-          src="/images/algoeye-cover-poster.jpg"
+          src={`${opticURL}/images/algoeye-cover-poster.jpg`}
           width={1920}
           height={1440}
           className="project__img"
@@ -48,9 +50,9 @@ export default function Home() {
             is the first output that&apos;s actually been committed to paper.
           </p>
           <p>
-            Above are studies for the cover and a poster. I&apos;m happy with both
-            versions of the poster, the difference being that there&apos;s a 2nd
-            layer of orange printed on the more saturated version.
+            Above are studies for the cover and a poster. I&apos;m happy with
+            both versions of the poster, the difference being that there&apos;s
+            a 2nd layer of orange printed on the more saturated version.
           </p>
           <p>
             Next week taking another step back and gonna focus on honing the
@@ -62,7 +64,7 @@ export default function Home() {
 
       <article className="project">
         <Image
-          src="/images/nysee-qrCode.jpg"
+          src={`${opticURL}/images/nysee-qrCode.jpg`}
           width={768}
           height={768}
           className="project__img project__img--nysee-qrCode"
@@ -76,7 +78,7 @@ export default function Home() {
       <article className="project">
         <Link href="/scopus-ex-presentation">
           <Image
-            src="/images/scopus-ex-machina-presentation-cover.png"
+            src={`${opticURL}/images/scopus-ex-machina-presentation-cover.png`}
             width={1920}
             height={1080}
             className="project__img project__img--sem"
@@ -99,7 +101,7 @@ export default function Home() {
       <article className="project">
         <Link href="/whirligrid">
           <Image
-            src="/images/whirligrid-01.jpg"
+            src={`${opticURL}/images/whirligrid-01.jpg`}
             width={1920}
             height={1440}
             className="project__img"
@@ -122,7 +124,7 @@ export default function Home() {
       <article className="project">
         <Link href="/no-ordinary-duotone">
           <Image
-            src="/images/no-ordinary-duotone-001-1.1.0.jpg"
+            src={`${opticURL}/images/no-ordinary-duotone-001-1.1.0.jpg`}
             width={1920}
             height={1458}
             className="project__img"
@@ -143,7 +145,7 @@ export default function Home() {
       <article className="project">
         <Link href="/gossamer">
           <Image
-            src="/images/gossamer-poster-2.jpg"
+            src={`${opticURL}/images/gossamer-poster-2.jpg`}
             width={1245}
             height={1920}
             className="project__img project__img--gossamer"
