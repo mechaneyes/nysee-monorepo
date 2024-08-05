@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Navigation from "@/app/components/nav";
+import Navigation from "@/components/nav";
 
 export const metadata = {
   title: "Whirligrid | NYSee",

@@ -14,12 +14,12 @@ import {
   thumbnailPlugin,
 } from "@react-pdf-viewer/thumbnail";
 
-import Navigation from "@/app/components/navts";
+import Navigation from "@/components/navts";
 
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/page-navigation/lib/styles/index.css";
 import "@react-pdf-viewer/thumbnail/lib/styles/index.css";
-import "@/app/styles/styles.scss";
+import "@/styles/styles.scss";
 
 const PdfExMachina: React.FC = () => {
   const pageNavigationPluginInstance = pageNavigationPlugin();

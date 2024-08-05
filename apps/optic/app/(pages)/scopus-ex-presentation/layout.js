@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import "@/app/styles/styles.scss";
+import "@/styles/styles.scss";
 
 export const metadata = {
   title: "Scopus Ex Machina | NYSee.nyc",

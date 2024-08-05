@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import SaveVCard from "@/app/components/vcard";
-import Navigation from "@/app/components/nav";
+import SaveVCard from "@/components/vcard";
+import Navigation from "@/components/nav";
 
-import "@/app/styles/styles.scss";
+import "@/styles/styles.scss";
 
 export default function Ray() {
   return (
