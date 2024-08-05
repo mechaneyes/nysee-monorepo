@@ -1,12 +1,12 @@
 {
-  "name": "ray-nysee-vcard",
+  "name": "optic.nysee",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "turbo run build",
-    "start": "turbo run start",
-    "lint": "turbo run lint",
+    "dev": "next dev -p 3031",
+    "build": "next build",
+    "start": "next start -p 3031",
+    "lint": "next lint",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
