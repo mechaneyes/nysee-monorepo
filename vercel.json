@@ -5,7 +5,7 @@
     { "src": "apps/optic/package.json", "use": "@vercel/next" }
   ],
   "routes": [
-    { "src": "/optic/(.*)", "dest": "apps/optic/$1" },
-    { "src": "/(.*)", "dest": "apps/home/$1" }
+    { "src": "/(.*)", "dest": "apps/home/$1" },
+    { "src": "/optic/(.*)", "dest": "apps/optic/$1" }
   ]
 }
