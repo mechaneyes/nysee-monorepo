@@ -19,6 +19,16 @@ const nextConfig = {
         hostname: "0.gravatar.com",
         pathname: "/avatar/**",
       },
+      {
+        protocol: "https",
+        hostname: "secure.gravatar.com",
+        pathname: "/avatar/**",
+      },
+      {
+        protocol: "https",
+        hostname: "wordpress-1313045-4791931.cloudwaysapps.com",
+        pathname: "/**",
+      },
     ],
   },
   basePath: '/optic',
