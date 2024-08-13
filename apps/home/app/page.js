@@ -26,7 +26,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-
+      
       <article className="project">
         <Image
           src={`${opticURL}/images/algoeye-cover-poster.jpg`}
@@ -61,7 +61,6 @@ export default function Home() {
           </p>
         </div>
       </article>
-
       <article className="project">
         <Image
           src={`${opticURL}/images/nysee-qrCode.jpg`}
@@ -97,7 +96,6 @@ export default function Home() {
           </p>
         </div>
       </article>
-
       <article className="project">
         <Link href="/whirligrid">
           <Image
@@ -120,7 +118,6 @@ export default function Home() {
           </p>
         </div>
       </article>
-
       <article className="project">
         <Link href="/no-ordinary-duotone">
           <Image
@@ -141,7 +138,6 @@ export default function Home() {
           </p>
         </div>
       </article>
-
       <article className="project">
         <Link href="/gossamer">
           <Image
