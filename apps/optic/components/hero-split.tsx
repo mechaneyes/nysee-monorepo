@@ -18,27 +18,29 @@ export default function HeroSplit({
 }) {
   return (
     <div className="min-h-screen bg-white">
-      <main className="hero-split flex flex-col md:flex-row items-start justify-between p-8">
-        <div className="md:w-1/2 space-y-4">
-          <p className="text-gray-500">
-            <Date dateString={date} />
-          </p>
-          <h1 className="text-4xl font-bold text-gray-900">
-            <Link
-              href={`/posts/${slug}`}
-              className="hover:underline"
-              dangerouslySetInnerHTML={{ __html: title }}
-            ></Link>
-          </h1>
-          <p
-            className="text-gray-700"
-            dangerouslySetInnerHTML={{ __html: excerpt }}
-          />
-          <div className="flex items-center space-x-4">
-            <Avatar author={author} />
+      <main className="hero hero--split">
+        <div className="hero__copy">
+          <div className="hero__copy__inner">
+            <p className="text-gray-500">
+              <Date dateString={date} />
+            </p>
+            <h1 className="text-4xl font-bold text-gray-900">
+              <Link
+                href={`/posts/${slug}`}
+                className="hover:underline"
+                dangerouslySetInnerHTML={{ __html: title }}
+              ></Link>
+            </h1>
+            <p
+              className="text-gray-700"
+              dangerouslySetInnerHTML={{ __html: excerpt }}
+            />
+            <div className="flex items-center space-x-4">
+              <Avatar author={author} />
+            </div>
           </div>
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0">
+        <div className="hero__image">
           {coverImage && (
             <CoverImage title={title} coverImage={coverImage} slug={slug} />
           )}
