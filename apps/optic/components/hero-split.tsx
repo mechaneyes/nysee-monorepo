@@ -8,6 +8,11 @@ import Date from "./date";
 import CoverImage from "./cover-image";
 import Link from "next/link";
 
+// Function to strip HTML tags
+const stripHtmlTags = (html: string) => {
+  return html.replace(/<\/?[^>]+(>|$)/g, "");
+};
+
 export default function HeroSplit({
   title,
   coverImage,
@@ -25,16 +30,11 @@ export default function HeroSplit({
               <Date dateString={date} />
             </p>
             <h1 className="text-4xl font-bold text-gray-900">
-              <Link
-                href={`/posts/${slug}`}
-                className="hover:underline"
-                dangerouslySetInnerHTML={{ __html: title }}
-              ></Link>
+              <Link href={`/posts/${slug}`} className="hover:underline">
+                {title}
+              </Link>
             </h1>
-            <p
-              className="text-gray-700"
-              dangerouslySetInnerHTML={{ __html: excerpt }}
-            />
+            <p className="text-gray-700">{stripHtmlTags(excerpt)}</p>
             <div className="flex items-center space-x-4">
               <Avatar author={author} />
             </div>
