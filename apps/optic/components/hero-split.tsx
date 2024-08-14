@@ -30,9 +30,9 @@ export default function HeroSplit({
               <Date dateString={date} />
             </p>
             <h1 className="text-4xl font-bold text-gray-900">
-              <Link href={`/posts/${slug}`} className="hover:underline">
+              {/* <Link href={`/posts/${slug}`} className="hover:underline"> */}
                 {title}
-              </Link>
+              {/* </Link> */}
             </h1>
             <p className="text-gray-700">{stripHtmlTags(excerpt)}</p>
             <div className="flex items-center space-x-4">
