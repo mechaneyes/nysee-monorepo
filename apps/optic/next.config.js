@@ -42,7 +42,6 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/optic',
   async rewrites() {
     return [
       {
