@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/optic/(.*)",
+      "destination": "/optic/$1"
+    }
+  ]
+}
