@@ -12,7 +12,7 @@ export default function Header() {
           </h2>
         </div>
         <nav className="flex items-center space-x-6">
-          <a href="#" className="text-gray-700">
+          {/* <a href="#" className="text-gray-700">
             Home
           </a>
           <a href="#" className="text-gray-700">
@@ -23,9 +23,9 @@ export default function Header() {
           </a>
           <a href="#" className="text-gray-700">
             Pricing
-          </a>
-          <a href="#" className="text-gray-700">
-            Company
+          </a> */}
+          <a href="/" className="text-gray-700">
+            NYSee
           </a>
         </nav>
       </header>
