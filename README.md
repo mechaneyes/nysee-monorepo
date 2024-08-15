@@ -60,4 +60,14 @@ All of the Turborepo noise is still there atm, but if you want to take a peek at
 If you'd like to experiment with something similar, to spare yourself the rat's nest, just go straight to the official example: https://github.com/vercel/next.js/tree/canary/examples/with-zones
 
 
+<br>
 
+# Mechaneyes Notes
+
+## favicon-cheat-sheet
+
+https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
+
+>A painfully obsessive cheat sheet to favicon sizes/types.
+>
+>For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file favicon.ico and place it in the root of your domain.
