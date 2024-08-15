@@ -14,15 +14,6 @@ export default function Header() {
         <nav className="flex items-center space-x-6">
           {/* <a href="#" className="text-gray-700">
             Home
-          </a>
-          <a href="#" className="text-gray-700">
-            Products
-          </a>
-          <a href="#" className="text-gray-700">
-            Resources
-          </a>
-          <a href="#" className="text-gray-700">
-            Pricing
           </a> */}
           <a href="/" className="text-gray-700">
             NYSee

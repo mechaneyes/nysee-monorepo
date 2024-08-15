@@ -21,7 +21,7 @@ export default function HeroSplit({ title, coverImage, date, excerpt, slug }) {
             <p className="post__date text-gray-500">
               <Date dateString={date} />
             </p>
-            {parse(excerpt)}
+            <div className="post__excerpt">{parse(excerpt)}</div>
           </div>
         </div>
         <div className="hero__image">
