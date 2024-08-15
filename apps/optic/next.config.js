@@ -1,5 +1,3 @@
-require('dotenv').config({ path: '.env.local' });
-
 if (!process.env.NEXT_PUBLIC_WORDPRESS_API_URL) {
   throw new Error(`
     Please provide a valid WordPress instance URL.
@@ -18,6 +16,15 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/optic",
+  async rewrites() {
+    return [
+      {
+        source: "/",
+        destination: "/",
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
@@ -41,14 +48,6 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/optic',
-        destination: '/',
-      },
-    ];
   },
 };
 

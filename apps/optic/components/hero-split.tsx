@@ -21,7 +21,6 @@ export default function HeroSplit({
   author,
   slug,
 }) {
-  console.log("url", process.env.NEXT_PUBLIC_WORDPRESS_API_URL)
   return (
     <div className="min-h-screen bg-white">
       <main className="hero hero--split">

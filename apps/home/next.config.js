@@ -1,29 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
-    const OPTIC_DOMAIN = process.env.OPTIC_DOMAIN || "default_domain"; // Ensure OPTIC_DOMAIN is defined
+    const NEXT_PUBLIC_OPTIC_DOMAIN = process.env.NEXT_PUBLIC_OPTIC_DOMAIN || "default_domain"; // Ensure NEXT_PUBLIC_OPTIC_DOMAIN is defined
     return [
       {
         source: "/optic",
-        destination: `${OPTIC_DOMAIN}/optic`,
+        destination: `${NEXT_PUBLIC_OPTIC_DOMAIN}/optic`,
       },
       {
         source: "/optic/:path+",
-        destination: `${OPTIC_DOMAIN}/optic/:path*`,
+        destination: `${NEXT_PUBLIC_OPTIC_DOMAIN}/optic/:path*`,
       },
     ];
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "localhost",
-      },
-      {
-        protocol: "http",
-        hostname: "localhost",
-      },
-    ],
   },
 };
 
