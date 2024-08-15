@@ -17,14 +17,14 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: "/optic",
-  async rewrites() {
-    return [
-      {
-        source: "/",
-        destination: "/",
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/",
+  //     },
+  //   ];
+  // },
   images: {
     remotePatterns: [
       {
