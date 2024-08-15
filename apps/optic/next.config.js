@@ -16,15 +16,25 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/optic",
   // async rewrites() {
   //   return [
   //     {
-  //       source: "/",
-  //       destination: "/",
+  //       source: '/optic',
+  //       destination: '/',
   //     },
   //   ];
   // },
+  basePath: "/optic",
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/optic",
+        basePath: false,
+        permanent: false,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
