@@ -34,11 +34,9 @@ export default function PostHero({
             </div>
           </div>
         </div>
-        <div className="hero__image">
-          {featuredImage && (
-            <CoverImage title={title} coverImage={featuredImage} />
-          )}
-        </div>
+        {featuredImage && (
+          <CoverImage title={title} coverImage={featuredImage} />
+        )}
       </main>
     </div>
   );

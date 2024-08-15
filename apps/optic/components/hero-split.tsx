@@ -24,11 +24,9 @@ export default function HeroSplit({ title, coverImage, date, excerpt, slug }) {
             <div className="post__excerpt">{parse(excerpt)}</div>
           </div>
         </div>
-        <div className="hero__image">
-          {coverImage && (
-            <CoverImage title={title} coverImage={coverImage} slug={slug} />
-          )}
-        </div>
+        {coverImage && (
+          <CoverImage title={title} coverImage={coverImage} slug={slug} />
+        )}
       </main>
     </div>
   );
