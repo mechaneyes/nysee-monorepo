@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "source": "/optic",
+      "destination": "/optic"
+    },
+    {
+      "source": "/optic/:path*",
+      "destination": "/optic/:path*"
     }
   ]
 }
