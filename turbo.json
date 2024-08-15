@@ -4,9 +4,28 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
+      "env": [
+        "OPTIC_DOMAIN",
+        "NEXT_PUBLIC_WORDPRESS_API_URL",
+        "WORDPRESS_API_URL",
+        "WORDPRESS_URL",
+        "WORDPRESS_HOSTNAME"
+      ],
       "inputs": [
         "$TURBO_DEFAULT$",
         ".env*",
+        "OPTIC_DOMAIN",
+        "NEXT_PUBLIC_WORDPRESS_API_URL",
+        "WORDPRESS_API_URL",
+        "WORDPRESS_URL",
+        "WORDPRESS_HOSTNAME"
+      ],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "web#build": {
+      "dependsOn": ["^build"],
+      "env": [
+        "OPTIC_DOMAIN",
         "NEXT_PUBLIC_WORDPRESS_API_URL",
         "WORDPRESS_API_URL",
         "WORDPRESS_URL",
@@ -25,5 +44,13 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": [
+    "OPTIC_DOMAIN",
+    "NEXT_PUBLIC_WORDPRESS_API_URL",
+    "WORDPRESS_API_URL",
+    "WORDPRESS_URL",
+    "WORDPRESS_HOSTNAME"
+  ],
+  "globalDependencies": ["tsconfig.json"]
 }
