@@ -13,7 +13,7 @@ export default function PostPreview({
 }) {
   return (
     <div className="post post--preview">
-      <div className="mb-5">
+      <div className="mb-3">
         {coverImage && (
           <CoverImage title={title} coverImage={coverImage} slug={slug} />
         )}

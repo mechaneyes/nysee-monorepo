@@ -9,6 +9,15 @@
   @apply my-6;
 }
 
+.content p {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.content figure {
+  padding-bottom: 0.5rem;
+}
+
 .content a {
   @apply underline;
 }
@@ -56,7 +65,7 @@
 }
 
 .content figcaption {
-  @apply text-center text-sm;
+  @apply text-left text-sm;
 }
 
 .content blockquote {

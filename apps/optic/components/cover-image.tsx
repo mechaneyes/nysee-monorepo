@@ -16,7 +16,7 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
   const image = (
     <Image
       width={2000}
-      height={1000}
+      height={2500}
       alt={`Cover Image for ${title}`}
       src={coverImage?.node.sourceUrl}
       className={cn("shadow-small", {
@@ -25,7 +25,7 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
     />
   );
   return (
-      <div className="post__image--cover sm:mx-0">
+    <div className="post__image--cover">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}
