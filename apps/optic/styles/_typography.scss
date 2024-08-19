@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/xgi8mni.css");
 
-@mixin mobleySerif {
+@mixin mobley-serif {
   font-family: mobley-serif, serif;
   font-weight: 400;
   font-style: normal;
@@ -23,15 +23,18 @@ body {
 }
 
 nav {
-  // @include mobleySerif;
+  // @include mobley-serif;
   font-size: 1.25rem;
 }
 
 h1 {
-  @include mobleySerif;
   font-family: mobley-serif, serif;
   font-size: 4rem;
   line-height: 1;
+
+  a {
+    @include mobley-serif;
+  }
 }
 
 h2 {
