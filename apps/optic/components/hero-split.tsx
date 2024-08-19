@@ -13,7 +13,7 @@ export default function HeroSplit({ title, coverImage, date, excerpt, slug }) {
       <main className="hero hero--split">
         <div className="hero__copy">
           <div className="hero__copy__inner">
-            <h1 className="text-4xl font-bold text-gray-900">
+            <h1 className="text-gray-900">
               <Link href={`/posts/${slug}`} className="hover:underline">
                 {title}
               </Link>

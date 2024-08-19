@@ -1,1 +1,17 @@
+@import url("https://use.typekit.net/xgi8mni.css");
+@import "typography";
 @import "posts";
+
+header h2 {
+  font-family: mobley-serif, serif;
+  font-size: 2rem;
+}
+
+.more-stories {
+    // column-gap: 4rem;
+    // row-gap: 6rem;
+
+    h2 {
+        font-size: 3rem;
+    }
+}

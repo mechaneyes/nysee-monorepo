@@ -22,13 +22,13 @@ export default function PostHero({
       <main className="hero hero--post hero--split">
         <div className="hero__copy">
           <div className="hero__copy__inner">
-            <h1 className="text-4xl font-bold text-gray-900">{title}</h1>
+            <h1 className="text-gray-900">{title}</h1>
             <p className="post__meta text-gray-500">
               <Date dateString={date} /> &middot;{" "}
               <Categories categories={categories} />
             </p>
 
-            <div className="post__excerpt">{parse(excerpt)}</div>
+            {/* <div className="post__excerpt">{parse(excerpt)}</div> */}
             <div className="flex items-center space-x-4">
               <Avatar author={author} />
             </div>

@@ -19,9 +19,7 @@ export default function PostPreview({
         )}
       </div>
       <h3 className="post__title post__title--preview text-3xl">
-        <Link href={`/posts/${slug}`} className="hover:underline">
-          {title}
-        </Link>
+        <Link href={`/posts/${slug}`}>{title}</Link>
       </h3>
       <p className="post__meta text-gray-500">
         <Date dateString={date} />
