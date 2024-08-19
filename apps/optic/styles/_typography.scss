@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/xgi8mni.css");
+
 @mixin mobleySerif {
   font-family: mobley-serif, serif;
   font-weight: 400;
@@ -22,12 +24,13 @@ body {
 
 nav {
   // @include mobleySerif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h1 {
   @include mobleySerif;
   font-size: 4rem;
+  line-height: 1;
 }
 
 h2 {
@@ -38,6 +41,10 @@ h3 {
   a {
     text-decoration-thickness: 0.05rem;
     text-underline-offset: 0.25rem;
+
+    &:hover {
+      text-decoration-thickness: 0.05rem;
+    }
   }
 }
 
