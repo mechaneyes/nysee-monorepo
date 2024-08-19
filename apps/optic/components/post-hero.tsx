@@ -18,7 +18,7 @@ export default function PostHero({
   author,
 }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <main className="hero hero--post hero--split">
         <div className="hero__copy">
           <div className="hero__copy__inner">
