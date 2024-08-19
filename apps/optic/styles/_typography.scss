@@ -29,6 +29,7 @@ nav {
 
 h1 {
   @include mobleySerif;
+  font-family: mobley-serif, serif;
   font-size: 4rem;
   line-height: 1;
 }
