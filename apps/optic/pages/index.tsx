@@ -16,6 +16,7 @@ export default function Index({ allPosts: { edges }, preview }) {
     <Layout preview={preview}>
       <Head>
         <title>{`NYSee Lowdown ${CMS_NAME}`}</title>
+        <link rel="stylesheet" href="https://use.typekit.net/xgi8mni.css"></link>
       </Head>
       <Container>
         <Header />
