@@ -16,14 +16,6 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/optic',
-  //       destination: '/',
-  //     },
-  //   ];
-  // },
   basePath: "/optic",
   async redirects() {
     return [
@@ -32,6 +24,14 @@ const nextConfig = {
         destination: "/optic",
         basePath: false,
         permanent: false,
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/api/proxy/:path*",
+        destination: `${process.env.NEXT_PUBLIC_WORDPRESS_API_URL}/:path*`,
       },
     ];
   },
