@@ -1,4 +1,10 @@
 .post {
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.25rem;
+  }
+
   &__image {
     &--cover {
       width: 100%;
