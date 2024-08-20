@@ -11,10 +11,11 @@ export default function Header() {
             </Link>
           </h2>
         </div>
-        <nav className="flex items-center space-x-6">
+        <nav className="flex items-center space-x-3">
           <a href="/" className="text-gray-700">
             NYSee Home
           </a>
+          <div>&middot;</div>
           <a href="https://nysee.nyc/ray-weitzenberg" className="text-gray-700">
             Ray Weitzenberg
           </a>
