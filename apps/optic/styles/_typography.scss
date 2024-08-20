@@ -89,3 +89,31 @@ a {
 .italics {
   font-style: italic;
 }
+
+nav {
+  a {
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.25rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration-thickness: 0.05rem;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.more-stories .post {
+  a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.25rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration-color: #0088ff;
+      transition: all 0.3s ease;
+    }
+  }
+}

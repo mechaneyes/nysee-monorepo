@@ -12,11 +12,11 @@ export default function Header() {
           </h2>
         </div>
         <nav className="flex items-center space-x-6">
-          {/* <a href="#" className="text-gray-700">
-            Home
-          </a> */}
           <a href="/" className="text-gray-700">
             NYSee Home
+          </a>
+          <a href="https://nysee.nyc/ray-weitzenberg" className="text-gray-700">
+            Ray Weitzenberg
           </a>
         </nav>
       </header>
