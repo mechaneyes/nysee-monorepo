@@ -1,12 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
 import Navigation from "@/components/nav";
 
 export const metadata = {
-  title: "Radar | NYSee",
-  // description:
-  //   "Gossamer is the original idea I&apos;d had for the first project.",
-  "og:image": "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+  title: "NYSee Radar",
+  openGraph: {
+    images: [
+      {
+        url: "/images/og-juli-kosolapova.jpg",
+      },
+    ],
+  },
 };
 
 export default function Home() {
