@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import RadarVideo from "./components/radar-video";
 
 export const metadata = {
   title: "NYSee.nyc",
@@ -37,20 +38,7 @@ export default function Home() {
         width={2880}
         height={1913}
       />
-      <div className="project project--radar">
-        <video
-          className="video--radar-antenna"
-          autoPlay
-          loop
-          muted
-          width="340"
-          height="440"
-        >
-          <source src="/images/radarAlpha4.webm" type="video/webm" />
-          <source src="/images/radarAlpha4ios.mov" type="video/quicktime" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <RadarVideo />
     </div>
   );
 }
