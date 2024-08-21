@@ -59,6 +59,7 @@ export default function Home() {
           </p>
         </div>
       </article>
+
       <article className="project">
         <Image
           src={`/images/nysee-qrCode.jpg`}
@@ -72,6 +73,7 @@ export default function Home() {
           <p>Tell your friends. Tell your loved ones.</p>
         </div>
       </article>
+
       <article className="project">
         <Link href="/scopus-ex-presentation">
           <Image
@@ -94,6 +96,7 @@ export default function Home() {
           </p>
         </div>
       </article>
+
       <article className="project">
         <Link href="/whirligrid">
           <Image
@@ -116,6 +119,7 @@ export default function Home() {
           </p>
         </div>
       </article>
+
       <article className="project">
         <Link href="/no-ordinary-duotone">
           <Image
@@ -136,6 +140,7 @@ export default function Home() {
           </p>
         </div>
       </article>
+
       <article className="project">
         <Link href="/gossamer">
           <Image
