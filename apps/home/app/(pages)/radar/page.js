@@ -3,9 +3,10 @@ import Link from "next/link";
 import Navigation from "@/components/nav";
 
 export const metadata = {
-  title: "Gossamer | NYSee",
-  description:
-    "Gossamer is the original idea I&apos;d had for the first project.",
+  title: "Radar | NYSee",
+  // description:
+  //   "Gossamer is the original idea I&apos;d had for the first project.",
+  "og:image": "/images/og-juli-kosolapova.jpg",
 };
 
 export default function Home() {
