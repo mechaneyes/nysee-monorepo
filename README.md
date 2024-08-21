@@ -98,6 +98,12 @@ After exporting from Premiere Pro, you can use the FFmpeg command to convert the
 ffmpeg -i your_exported_file.mov -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus -pix_fmt yuva420p output.webm
 ```
 
+For iOS, to reduce the file size I again used FFmpeg to create a more compressed version while still preserving the alpha channel:
+
+```bash
+ffmpeg -i radarAlpha4.mov -c:v hevc -tag:v hvc1 -crf 23 -preset medium -pix_fmt yuva420p -movflags faststart radarAlpha4a.mov
+```
+
 This two-step process (Premiere Pro export to ProRes, then FFmpeg conversion to WebM) helps ensure you maintain the best possible quality and alpha channel integrity for your web video.
 
 ### Background Image

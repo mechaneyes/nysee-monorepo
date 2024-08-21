@@ -45,9 +45,11 @@ export default function Home() {
           muted
           width="340"
           height="440"
-          type="video/webm"
-          src="/images/radarAlpha4.webm"
-        ></video>
+        >
+          <source src="/images/radarAlpha4.webm" type="video/webm" />
+          <source src="/images/radarAlpha4ios.mov" type="video/quicktime" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
