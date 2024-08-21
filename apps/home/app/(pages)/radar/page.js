@@ -5,7 +5,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "/images/og-juli-kosolapova.jpg",
+        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
       },
     ],
   },

@@ -4,13 +4,13 @@
   align-items: flex-start;
   justify-content: center;
   padding: 1rem;
-  
+
   @include bp("small") {
     padding: 2rem 2rem 0 2rem;
   }
 
   a {
-    color: white;
+    color: black;
     text-decoration: none;
 
     &.link-colored {
@@ -19,12 +19,16 @@
       text-decoration-thickness: 0.05em;
       text-underline-offset: 0.2em;
       text-decoration-line: underline;
-      transition: color 0.3s ease, text-decoration 0.3s ease;
+      transition:
+        color 0.3s ease,
+        text-decoration 0.3s ease;
 
       &:hover {
         color: white;
         text-decoration-color: white;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
+        transition:
+          color 0.3s ease,
+          text-decoration 0.3s ease;
       }
     }
   }
@@ -51,7 +55,9 @@
     text-decoration-thickness: 0.05em;
     text-underline-offset: 0.2em;
     text-decoration-color: transparent;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition:
+      color 0.3s ease,
+      text-decoration 0.3s ease;
 
     @include bp("medium") {
       font-size: 1.5rem;
@@ -67,11 +73,21 @@
   &__header {
     padding-bottom: 2rem;
 
+    a {
+      color: black;
+      text-decoration-color: black;
+    }
+
     a:hover {
+      text-decoration: underline;
+      text-decoration-color: black;
+
       h2 {
         color: #00f3ff;
         text-decoration-color: #00f3ff;
-        transition: color 0.3s ease, text-decoration 0.6s ease;
+        transition:
+          color 0.3s ease,
+          text-decoration 0.6s ease;
       }
     }
 
@@ -79,8 +95,14 @@
       padding: 0.5rem 0;
     }
 
+    h3 {
+      color: black;
+      font-weight: 300;
+    }
+
     h4 {
       padding-bottom: 0.5rem;
+      color: black;
     }
 
     &__subheader {
@@ -89,9 +111,31 @@
       justify-content: space-between;
       gap: 0.5rem;
       padding: 1rem 0;
+      color: black;
 
       * {
         padding: 0 !important;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        color: black;
+        font-weight: 300;
+      }
+
+      h4 {
+        padding-bottom: 0.5rem;
+        font-size: 1.5rem;
+        color: black;
+      }
+
+      &--radar {
+        h2 {
+          font-family: mobley-serif, serif;
+          font-size: 3rem;
+          font-weight: 400;
+          color: black;
+        }
       }
     }
   }
@@ -115,7 +159,9 @@
       h2 {
         color: #00f3ff;
         text-decoration-color: #00f3ff;
-        transition: color 0.3s ease, text-decoration 0.6s ease;
+        transition:
+          color 0.3s ease,
+          text-decoration 0.6s ease;
       }
     }
 
