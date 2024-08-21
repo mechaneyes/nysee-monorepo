@@ -1,7 +1,15 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
+
+export const metadata = {
+  title: "NYSee",
+  openGraph: {
+    images: [
+      {
+        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
