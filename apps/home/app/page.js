@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "NYSee.nyc",
@@ -25,16 +26,27 @@ export default function Home() {
         <div className="homepage__header__subheader homepage__header__subheader--radar">
           <Link href="/optic">
             <h3>NYSee Lowdown</h3>
+            <h4>Beyond the Frame</h4>
           </Link>
         </div>
       </div>
+      <Image
+        className="fullscreen-image"
+        src="/images/radar-juli-kosolapova_2880px.jpg"
+        alt="NYSee.nyc"
+        width={2880}
+        height={1913}
+      />
       <div className="project project--radar">
         <video
-          className="fullscreen-video"
+          className="video--radar-antenna"
           autoPlay
           loop
           muted
-          src="/images/radar02_2.mp4"
+          width="340"
+          height="440"
+          type="video/webm"
+          src="/images/radarAlpha4.webm"
         ></video>
       </div>
     </div>

@@ -64,6 +64,48 @@ If you'd like to experiment with something similar, to spare yourself the rat's 
 
 # Mechaneyes Notes
 
+## Radar Antenna Video v Background Image
+
+You can see the effect at https://nysee.nyc/
+
+### Radar Antenna Video w Alpha
+
+In order to achieve the spinning radar antenna video, I wanted to export the video from Premiere with the alpha transparency. Thank you, Claude, for the assist.
+
+#### Via Claude:
+
+To export a file from Premiere Pro that's suitable for web use with transparency, you'll want to use a format that supports alpha channels. Here's a recommended approach:
+
+Export as QuickTime/MOV with the ProRes 4444 codec:
+- Go to File > Export > Media
+- In the Export Settings dialog, choose "QuickTime" as the Format
+- Under Video Codec, select "Apple ProRes 4444"
+- Ensure "Render at Maximum Depth" and "Use Maximum Render Quality" are checked
+- In the Video tab, make sure "Composite in Linear Color" is checked
+- Set your desired resolution and frame rate
+
+
+This will give you a high-quality .mov file with preserved alpha channel, which you can then convert to WebM using the FFmpeg command I provided earlier.
+
+Why this method:
+1. ProRes 4444 preserves the alpha channel and maintains high quality.
+2. It's widely supported and works well as an intermediate format.
+3. It avoids compression artifacts that might affect the alpha channel.
+
+After exporting from Premiere Pro, you can use the FFmpeg command to convert the .mov to .webm for web use:
+
+```bash
+ffmpeg -i your_exported_file.mov -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus -pix_fmt yuva420p output.webm
+```
+
+This two-step process (Premiere Pro export to ProRes, then FFmpeg conversion to WebM) helps ensure you maintain the best possible quality and alpha channel integrity for your web video.
+
+### Background Image
+
+![Juili](./apps/home/public/images/radar-juli-kosolapova_2880px.jpg)
+
+Photo by [Juli Kosolapova](https://unsplash.com/@yuli_superson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+
 ## favicon-cheat-sheet
 
 https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
@@ -71,3 +113,4 @@ https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
 >A painfully obsessive cheat sheet to favicon sizes/types.
 >
 >For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file favicon.ico and place it in the root of your domain.
+
