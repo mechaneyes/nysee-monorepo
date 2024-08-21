@@ -96,20 +96,30 @@
 
   &--gossamer {
     .gossamer-img--poster {
-        aspect-ratio: 83 / 128;
-        width: 100%;
-        height: auto;
+      aspect-ratio: 83 / 128;
+      width: 100%;
+      height: auto;
 
-        @include bp("small") {
-            height: 80vh;
-            width: auto;
-        }
+      @include bp("small") {
+        height: 80vh;
+        width: auto;
+      }
     }
   }
 
   &--radar {
     video {
       width: 100%;
+    }
+
+    .fullscreen-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Optional: to place the video behind other content */
     }
   }
 }
