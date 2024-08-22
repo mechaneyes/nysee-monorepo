@@ -10,6 +10,14 @@ const nextConfig = {
         source: "/optic/:path+",
         destination: `${process.env.NEXT_PUBLIC_OPTIC_DOMAIN}/optic/:path*`,
       },
+      {
+        source: "/radar",
+        destination: `${process.env.NEXT_PUBLIC_RADAR_DOMAIN}/radar`,
+      },
+      {
+        source: "/radar/:path+",
+        destination: `${process.env.NEXT_PUBLIC_RADAR_DOMAIN}/radar/:path*`,
+      },
     ];
   },
 };

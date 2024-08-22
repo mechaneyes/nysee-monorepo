@@ -1,0 +1,149 @@
+.post {
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.25rem;
+  }
+
+  &__image {
+    &--cover {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        display: block;
+        padding-bottom: 125%; // 4:5 aspect ratio (4/5 = 0.8, 0.8 * 100 = 80%)
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: min(2rem, 3vw);
+      }
+    }
+  }
+
+  &__meta {
+    padding-bottom: 0.625rem;
+    font-weight: 200;
+  }
+
+  &__date {
+    padding-bottom: 0.625rem;
+    font-weight: 200;
+  }
+
+  &__title {
+    &--preview {
+      padding-bottom: 0.25rem;
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+  }
+
+  &__excerpt {
+    p {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &--preview {
+    .post__image--cover {
+      width: 100%;
+      height: auto;
+
+      img {
+        border-radius: min(2rem, 3vw);
+      }
+    }
+  }
+
+  figure + h3 {
+    margin-top: 0.5rem;
+  }
+}
+
+.hero {
+  &--split {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    h1 {
+      // font-size: 2.5rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .hero__copy {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin: 0 auto; // Center horizontally
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        height: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+
+      &::before {
+        top: 0;
+        height: 33%;
+      }
+
+      &::after {
+        bottom: 0;
+        height: 67%;
+      }
+
+      &__inner {
+        position: absolute;
+        top: 33%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+    }
+
+    .post__image--cover {
+      width: 100%;
+      height: auto;
+
+      img {
+        border-radius: min(2rem, 3vw);
+      }
+    }
+  }
+
+  &--post {
+    .post__image--cover {
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+article {
+  .min-h-screen {
+    min-height: 555px;
+  }
+}
