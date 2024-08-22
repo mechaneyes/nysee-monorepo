@@ -20,7 +20,7 @@ export default function PostHero({
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth >= 1023);
+      setIsMobile(window.innerWidth >= 768);
     };
 
     handleResize(); // Set initial value

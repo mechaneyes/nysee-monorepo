@@ -1,12 +1,14 @@
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Container from "../../components/container";
+import HeroPost from "../../components/hero-post";
+import HeroSplit from "../../components/hero-split";
 import PostBody from "../../components/post-body";
 import MoreStories from "../../components/more-stories";
 import Header from "../../components/header";
-import PostHero from "../../components/post-hero";
 import SectionSeparator from "../../components/section-separator";
 import Layout from "../../components/layout";
 import PostTitle from "../../components/post-title";
@@ -21,6 +23,21 @@ export default function Post({ post, posts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
 
+  const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktopOrLaptop(window.innerWidth >= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Layout preview={preview}>
       <Container>
@@ -31,22 +48,31 @@ export default function Post({ post, posts, preview }) {
           <>
             <article>
               <Head>
-                <title>
-                  {`${post.title} | NYSee Lowdown`}
-                </title>
+                <title>{`${post.title} | NYSee Lowdown`}</title>
                 <meta
                   property="og:image"
                   content={post.featuredImage?.node.sourceUrl}
                 />
               </Head>
-              <PostHero
-                title={post.title}
-                featuredImage={post.featuredImage}
-                excerpt={post.excerpt}
-                date={post.date}
-                author={post.author}
-                categories={post.categories}
-              />
+              {isDesktopOrLaptop ? (
+                <HeroSplit
+                  title={post.title}
+                  coverImage={post.featuredImage}
+                  date={post.date}
+                  author={post.author}
+                  slug={post.slug}
+                  excerpt={undefined}
+                />
+              ) : (
+                <HeroPost
+                  title={post.title}
+                  coverImage={post.featuredImage}
+                  date={post.date}
+                  author={post.author}
+                  slug={post.slug}
+                  excerpt={undefined}
+                />
+              )}
               <PostBody content={post.content} />
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}

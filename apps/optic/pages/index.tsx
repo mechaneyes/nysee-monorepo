@@ -17,7 +17,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktopOrLaptop(window.innerWidth >= 1024); // Adjust the width as needed
+      setIsDesktopOrLaptop(window.innerWidth >= 768);
     };
 
     handleResize(); // Set initial value
@@ -36,6 +36,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           title={heroPost.title}
           coverImage={heroPost.featuredImage}
           date={heroPost.date}
+          author={undefined}
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
@@ -45,6 +46,7 @@ export default function Index({ allPosts: { edges }, preview }) {
             title={heroPost.title}
             coverImage={heroPost.featuredImage}
             date={heroPost.date}
+            author={undefined}
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
           />

@@ -5,9 +5,10 @@
 import Link from "next/link";
 import parse from "html-react-parser";
 import Date from "./date";
+import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 
-export default function HeroSplit({ title, coverImage, date, excerpt, slug }) {
+export default function HeroSplit({ title, coverImage, date, author, excerpt, slug }) {
   return (
     <div className="min-h-screen bg-white">
       <main className="hero hero--split">
@@ -21,7 +22,10 @@ export default function HeroSplit({ title, coverImage, date, excerpt, slug }) {
             <p className="post__date text-gray-500">
               <Date dateString={date} />
             </p>
-            <div className="post__excerpt">{parse(excerpt)}</div>
+            <div className="flex items-center space-x-4">
+            {author && <Avatar author={author} />}
+            </div>
+            {excerpt && <div className="post__excerpt">{parse(excerpt)}</div>}
           </div>
         </div>
         {coverImage && (

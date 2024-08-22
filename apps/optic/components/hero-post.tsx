@@ -7,6 +7,7 @@ export default function HeroPost({
   title,
   coverImage,
   date,
+  author,
   excerpt,
   slug,
 }) {
@@ -19,15 +20,18 @@ export default function HeroPost({
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28 px-5">
         <div>
-          <h3 className="mb-0 text-4xl lg:text-6xl leading-tight">
+          <h1 className="mb-0 text-5xl lg:text-6xl leading-tight">
             <Link
               href={`/posts/${slug}`}
               className="hover:underline"
               dangerouslySetInnerHTML={{ __html: title }}
             ></Link>
-          </h3>
-          <div className="mb-3 text-lg">
+          </h1>
+          <div className="mb-1 text-lg">
             <Date dateString={date} />
+          </div>
+          <div className="flex items-center space-x-4">
+            {author && <Avatar author={author} />}
           </div>
           <div
             className="text-lg leading-relaxed mb-4"

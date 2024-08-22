@@ -37,6 +37,14 @@ h1 {
   }
 }
 
+.hero--split h1 {
+  font-size: 3.5rem;
+
+  @media (min-width: 900px) {
+    font-size: 4rem;
+  }
+}
+
 h2 {
   @include prometo(400);
 }

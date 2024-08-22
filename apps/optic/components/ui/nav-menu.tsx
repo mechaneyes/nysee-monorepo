@@ -14,6 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import RadarSequence from "@/components/radar-sequence";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -69,12 +70,13 @@ export default function NavMenu() {
                       <div className="mb-2 mt-4 text-lg font-medium">
                         NYSee Home
                       </div>
-                      <Image
+                      {/* <Image
                         width={2000}
                         height={2500}
                         alt={`Cover Image for NYSee Home`}
                         src="/optic/images/radar_052.png"
-                      />
+                      /> */}
+                      <RadarSequence speed={0.9} />
                       {/* <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components built with Radix UI and
                       Tailwind CSS.
@@ -103,16 +105,7 @@ export default function NavMenu() {
                     <div className="mb-2 mt-4 text-lg font-medium">
                       NYSee Radar
                     </div>
-                    <Image
-                      width={2000}
-                      height={2500}
-                      alt={`Cover Image for NYSee Home`}
-                      src="/optic/images/radar_052.png"
-                    />
-                    {/* <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p> */}
+                    <RadarSequence speed={0.9} />
                   </div>
                 </NavigationMenuLink>
               </li>
