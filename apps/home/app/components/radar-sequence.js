@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
@@ -31,7 +33,7 @@ const RadarSequence = ({ speed = 0.5 }) => {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [speed]);
+  }, [speed, frameCount]);
 
   const padFrame = (frame) => {
     return frame.toString().padStart(3, '0');

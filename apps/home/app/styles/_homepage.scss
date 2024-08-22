@@ -227,7 +227,7 @@
     bottom: 4rem;
     bottom: 0;
     right: 3vw;
-    width: 65vw;
+    width: 50vw;
     height: auto;
 
     @include bp("small") {
@@ -239,14 +239,14 @@
   .project--radar-sequence {
     position: fixed;
     // bottom: 4rem;
-    bottom: -6rem;
+    bottom: -3.5rem;
     right: 8vw;
     width: 60vw;
     height: auto;
 
-    // @include bp("small") {
-    //   right: 11vw;
-    //   width: 16vw;
-    // }
+    @include bp("small") {
+      right: 11vw;
+      width: 16vw;
+    }
   }
 }
