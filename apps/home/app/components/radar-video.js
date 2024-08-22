@@ -7,21 +7,8 @@ const RadarVideo = () => {
 
   useEffect(() => {
     const video = videoRef.current;
-    if (video) {
-      const isIOS =
-        /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      const isSafari = /^((?!chrome|android).)*safari/i.test(
-        navigator.userAgent
-      );
-
-    //   if (isIOS || isSafari) {
-    //     video.src = "/images/radarAlpha4_ios.mov";
-    //     video.type = "video/quicktime";
-    //   } else {
-        video.src = "/images/radarAlpha4.webm";
-        video.type = "video/webm";
-    //   }
-    }
+    video.src = "/images/radarAlpha4.webm";
+    video.type = "video/webm";
   }, []);
 
   return (

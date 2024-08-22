@@ -15,7 +15,7 @@ export default function Home() {
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     if (isIOS || isSafari) {
-      setRadarElement(<RadarSequence speed={0.8} />);
+      setRadarElement(<RadarSequence speed={0.9} />);
     } else {
       setRadarElement(<RadarVideo />);
     }

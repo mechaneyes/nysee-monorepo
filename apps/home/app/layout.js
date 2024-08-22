@@ -4,7 +4,7 @@ import "@/styles/styles.scss";
 
 export const metadata = {
   title: "NYSee | Ray Weitzenberg",
-  description: "Art+Tech+RisoPrinters",
+  description: "Art + Tech + Riso",
   url: "https://nysee.nyc/",
   openGraph: {
     url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",

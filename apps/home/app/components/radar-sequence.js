@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const RadarSequence = ({ speed = 0.5 }) => {
   const [currentFrame, setCurrentFrame] = useState(1);
-  const frameCount = 150; // Total number of frames in your sequence
+  const frameCount = 75;
   const animationRef = useRef(null);
   const lastUpdateTime = useRef(0);
 
