@@ -14,13 +14,13 @@ const RadarVideo = () => {
         navigator.userAgent
       );
 
-      if (isIOS || isSafari) {
-        video.src = "/images/radarAlpha4_ios.mov";
-        video.type = "video/quicktime";
-      } else {
+    //   if (isIOS || isSafari) {
+    //     video.src = "/images/radarAlpha4_ios.mov";
+    //     video.type = "video/quicktime";
+    //   } else {
         video.src = "/images/radarAlpha4.webm";
         video.type = "video/webm";
-      }
+    //   }
     }
   }, []);
 

@@ -235,4 +235,18 @@
       width: 16vw;
     }
   }
+
+  .project--radar-sequence {
+    position: fixed;
+    bottom: 4rem;
+    bottom: -1rem;
+    right: 10vw;
+    width: 60vw;
+    height: auto;
+
+    // @include bp("small") {
+    //   right: 11vw;
+    //   width: 16vw;
+    // }
+  }
 }

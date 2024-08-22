@@ -1,19 +1,26 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import RadarVideo from "./components/radar-video";
-
-export const metadata = {
-  title: "NYSee.nyc",
-  openGraph: {
-    images: [
-      {
-        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
-      },
-    ],
-  },
-};
+import RadarSequence from "./components/radar-sequence";
 
 export default function Home() {
+  const [radarElement, setRadarElement] = useState(null);
+  
+  useEffect(() => {
+    const isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (isIOS || isSafari) {
+      setRadarElement(<RadarSequence speed={0.8} />);
+    } else {
+      setRadarElement(<RadarVideo />);
+    }
+  }, []);
+
   return (
     <div className="homepage">
       <div className="homepage__header">
@@ -38,7 +45,7 @@ export default function Home() {
         width={2880}
         height={1913}
       />
-      <RadarVideo />
+      {radarElement}
     </div>
   );
 }
