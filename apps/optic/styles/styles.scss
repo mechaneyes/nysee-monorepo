@@ -1,16 +1,76 @@
 @import "typography";
 @import "posts";
 
-header h2 {
-  font-family: mobley-serif, serif;
-  font-size: 2rem;
+header {
+  line-height: 1.25;
+
+  a {
+    text-align: center;
+  }
+
+  .NavigationMenuList {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+
+  .NavigationMenuItem {
+    // background-color: blue;
+  }
+
+  .NavigationMenuContent {
+    background-color: white;
+    // border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px var(--black-a7);
+    z-index: 2;
+
+    a {
+      color: black;
+
+      &:hover {
+        color: black;
+        text-decoration-color: black;
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      width: 25rem;
+
+      a.flex {
+        background-color: tomato;
+      }
+
+      div.flex {
+        background-color: deepskyblue;
+      }
+    }
+
+    .nysee-radar {
+      a.flex {
+        background-color: tomato;
+      }
+
+      div.flex {
+        background-color: tomato;
+      }
+    }
+  }
+
+  h2 {
+    font-family: mobley-serif, serif;
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 
 .more-stories {
-    // column-gap: 4rem;
-    // row-gap: 6rem;
+  // column-gap: 4rem;
+  // row-gap: 6rem;
 
-    h2 {
-        font-size: 3rem;
-    }
+  h2 {
+    font-size: 3rem;
+  }
 }
