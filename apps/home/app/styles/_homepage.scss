@@ -226,27 +226,46 @@
     position: fixed;
     bottom: 4rem;
     bottom: 0;
-    right: 3vw;
-    width: 50vw;
+    right: 5vw;
+    width: 61vw;
     height: auto;
 
     @include bp("small") {
-      right: 11vw;
-      width: 16vw;
+      right: 10vw;
+      width: 50vw;
+    }
+
+    @include bp("medium") {
+      right: 10vw;
+      width: 40vw;
+    }
+
+    @include bp("large") {
+      right: 12vw;
+      width: 34vw;
+    }
+
+    @include bp("xlarge") {
+      right: 12vw;
+      width: 27vw;
     }
   }
 
   .project--radar-sequence {
     position: fixed;
-    // bottom: 4rem;
     bottom: -3.5rem;
     right: 8vw;
     width: 60vw;
     height: auto;
 
     @include bp("small") {
+      bottom: -5rem;
       right: 11vw;
-      width: 16vw;
+    }
+
+    @include bp("medium") {
+      right: 10vw;
+      width: 40vw;
     }
   }
 }
