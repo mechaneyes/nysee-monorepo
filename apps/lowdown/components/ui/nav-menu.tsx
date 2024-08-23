@@ -59,7 +59,7 @@ export default function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger className="NavigationMenuTrigger">NYSee Home</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="NavigationMenuTrigger">NYSee</NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
             <a href="/">
               <ul className="nysee-nav grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">

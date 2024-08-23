@@ -1,3 +1,4 @@
+@import "mixins";
 @import "typography";
 @import "pages";
 @import "posts";
@@ -16,7 +17,7 @@ header {
     z-index: 1;
   }
 
-  .NavigationMenuItem {
+  .NavigationMenuTrigger {
     // background-color: blue;
   }
 
@@ -86,7 +87,15 @@ header {
   }
 
   .NavigationMenuTrigger {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
     font-size: 1.125rem;
+
+    @include bp("medium") {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.25rem;
+    }
   }
 
   .nysee-nav,
