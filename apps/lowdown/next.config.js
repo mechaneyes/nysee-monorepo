@@ -16,12 +16,12 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/optic",
+  basePath: "/lowdown",
   async redirects() {
     return [
       {
         source: "/",
-        destination: "/optic",
+        destination: "/lowdown",
         basePath: false,
         permanent: false,
       },

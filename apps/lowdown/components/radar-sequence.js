@@ -42,7 +42,7 @@ const RadarSequence = ({ speed = 0.5 }) => {
   return (
     <div className="project project--radar-sequence">
       <Image
-        src={`/optic/images/radarSequence/radar_${padFrame(currentFrame)}.png`}
+        src={`/lowdown/images/radarSequence/radar_${padFrame(currentFrame)}.png`}
         alt="Radar Animation"
         className="radar-antenna"
         width={340}

@@ -74,7 +74,7 @@ export default function NavMenu() {
                         width={2000}
                         height={2500}
                         alt={`Cover Image for NYSee Home`}
-                        src="/optic/images/radar_052.png"
+                        src="/lowdown/images/radar_052.png"
                       /> */}
                       <RadarSequence speed={0.9} />
                       {/* <p className="text-sm leading-tight text-muted-foreground">
