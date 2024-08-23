@@ -32,6 +32,10 @@ h1 {
   font-size: 4rem;
   line-height: 1;
 
+  @include bp("medium") {
+    font-size: 5rem;
+  }
+
   a {
     @include mobley-serif;
   }
@@ -89,13 +93,13 @@ p {
 a {
   color: black;
   text-decoration: underline;
+  text-decoration-color: transparent;
   text-decoration-thickness: 0.05rem;
   text-underline-offset: 0.125rem;
   transition: all 0.3s ease;
 
   &:hover {
-    color: #0088ff;
-    text-decoration-color: #0088ff;
+    text-decoration-color: black;
     text-decoration-thickness: 0.05rem;
     transition: all 0.3s ease;
   }

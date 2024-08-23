@@ -23,23 +23,27 @@ export default function Home() {
 
   return (
     <div className="homepage">
-      <div className="homepage__header">
-        <h1 style={{ padding: "1rem 0 0", color: "black" }}>NYSee.nyc</h1>
-        <div className="mb-4">
+      <div className="mb-20 md:mb-28 px-5">
+        <h1 className="mb-3 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
+          NYSee.nyc
+        </h1>
+        <div className="mb-4 px-0 md:px-3">
           <Link href="/ray-weitzenberg" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">Ray Weitzenberg</h3>
             <h4 className="text-xl">Let&apos;s dance: @mechaneyes</h4>
           </Link>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 px-0 md:px-3">
           <Link href="/lowdown" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">NYSee Lowdown</h3>
             <h4 className="text-xl">Beyond the frame</h4>
           </Link>
         </div>
-        <div className="grid grid-rows-2 gap-0">
-          <h3 className="text-2xl">NYSee Radar</h3>
-          <h4 className="text-xl">Art pulse, curated</h4>
+        <div className="mb-4 px-0 md:px-3">
+          <div className="grid grid-rows-2 gap-0">
+            <h3 className="text-2xl">NYSee Radar</h3>
+            <h4 className="text-xl">Art pulse, curated</h4>
+          </div>
         </div>
       </div>
       <Image

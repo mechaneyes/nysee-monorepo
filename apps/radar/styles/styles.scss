@@ -1,6 +1,20 @@
 @import "mixins";
 @import "typography";
+@import "homepage";
 @import "posts";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
 
 header {
   line-height: 1.25;
@@ -79,6 +93,14 @@ header {
   height: calc(100vh - 4rem);
   height: 100vh;
 
+  h3 {
+    font-weight: 400;
+  }
+
+  h4 {
+    font-weight: 300;
+  }
+
   .juli-bg-image {
     position: absolute;
     top: 0;
@@ -90,7 +112,7 @@ header {
 }
 
 .fullscreen-image {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

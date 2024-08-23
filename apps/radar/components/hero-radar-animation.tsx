@@ -22,7 +22,7 @@ export default function HeroRadarAnimation() {
   return (
     <section className="hero--radar-animation mb-8">
       <div className="mb-20 md:mb-28 px-5">
-        <h1 className="mb-5 pt-10 px-0 md:px-3 text-5xl lg:text-6xl leading-tight">
+        <h1 className="mb-3 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
           NYSee Radar
         </h1>
 
@@ -45,23 +45,21 @@ export default function HeroRadarAnimation() {
           </div>
         </p> */}
 
-        <div className="flex gap-8 md:gap-20 w-fit md:w-3/5 mt-3 px-0 md:px-3">
-          <div className="flex-none">
-            <a href="/lowdown">
+        <div className="w-fit md:w-3/5 mt-3 px-0 md:px-3">
+          <div className="mb-4">
+            <Link href="/lowdown" className="grid grid-rows-2 gap-0">
               <h3 className="text-2xl">NYSee Lowdown</h3>
-            </a>
-            <p className="text-xl text-black">Beyond the frame</p>
+              <h4 className="text-xl">Beyond the frame</h4>
+            </Link>
           </div>
-          <div className="flex-none">
-            <a href="/">
-              <h3 className="text-2xl">NYSee</h3>
-            </a>
-            <p className="text-xl text-black">Creative nexus</p>
+          <div className="grid grid-rows-2 gap-0">
+            <h3 className="text-2xl">NYSee</h3>
+            <h4 className="text-xl">Creative nexus</h4>
           </div>
         </div>
 
         <Image
-          className="juli-bg-image"
+          className="fullscreen-image"
           src="/radar/images/radar-juli-kosolapova_2880px.jpg"
           alt="NYSee.nyc"
           width={2880}
