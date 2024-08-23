@@ -20,21 +20,21 @@ export default function HeroPost({
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28 px-5">
         <div>
-          <h1 className="mb-0 text-5xl lg:text-6xl leading-tight">
+          <h2 className="pb-3 text-4xl text-gray-900 pb-2">
             <Link
               href={`/posts/${slug}`}
               className="hover:underline"
               dangerouslySetInnerHTML={{ __html: title }}
             ></Link>
-          </h1>
-          <div className="mb-1 text-lg">
+          </h2>
+          <p className="text-gray-500 pb-2">
             <Date dateString={date} />
-          </div>
+          </p>
           <div className="flex items-center space-x-4">
             {author && <Avatar author={author} />}
           </div>
           <div
-            className="text-lg leading-relaxed mb-4"
+            className="text-lg leading-relaxed"
             dangerouslySetInnerHTML={{ __html: excerpt }}
           />
         </div>

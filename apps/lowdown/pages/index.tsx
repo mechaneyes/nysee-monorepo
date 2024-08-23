@@ -4,10 +4,8 @@ import Container from "../components/container";
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import HeroSplit from "../components/hero-split";
-import Header from "../components/header";
-import Layout from "../components/layout";
+import Masthead from "../components/masthead";
 import { getAllPostsForHome } from "../lib/api";
-import { CMS_NAME } from "../lib/constants";
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node;
@@ -30,7 +28,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 
   return (
     <Container>
-      <Header />
+      <Masthead />
       {heroPost && isDesktopOrLaptop ? (
         <HeroSplit
           title={heroPost.title}

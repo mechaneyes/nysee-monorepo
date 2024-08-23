@@ -22,40 +22,41 @@ export default function HeroRadarAnimation() {
   return (
     <section className="hero--radar-animation mb-8">
       <div className="mb-20 md:mb-28 px-5">
-        <h1 className="mb-5 pt-10 px-3 text-5xl lg:text-6xl leading-tight">
+        <h1 className="mb-5 pt-10 px-0 md:px-3 text-5xl lg:text-6xl leading-tight">
           NYSee Radar
         </h1>
 
-        <p className="text-xl text-black w-3/5 mt-2 px-3">
-          NYSee Radar serves you a hand picked selection of gallery shows and
-          their openings in New York City.
+        <p className="text-xl text-black w-fit md:w-4/5 mt-2 px-0 md:px-3">
+          A hand picked selection of NYC gallery shows and their openings.
         </p>
 
-        <p className="text-xl text-black w-3/5 mt-2 px-3">
-          The site is updated regularly, but not on a fixed schedule. So you
-          don't miss the latest updates, follow{" "}
-          <a href="https://bsky.app/profile/nysee.bsky.social">
-            @nysee.bsky.social
-          </a>{" "}
-          on Bluesky, or{" "}
-          <a href="https://bsky.app/profile/nysee.bsky.social">
-            @nysee@hypermute.com
-          </a>{" "}
-          on Mastodon.
-        </p>
-
-        <div className="flex gap-20 w-3/5 mt-3 px-3">
-          <div className="flex-none">
-            <a href="/">
-              <h3 className="text-2xl">NYSee</h3>
+        {/* <p className="text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
+          <div>
+            Bluesky:{" "}
+            <a href="https://bsky.app/profile/nysee.bsky.social">
+              @nysee.bsky.social
             </a>
-            <p className="text-xl text-black">Creative nexus</p>
           </div>
+          <div>
+            Mastodon:{" "}
+            <a href="https://bsky.app/profile/nysee.bsky.social">
+              @nysee@hypermute.com
+            </a>
+          </div>
+        </p> */}
+
+        <div className="flex gap-8 md:gap-20 w-fit md:w-3/5 mt-3 px-0 md:px-3">
           <div className="flex-none">
             <a href="/lowdown">
               <h3 className="text-2xl">NYSee Lowdown</h3>
             </a>
             <p className="text-xl text-black">Beyond the frame</p>
+          </div>
+          <div className="flex-none">
+            <a href="/">
+              <h3 className="text-2xl">NYSee</h3>
+            </a>
+            <p className="text-xl text-black">Creative nexus</p>
           </div>
         </div>
 

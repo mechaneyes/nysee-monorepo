@@ -5,7 +5,10 @@ class NYSeeDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="stylesheet" href="https://use.typekit.net/xgi8mni.css" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+          />
         </Head>
         <body>
           <Main />

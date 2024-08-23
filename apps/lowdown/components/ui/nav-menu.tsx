@@ -59,7 +59,7 @@ export default function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger>NYSee Home</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="NavigationMenuTrigger">NYSee Home</NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
             <a href="/">
               <ul className="nysee-nav grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -95,7 +95,7 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger>NYSee Radar</NavigationMenuTrigger>
+        <NavigationMenuTrigger className="NavigationMenuTrigger">NYSee Radar</NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
             <ul className="nysee-radar grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               {" "}
@@ -124,7 +124,7 @@ export default function NavMenu() {
             legacyBehavior
             passHref
           >
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={`NavigationMenuTrigger ${navigationMenuTriggerStyle()}`}>
               Ray Weitzenberg
             </NavigationMenuLink>
           </Link>

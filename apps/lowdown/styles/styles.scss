@@ -65,3 +65,88 @@ header {
     line-height: 1;
   }
 }
+
+.masthead {
+  line-height: 1.25;
+
+  a {
+    text-align: center;
+
+    &:hover {
+      text-decoration-color: black;
+    }
+  }
+
+  .NavigationMenuList {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+
+  .NavigationMenuTrigger {
+    font-size: 1.125rem;
+  }
+
+  .nysee-nav,
+  .nysee-radar {
+    &:hover {
+      cursor: pointer;
+    }
+
+    .font-medium {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .text-sm {
+      text-align: left;
+    }
+  }
+
+  .NavigationMenuContent {
+    background-color: white;
+    // border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px var(--black-a7);
+    z-index: 2;
+
+    a {
+      color: black;
+
+      &:hover {
+        color: black;
+        text-decoration-color: black;
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      width: 25rem;
+
+      a.flex {
+        background-color: tomato;
+      }
+
+      div.flex {
+        background-color: deepskyblue;
+      }
+    }
+
+    .nysee-radar {
+      a.flex {
+        background-color: tomato;
+      }
+
+      div.flex {
+        background-color: tomato;
+      }
+    }
+  }
+
+  h2 {
+    font-family: mobley-serif, serif;
+    font-size: 2rem;
+    line-height: 1;
+  }
+}

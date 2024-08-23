@@ -8,24 +8,31 @@ import Date from "./date";
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 
-export default function HeroSplit({ title, coverImage, date, author, excerpt, slug }) {
+export default function HeroSplit({
+  title,
+  coverImage,
+  date,
+  author,
+  excerpt,
+  slug,
+}) {
   return (
     <div className="min-h-screen bg-white">
       <main className="hero hero--split">
         <div className="hero__copy">
           <div className="hero__copy__inner">
-            <h1 className="text-gray-900">
+            <h2 className="pb-3 text-4xl text-gray-900">
               <Link href={`/posts/${slug}`} className="hover:underline">
                 {title}
               </Link>
-            </h1>
-            <p className="post__date text-gray-500">
+            </h2>
+            <p className="text-gray-500">
               <Date dateString={date} />
             </p>
             <div className="flex items-center space-x-4">
-            {author && <Avatar author={author} />}
+              {author && <Avatar author={author} />}
             </div>
-            {excerpt && <div className="post__excerpt">{parse(excerpt)}</div>}
+            {excerpt && <div className="text-gray-900">{parse(excerpt)}</div>}
           </div>
         </div>
         {coverImage && (
