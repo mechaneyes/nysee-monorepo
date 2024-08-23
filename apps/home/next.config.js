@@ -12,11 +12,11 @@ const nextConfig = {
       },
       {
         source: "/radar",
-        destination: `${process.env.NEXT_PUBLIC_RADAR_DOMAIN}/radar`,
+        destination: `${process.env.RADAR_DOMAIN}/radar`,
       },
       {
         source: "/radar/:path+",
-        destination: `${process.env.NEXT_PUBLIC_RADAR_DOMAIN}/radar/:path*`,
+        destination: `${process.env.RADAR_DOMAIN}/radar/:path*`,
       },
     ];
   },
