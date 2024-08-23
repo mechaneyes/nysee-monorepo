@@ -44,9 +44,9 @@ export default function HeroRadarAnimation() {
           on Mastodon.
         </p>
 
-        <div className="flex gap-12 w-3/5 mt-3 px-3">
+        <div className="flex gap-20 w-3/5 mt-3 px-3">
           <div className="flex-none">
-            <a href="/lowdown">
+            <a href="/">
               <h3 className="text-2xl">NYSee</h3>
             </a>
             <p className="text-xl text-black">Creative nexus</p>
