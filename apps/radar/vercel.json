@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/lowdown/(.*)",
-      "destination": "/lowdown/$1"
+      "source": "/radar/(.*)",
+      "destination": "/radar/$1"
     }
   ]
 }
