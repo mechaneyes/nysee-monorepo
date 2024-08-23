@@ -47,7 +47,7 @@ The root address is: https://nysee.nyc/
 
 That is a simple Next.js app that has a couple pages setup with the App router.
 
-Within that, or at least revealed by a specific path, is a headless WordPress app's UI living at https://nysee.nyc/optic
+Within that, or at least revealed by a specific path, is a headless WordPress app's UI living at https://nysee.nyc/lowdown
 
 Fancy.
 

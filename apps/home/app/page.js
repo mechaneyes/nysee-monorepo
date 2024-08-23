@@ -32,7 +32,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="homepage__header__subheader homepage__header__subheader--radar">
-          <Link href="/optic">
+          <Link href="/lowdown">
             <h3>NYSee Lowdown</h3>
             <h4>Beyond the Frame</h4>
           </Link>

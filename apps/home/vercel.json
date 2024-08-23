@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/optic",
-      "destination": "/optic"
+      "source": "/lowdown",
+      "destination": "/lowdown"
     },
     {
-      "source": "/optic/:path*",
-      "destination": "/optic/:path*"
+      "source": "/lowdown/:path*",
+      "destination": "/lowdown/:path*"
     }
   ]
 }

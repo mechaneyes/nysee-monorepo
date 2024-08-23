@@ -30,12 +30,12 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/optic",
-        destination: `${process.env.OPTIC_DOMAIN}/optic`,
+        source: "/lowdown",
+        destination: `${process.env.LOWDOWN_DOMAIN}/lowdown`,
       },
       {
-        source: "/optic/:path+",
-        destination: `${process.env.OPTIC_DOMAIN}/optic/:path*`,
+        source: "/lowdown/:path+",
+        destination: `${process.env.LOWDOWN_DOMAIN}/lowdown/:path*`,
       },
     ];
   },

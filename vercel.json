@@ -2,10 +2,10 @@
   "version": 2,
   "builds": [
     { "src": "apps/home/package.json", "use": "@vercel/next" },
-    { "src": "apps/optic/package.json", "use": "@vercel/next" }
+    { "src": "apps/lowdown/package.json", "use": "@vercel/next" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "apps/home/$1" },
-    { "src": "/optic/(.*)", "dest": "apps/optic/$1" }
+    { "src": "/lowdown/(.*)", "dest": "apps/lowdown/$1" }
   ]
 }

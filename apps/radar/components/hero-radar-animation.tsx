@@ -46,13 +46,13 @@ export default function HeroRadarAnimation() {
 
         <div className="flex gap-12 w-3/5 mt-3 px-3">
           <div className="flex-none">
-            <a href="/optic">
+            <a href="/lowdown">
               <h3 className="text-2xl">NYSee</h3>
             </a>
             <p className="text-xl text-black">Creative nexus</p>
           </div>
           <div className="flex-none">
-            <a href="/optic">
+            <a href="/lowdown">
               <h3 className="text-2xl">NYSee Lowdown</h3>
             </a>
             <p className="text-xl text-black">Beyond the frame</p>
