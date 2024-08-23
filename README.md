@@ -8,6 +8,8 @@ This is setup via a monorepo so it can host distinct projects, allowing others t
 
 <br>
 
+# Sites
+
 ## NYSee
 
 This is currently a simple Next.js app leveraging the App router. After posting several projects it quickly started resembling a blog. After a few weeks of manually building posts, I thought the domain would be better served with a proper blog. That's become the NYSee Lowdown, briefly outlined below.
@@ -119,4 +121,12 @@ https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
 >A painfully obsessive cheat sheet to favicon sizes/types.
 >
 >For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file favicon.ico and place it in the root of your domain.
+
+<br><br>
+
+# Image Carousel
+
+## Image Carousel via Framer Motion
+
+https://www.freecodecamp.org/news/build-an-image-carousel-with-react-and-framer-motion/
 

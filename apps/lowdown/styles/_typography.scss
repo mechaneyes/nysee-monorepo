@@ -37,6 +37,10 @@ h1 {
   }
 }
 
+.page h1 {
+  @include prometo(400);
+}
+
 .hero--split h1 {
   font-size: 3.5rem;
 

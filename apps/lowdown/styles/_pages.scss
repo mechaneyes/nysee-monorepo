@@ -1,0 +1,67 @@
+.page {
+  &--scopusExMachina {
+    // background-color: black;
+  }
+}
+
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 776/430;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__images {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    // max-width: 650px;
+    margin: auto;
+    margin: 0;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    z-index: 1;
+  }
+
+  &__indicator {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__dot {
+    // background-color: #333;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+}
