@@ -26,7 +26,7 @@ export default function MoreStories({ posts }) {
                   width={2000}
                   height={2500}
                   alt="Back to NYSee Lowdown"
-                  src="/optic/images/mo-lowdown.jpg"
+                  src="/radar/images/mo-lowdown.jpg"
                   className={cn("shadow-small", {
                     "hover:shadow-medium transition-shadow duration-200":
                       "back-to-lowdown",

@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
-const RadarSequence = ({ speed = 0.5 }) => {
+const RadarSequence = ({ speed = 0.5, nav = false }) => {
   const [currentFrame, setCurrentFrame] = useState(1);
   const frameCount = 75;
   const animationRef = useRef(null);
@@ -40,9 +40,9 @@ const RadarSequence = ({ speed = 0.5 }) => {
   };
 
   return (
-    <div className="project project--radar-sequence">
+    <div className={`radar-sequence ${nav && "radar-sequence--nav px-3"}`}>
       <Image
-        src={`/optic/images/radarSequence/radar_${padFrame(currentFrame)}.png`}
+        src={`/radar/images/radarSequence/radar_${padFrame(currentFrame)}.png`}
         alt="Radar Animation"
         className="radar-antenna"
         width={340}

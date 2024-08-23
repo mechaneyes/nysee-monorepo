@@ -27,6 +27,18 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/optic",
+        destination: `${process.env.OPTIC_DOMAIN}/optic`,
+      },
+      {
+        source: "/optic/:path+",
+        destination: `${process.env.OPTIC_DOMAIN}/optic/:path*`,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

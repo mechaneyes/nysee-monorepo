@@ -50,21 +50,29 @@ h2 {
 }
 
 h3 {
+  // font-weight: 400;
+
   a {
-    text-decoration-thickness: 0.05rem;
+    text-decoration-thickness: 0.1rem;
     text-underline-offset: 0.25rem;
     transition: all 0.3s ease;
 
     &:hover {
-      text-decoration-thickness: 0.05rem;
+      text-decoration-thickness: 0.1rem;
       transition: all 0.3s ease;
     }
   }
 }
 
+.px-3 h3 {
+  text-decoration: none;
+  text-decoration-thickness: 0;
+  text-decoration-color: transparent;
+}
+
 h4 {
-  font-size: 1.25rem;
-  font-weight: 400;
+  // font-size: 1.25rem;
+  // font-weight: 400;
 }
 
 h5 {
@@ -81,15 +89,14 @@ p {
 a {
   color: black;
   text-decoration: underline;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 0.25rem;
+  text-decoration-thickness: 0.05rem;
+  text-underline-offset: 0.125rem;
   transition: all 0.3s ease;
 
   &:hover {
     color: #0088ff;
-    text-decoration: underline;
     text-decoration-color: #0088ff;
-    text-decoration-thickness: 0.25rem;
+    text-decoration-thickness: 0.05rem;
     transition: all 0.3s ease;
   }
 }
