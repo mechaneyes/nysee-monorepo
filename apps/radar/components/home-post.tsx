@@ -6,9 +6,18 @@ import parse from "html-react-parser";
 import Date from "./date";
 import HomePostImage from "./home-post-image";
 
-export default function HomePost({ title, coverImage, date, excerpt, slug, reverse }) {
+export default function HomePost({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  slug,
+  reverse,
+}) {
   return (
-    <div className={`flex gap-10 relative pb-20 pt-8 ${reverse ? 'flex-row-reverse' : ''}`}>
+    <div
+      className={`flex gap-10 relative pb-20 pt-8 ${reverse ? "flex-row-reverse" : ""}`}
+    >
       <div className="relative w-7/12 pt-32 flex-col justify-start items-start inline-flex">
         <div className="top-6 absolute opacity-10 text-white text-[240px] font-bold font-['Gilroy'] leading-[240px]">
           01
@@ -20,16 +29,18 @@ export default function HomePost({ title, coverImage, date, excerpt, slug, rever
             </div>
             <div className="w-[72px] h-0.5 left-0 top-[12px] absolute bg-[#fbd784]" />
           </div>
-          <h2 className="pt-10 text-white text-4xl font-semibold overflow-hidden break-words">
-            <Link href={`/posts/${slug}`}>{title}</Link>
-          </h2>
-          <div className="w-4/5 pt-4 text-white text-lg">
-            {parse(excerpt)}
-          </div>
+          <Link href={`/posts/${slug}`}>
+            <h2 className="pt-10 text-white text-4xl font-semibold overflow-hidden break-words">
+              {title}
+            </h2>
+          </Link>
+          <div className="w-4/5 pt-4 text-white text-lg">{parse(excerpt)}</div>
           <div className="h-[22px] relative">
-            <h4 className="left-0 top-0 absolute text-[#fbd784] text-lg font-normal">
-              read more {reverse ? "→" : "←"}
-            </h4>
+            <Link href={`/posts/${slug}`}>
+              <h4 className="left-0 top-0 absolute text-[#fbd784] text-lg font-normal">
+                read more {reverse ? "→" : "←"}
+              </h4>
+            </Link>
             <div className="w-4 h-6 left-[103px] top-[19px] absolute origin-top-left -rotate-90 flex-col justify-start items-start inline-flex" />
           </div>
         </div>

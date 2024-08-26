@@ -60,6 +60,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "wordpressmu-1313045-4824823.cloudwaysapps.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "wordpress-1313045-4791931.cloudwaysapps.com",
         pathname: "/**",
       },

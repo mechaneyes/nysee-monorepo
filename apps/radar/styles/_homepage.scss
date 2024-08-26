@@ -18,9 +18,16 @@
     }
     
   }
+
   &__stories {
     background-color: #0b1d26;
     // background-color: blue;
+  }
+
+  .post {
+    &__content {
+      z-index: 1;
+    }
   }
 }
 
