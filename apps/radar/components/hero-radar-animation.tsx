@@ -30,20 +30,17 @@ export default function HeroRadarAnimation() {
           A hand picked selection of NYC gallery shows and their openings.
         </p>
 
-        {/* <p className="text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
-          <div>
-            Bluesky:{" "}
-            <a href="https://bsky.app/profile/nysee.bsky.social">
-              @nysee.bsky.social
-            </a>
-          </div>
-          <div>
-            Mastodon:{" "}
-            <a href="https://bsky.app/profile/nysee.bsky.social">
-              @nysee@hypermute.com
-            </a>
-          </div>
-        </p> */}
+        <p className="text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
+          Bluesky:{" "}
+          <a href="https://bsky.app/profile/nysee.bsky.social">
+            @nysee.bsky.social
+          </a>
+          <br />
+          Mastodon:{" "}
+          <a href="https://bsky.app/profile/nysee.bsky.social">
+            @nysee@hypermute.com
+          </a>
+        </p>
 
         <div className="w-fit md:w-3/5 mt-3 px-0 md:px-3">
           <Link href="/lowdown" className="grid grid-rows-2 gap-0 mb-4">
