@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { GetStaticProps } from "next";
-import Container from "../components/container";
-import MoreStories from "../components/more-stories";
+import ContainerHome from "../components/container-home";
+import HomeStories from "../components/home-stories";
 import HeroRadarAnimation from "../components/hero-radar-animation";
 import Header from "../components/header";
 import { getAllPostsForHome } from "../lib/api";
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node;
-  const morePosts = edges.slice(1);
+  const morePosts = edges;
 
   const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
 
@@ -26,11 +26,11 @@ export default function Index({ allPosts: { edges }, preview }) {
   }, []);
 
   return (
-    <Container>
+    <ContainerHome>
       {/* <Header /> */}
       <HeroRadarAnimation />
-      {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-    </Container>
+      {morePosts.length > 0 && <HomeStories posts={morePosts} />}
+    </ContainerHome>
   );
 }
 
