@@ -42,7 +42,7 @@ const RadarSequence = ({ speed = 0.5, nav = false }) => {
   return (
     <div className={`radar-sequence ${nav && "radar-sequence--nav px-3"}`}>
       <Image
-        src={`/radar/images/radarSequence/radar_${padFrame(currentFrame)}.png`}
+        src={`/radar/images/radar/radar_${padFrame(currentFrame)}.gif`}
         alt="Radar Animation"
         className="radar-antenna"
         width={340}

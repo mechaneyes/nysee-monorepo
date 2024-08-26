@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const RadarSequence = ({ speed = 0.5 }) => {
   const [currentFrame, setCurrentFrame] = useState(1);
@@ -14,9 +14,9 @@ const RadarSequence = ({ speed = 0.5 }) => {
       if (!lastUpdateTime.current) lastUpdateTime.current = timestamp;
 
       const elapsed = timestamp - lastUpdateTime.current;
-      
+
       // Adjust this value to change the speed. Lower value = slower animation
-      const frameInterval = 1000 / (60 * speed); 
+      const frameInterval = 1000 / (60 * speed);
 
       if (elapsed > frameInterval) {
         setCurrentFrame((prevFrame) => (prevFrame % frameCount) + 1);
@@ -36,13 +36,13 @@ const RadarSequence = ({ speed = 0.5 }) => {
   }, [speed, frameCount]);
 
   const padFrame = (frame) => {
-    return frame.toString().padStart(3, '0');
+    return frame.toString().padStart(3, "0");
   };
 
   return (
     <div className="project project--radar-sequence">
       <Image
-        src={`/images/radarSequence/radar_${padFrame(currentFrame)}.png`}
+        src={`/images/radar/radar_${padFrame(currentFrame)}.gif`}
         alt="Radar Animation"
         className="radar-antenna"
         width={340}

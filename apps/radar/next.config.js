@@ -32,10 +32,12 @@ const nextConfig = {
       {
         source: "/lowdown",
         destination: `${process.env.LOWDOWN_DOMAIN}/lowdown`,
+        basePath: false,
       },
       {
         source: "/lowdown/:path+",
         destination: `${process.env.LOWDOWN_DOMAIN}/lowdown/:path*`,
+        basePath: false,
       },
     ];
   },

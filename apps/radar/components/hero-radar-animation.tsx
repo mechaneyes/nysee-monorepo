@@ -46,16 +46,15 @@ export default function HeroRadarAnimation() {
         </p> */}
 
         <div className="w-fit md:w-3/5 mt-3 px-0 md:px-3">
-          <div className="mb-4">
-            <Link href="/lowdown" className="grid grid-rows-2 gap-0">
-              <h3 className="text-2xl">NYSee Lowdown</h3>
-              <h4 className="text-xl">Beyond the frame</h4>
-            </Link>
-          </div>
-          <div className="grid grid-rows-2 gap-0">
+          <Link href="/lowdown" className="grid grid-rows-2 gap-0 mb-4">
+            <h3 className="text-2xl">NYSee Lowdown</h3>
+            <h4 className="text-xl">Beyond the frame</h4>
+          </Link>
+
+          <Link href="/" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">NYSee</h3>
             <h4 className="text-xl">Creative nexus</h4>
-          </div>
+          </Link>
         </div>
 
         <Image

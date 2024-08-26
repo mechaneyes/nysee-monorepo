@@ -47,9 +47,10 @@ export default function NavMenu() {
                 </li>
                 <li className="text-sm">
                   Re-usable components built using Radix UI and Tailwind CSS.
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                  Beautifully designed components built with Radix UI and
+                  Tailwind CSS. Re-usable components built using Radix UI and
+                  Tailwind CSS. Beautifully designed components built with Radix
+                  UI and Tailwind CSS.
                 </li>
               </ul>
             </a>
