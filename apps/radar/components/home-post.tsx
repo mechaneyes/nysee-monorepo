@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import parse from "html-react-parser";
 
 import Date from "./date";
@@ -10,18 +11,28 @@ export default function HomePost({
   title,
   coverImage,
   date,
+  mechanicalCharacter,
+  mechanicalImage,
   excerpt,
   slug,
   reverse,
 }) {
+  console.log("mechanicalCharacter:", mechanicalCharacter);
   return (
     <div
       className={`flex gap-10 relative pb-20 pt-8 ${reverse ? "flex-row-reverse" : ""}`}
     >
       <div className="relative w-7/12 pt-32 flex-col justify-start items-start inline-flex">
         <div className="top-6 absolute opacity-10 text-white text-[240px] font-bold font-['Gilroy'] leading-[240px]">
-          01
+          {/* {mechanicalCharacter} */}
+          <Image
+            src={mechanicalImage}
+            alt={mechanicalCharacter}
+            width={240}
+            height={240}
+          />
         </div>
+
         <div className="post__content pl-32">
           <div className="relative">
             <div className="left-[96px] top-0 absolute text-[#fbd784] text-lg font-normal uppercase">
@@ -45,6 +56,7 @@ export default function HomePost({
           </div>
         </div>
       </div>
+
       <div className="w-5/12">
         {coverImage && (
           <HomePostImage title={title} coverImage={coverImage} slug={slug} />

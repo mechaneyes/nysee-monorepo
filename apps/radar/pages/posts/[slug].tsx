@@ -38,6 +38,8 @@ export default function Post({ post, posts, preview }) {
     };
   }, []);
 
+
+
   return (
     <Layout preview={preview}>
       <Container>
