@@ -1,22 +1,20 @@
-if (!process.env.WORDPRESS_API_URL) {
-  throw new Error(`
-    Please provide a valid WordPress instance URL.
-    Add to your environment variables WORDPRESS_API_URL.
-  `);
-}
-
-try {
-  new URL(process.env.WORDPRESS_API_URL);
-} catch (err) {
-  throw new Error(`
-    Please provide a valid WordPress instance URL.
-    The provided URL is invalid: ${process.env.WORDPRESS_API_URL}
-  `);
-}
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: "/radar",
+  async rewrites() {
+    return [
+      {
+        source: "/lowdown",
+        destination: `${process.env.LOWDOWN_DOMAIN}/lowdown`,
+        // basePath: false,
+      },
+      {
+        source: "/lowdown/:path+",
+        destination: `${process.env.LOWDOWN_DOMAIN}/lowdown/:path*`,
+        // basePath: false,
+      },
+    ];
+  },
   async redirects() {
     return [
       {
@@ -24,20 +22,6 @@ const nextConfig = {
         destination: "/radar",
         basePath: false,
         permanent: false,
-      },
-    ];
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/lowdown",
-        destination: `${process.env.LOWDOWN_DOMAIN}/lowdown`,
-        basePath: false,
-      },
-      {
-        source: "/lowdown/:path+",
-        destination: `${process.env.LOWDOWN_DOMAIN}/lowdown/:path*`,
-        basePath: false,
       },
     ];
   },

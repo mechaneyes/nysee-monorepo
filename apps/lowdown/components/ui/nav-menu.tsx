@@ -59,7 +59,9 @@ export default function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger className="NavigationMenuTrigger">NYSee</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="NavigationMenuTrigger">
+            NYSee
+          </NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
             <a href="/">
               <ul className="nysee-nav grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -85,7 +87,7 @@ export default function NavMenu() {
                   </NavigationMenuLink>
                 </li>
                 <li className="text-sm">
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                  ReRe-usable components built using Radix UI and Tailwind CSS.
                   Re-usable components built using Radix UI and Tailwind CSS.
                   Re-usable components built using Radix UI and Tailwind CSS.
                   Re-usable components built using Radix UI and Tailwind CSS.
@@ -95,27 +97,31 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="NavigationMenuItem">
-        <NavigationMenuTrigger className="NavigationMenuTrigger">NYSee Radar</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="NavigationMenuTrigger">
+            NYSee Radar
+          </NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
-            <ul className="nysee-radar grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              {" "}
-              <li className="row-span-1">
-                <NavigationMenuLink asChild>
-                  <div className="flex h-full w-full select-none flex-col justify-end items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-2no-underline outline-none focus:shadow-md">
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      NYSee Radar
+            <a href="/radar">
+              <ul className="nysee-radar grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                {" "}
+                <li className="row-span-1">
+                  <NavigationMenuLink asChild>
+                    <div className="flex h-full w-full select-none flex-col justify-end items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-2no-underline outline-none focus:shadow-md">
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        NYSee Radar
+                      </div>
+                      <RadarSequence speed={0.9} />
                     </div>
-                    <RadarSequence speed={0.9} />
-                  </div>
-                </NavigationMenuLink>
-              </li>
-              <li className="text-sm">
-                Re-usable components built using Radix UI and Tailwind CSS.
-                Re-usable components built using Radix UI and Tailwind CSS.
-                Re-usable components built using Radix UI and Tailwind CSS.
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </li>
-            </ul>
+                  </NavigationMenuLink>
+                </li>
+                <li className="text-sm">
+                  Re-usable components built using Radix UI and Tailwind CSS.
+                  Re-usable components built using Radix UI and Tailwind CSS.
+                  Re-usable components built using Radix UI and Tailwind CSS.
+                  Re-usable components built using Radix UI and Tailwind CSS.
+                </li>
+              </ul>
+            </a>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -124,7 +130,9 @@ export default function NavMenu() {
             legacyBehavior
             passHref
           >
-            <NavigationMenuLink className={`NavigationMenuTrigger ${navigationMenuTriggerStyle()}`}>
+            <NavigationMenuLink
+              className={`NavigationMenuTrigger ${navigationMenuTriggerStyle()}`}
+            >
               Ray Weitzenberg
             </NavigationMenuLink>
           </Link>

@@ -40,10 +40,10 @@ export default function Home() {
           </Link>
         </div>
         <div className="mb-4 px-0 md:px-3">
-          <div className="grid grid-rows-2 gap-0">
+          <Link href="/radar" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">NYSee Radar</h3>
             <h4 className="text-xl">Art pulse, curated</h4>
-          </div>
+          </Link>
         </div>
       </div>
       <Image

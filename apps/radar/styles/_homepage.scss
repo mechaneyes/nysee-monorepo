@@ -16,6 +16,14 @@
       position: relative;
       z-index: 1;
     }
+
+    &__social {
+      a {
+        text-decoration: underline;
+        text-decoration-thickness: 0.05em;
+        text-underline-offset: 0.125em;
+      }
+    }
     
   }
 
@@ -47,7 +55,7 @@
       color: #00f3ff;
       text-decoration-color: #00f3ff;
       text-decoration-thickness: 0.05em;
-      text-underline-offset: 0.2em;
+      text-underline-offset: 0.125em;
       text-decoration-line: underline;
       transition:
         color 0.3s ease,
@@ -75,7 +83,7 @@
     line-height: 1;
     text-decoration: underline;
     text-decoration-thickness: 0.05em;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.125em;
     text-decoration-color: transparent;
     transition:
       color 0.3s ease,
