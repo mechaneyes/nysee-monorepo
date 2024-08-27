@@ -3,7 +3,7 @@ import HomePost from "./home-post";
 import { getChapterTextPruned } from "./get-reproduction";
 
 export default function HomeStories({ posts }) {
-  const [isClient, setIsClient] = useState(false);
+  const [isReverse, setIsReverse] = useState(false);
   const [mechanicalText, setMechanicalText] = useState("");
 
   const getImagePath = (character) => {
@@ -18,7 +18,7 @@ export default function HomeStories({ posts }) {
   };
 
   useEffect(() => {
-    setIsClient(true);
+    setIsReverse(true);
   }, []);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function HomeStories({ posts }) {
               mechanicalImage={imagePath}
               slug={node.slug}
               excerpt={node.excerpt}
-              reverse={isClient && index % 2 === 1}
+              reverse={isReverse && index % 2 === 1}
             />
           );
         })}
