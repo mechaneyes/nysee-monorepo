@@ -125,17 +125,12 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link
-            href="https://nysee.nyc/ray-weitzenberg"
-            legacyBehavior
-            passHref
+          <a
+            href="/ray-weitzenberg"
+            className="font-medium"
           >
-            <NavigationMenuLink
-              className={`NavigationMenuTrigger ${navigationMenuTriggerStyle()}`}
-            >
               Ray Weitzenberg
-            </NavigationMenuLink>
-          </Link>
+          </a>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
