@@ -1,3 +1,22 @@
+.ray {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      color: white;
+    }
+
+    li {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
 .vcard {
   display: flex;
   justify-content: center;
@@ -21,7 +40,9 @@
       color: #374893;
       text-decoration: underline;
       text-decoration-color: #374893;
-      transition: color 0.3s ease, text-decoration 0.3s ease;
+      transition:
+        color 0.3s ease,
+        text-decoration 0.3s ease;
     }
   }
 
@@ -185,11 +206,13 @@
         text-decoration: underline;
         text-decoration-thickness: 0.05em;
         text-underline-offset: 0.15em;
-    
+
         &:hover {
           color: #374893;
           text-decoration-color: #374893;
-          transition: color 0.3s ease, text-decoration 0.3s ease;
+          transition:
+            color 0.3s ease,
+            text-decoration 0.3s ease;
         }
       }
     }
@@ -316,7 +339,8 @@
     padding: 0.5rem 0.5rem 0.5rem 1.375rem;
     color: #fff;
     background-color: #374793;
-    box-shadow: 2px 5px 11px rgba(0, 0, 0, 0.25),
+    box-shadow:
+      2px 5px 11px rgba(0, 0, 0, 0.25),
       4px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
     cursor: pointer;
@@ -329,7 +353,6 @@
       text-decoration-thickness: 0.05em;
       text-underline-offset: 0.15em;
       transition: text-decoration 0.3s ease;
-
     }
 
     p {

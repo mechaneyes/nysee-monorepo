@@ -1,14 +1,12 @@
-import Link from 'next/link';
-
 const Navigation = () => {
   return (
     <nav>
       <ul>
-        <li><Link href="/">NYSee.nyc</Link></li>
+        <li><a href="/">NYSee.nyc</a></li>
         <li>&middot;</li>
-        <li><Link href="/lowdown">Lowdown</Link></li>
+        <li><a href="/lowdown">Lowdown</a></li>
         <li>&middot;</li>
-        <li><Link href="/ray-weitzenberg">Ray Weitzenberg</Link></li>
+        <li><a href="/radar">Radar</a></li>
       </ul>
     </nav>
   );
