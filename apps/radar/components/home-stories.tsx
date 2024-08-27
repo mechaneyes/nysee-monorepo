@@ -30,8 +30,9 @@ export default function HomeStories({ posts }) {
     <section className="home__stories pt-8 px-5 max-w-[1400px] mx-auto">
       {mechanicalText &&
         posts.map(({ node }, index) => {
-          const mechanicalCharacter = mechanicalText.charAt(index);
-          const imagePath = getImagePath(mechanicalCharacter);
+          // const mechanicalCharacter = mechanicalText.charAt(index);
+          const titleCharacter = node.title.charAt(0);
+          const imagePath = getImagePath(titleCharacter);
 
           return (
             <HomePost
@@ -39,7 +40,7 @@ export default function HomeStories({ posts }) {
               title={node.title}
               coverImage={node.featuredImage}
               date={node.date}
-              mechanicalCharacter={mechanicalCharacter}
+              mechanicalCharacter={titleCharacter}
               mechanicalImage={imagePath}
               slug={node.slug}
               excerpt={node.excerpt}
