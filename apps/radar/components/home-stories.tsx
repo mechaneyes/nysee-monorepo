@@ -27,27 +27,25 @@ export default function HomeStories({ posts }) {
   }, []);
 
   return (
-    <section className="home__stories pt-8 px-5 max-w-[1400px] mx-auto">
-      {mechanicalText &&
-        posts.map(({ node }, index) => {
-          // const mechanicalCharacter = mechanicalText.charAt(index);
-          const titleCharacter = node.title.charAt(0);
-          const imagePath = getImagePath(titleCharacter);
+    <section className="home__stories pt-8 px-5 max-w-[1280px] mx-auto">
+      {posts.map(({ node }, index) => {
+        const titleCharacter = node.title.charAt(0);
+        const imagePath = getImagePath(titleCharacter);
 
-          return (
-            <HomePost
-              key={node.slug}
-              title={node.title}
-              coverImage={node.featuredImage}
-              date={node.date}
-              mechanicalCharacter={titleCharacter}
-              mechanicalImage={imagePath}
-              slug={node.slug}
-              excerpt={node.excerpt}
-              reverse={isReverse && index % 2 === 1}
-            />
-          );
-        })}
+        return (
+          <HomePost
+            key={node.slug}
+            title={node.title}
+            coverImage={node.featuredImage}
+            date={node.date}
+            mechanicalCharacter={titleCharacter}
+            mechanicalImage={imagePath}
+            slug={node.slug}
+            excerpt={node.excerpt}
+            reverse={isReverse && index % 2 === 1}
+          />
+        );
+      })}
     </section>
   );
 }
