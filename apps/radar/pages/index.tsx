@@ -1,17 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import ContainerHome from "../components/container-home";
 import HomeStories from "../components/home-stories";
 import HeroRadarAnimation from "../components/hero-radar-animation";
-import Header from "../components/header";
 import { getAllPostsForHome } from "../lib/api";
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node;
   const morePosts = edges;
-
-  const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
 
   return (
     <ContainerHome>

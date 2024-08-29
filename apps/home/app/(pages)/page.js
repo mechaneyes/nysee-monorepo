@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="homepage">
       <div className="mb-20 md:mb-28 px-5">
-        <h1 className="mb-3 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
+        <h1 className="mb-5 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
           NYSee.nyc
         </h1>
         <div className="mb-4 px-0 md:px-3">
@@ -47,13 +47,13 @@ export default function Home() {
         </div>
       </div>
       <Image
-        className="fullscreen-image"
-        src="/images/radar-juli-kosolapova_2880px.jpg"
+        className="fullscreen-image fullscreen-image--eruno"
+        src="/images/deepmind-eruno-1.0.0.jpg"
         alt="NYSee.nyc"
         width={2880}
-        height={1913}
+        height={1620}
       />
-      {radarElement}
+      {/* {radarElement} */}
     </div>
   );
 }
