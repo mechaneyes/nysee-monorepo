@@ -55,7 +55,7 @@ export default function HomePost({
             <div className="w-[72px] h-0.5 left-0 top-[12px] absolute bg-[#fbd784]" />
           </div>
           <Link href={`/posts/${slug}`}>
-            <h2 className="pt-10 text-white text-4xl font-semibold overflow-hidden break-words">
+            <h2 className="pt-10 text-4xl font-semibold overflow-hidden break-words">
               {title}
             </h2>
           </Link>

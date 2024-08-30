@@ -7,6 +7,10 @@
 .home {
   background-color: #0b1d26;
 
+  h2 {
+    color: white;
+  }
+
   .hero {
     a {
       &:hover {
@@ -16,12 +20,10 @@
     }
 
     h3 {
-      display: inline;
       font-weight: 400;
     }
 
-    h4 {
-      display: inline;
+    p {
       font-weight: 300;
     }
 
@@ -44,13 +46,14 @@
 
       @include bp("small") {
         object-fit: none;
-        object-position: center;
+        object-position: 100%;
       }
     }
 
     &__gradient {
       position: absolute;
-      bottom: -10vh;
+      width: 100%;
+      bottom: -5vh;
       background: linear-gradient(
         180deg,
         rgba(11.48, 29.32, 38.25, 0) 0%,
@@ -79,6 +82,10 @@
   .post {
     &__content {
       z-index: 1;
+
+      h4 {
+        font-weight: 300;
+      }
     }
   }
 
@@ -87,6 +94,16 @@
     opacity: 0.3;
 
     @include bp("small") {
+      width: 60vw;
+      opacity: 0.3;
+    }
+
+    @include bp("medium") {
+      width: 30vw;
+      opacity: initial;
+    }
+
+    @include bp("large") {
       width: revert-layer;
       opacity: initial;
     }

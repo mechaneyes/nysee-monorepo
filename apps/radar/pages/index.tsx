@@ -14,12 +14,12 @@ export default function Index({ allPosts: { edges }, preview }) {
       <section className="hero hero--home hero--radar-animation">
         <div className="mb-20 md:mb-28 px-5">
           <div className="hero__content">
-            <h1 className="mb-3 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
+            <h1 className="pt-7 px-0 md:px-3 text-6xl lg:text-6xl text-black leading-tight">
               NYSee Radar
             </h1>
 
-            <p className="text-xl text-black w-fit md:w-4/5 mt-2 px-0 md:px-3">
-              A hand picked selection art in NYC.
+            <p className="text-xl text-black w-fit md:w-4/5 mt-4 px-0 md:px-3">
+              A hand picked selection art in NYC
             </p>
 
             {/* <p className="hero__social text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
@@ -34,20 +34,20 @@ export default function Index({ allPosts: { edges }, preview }) {
               </a>
             </p> */}
 
-            <div className="w-fit md:w-3/5 mt-3 px-0 md:px-3">
+            <div className="w-fit md:w-3/5 mt-5 px-0 md:px-3 text-black">
               <a href="/" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">NYSee</h3>
-                <h4 className="text-xl">Creative nexus</h4>
+                <p className="text-xl">Creative nexus</p>
               </a>
 
               <a href="/lowdown" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">NYSee Lowdown</h3>
-                <h4 className="text-xl">Beyond the frame</h4>
+                <p className="text-xl">Beyond the frame</p>
               </a>
 
               <a href="/" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">Ray Weitzenberg</h3>
-                <h4 className="text-xl">Let&apos;s dance: @mechaneyes</h4>
+                <p className="text-xl">Let&apos;s dance: @mechaneyes</p>
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           />
           <HeroRadarAnimation />
         </div>
-        <div className="hero__gradient w-screen h-80" />
+        <div className="hero__gradient h-80" />
       </section>
       {morePosts.length > 0 && <HomeStories posts={morePosts} />}
     </ContainerHome>

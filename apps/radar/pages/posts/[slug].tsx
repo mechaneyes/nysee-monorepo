@@ -48,7 +48,7 @@ export default function Post({ post, posts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article>
+            <article className="post">
               <Head>
                 <title>{`${post.title} | NYSee Lowdown`}</title>
                 <meta

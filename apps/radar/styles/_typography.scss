@@ -99,14 +99,49 @@ a {
   transition: all 0.3s ease;
 
   &:hover {
-    text-decoration-color: black;
+    color: #83fce7;
+    text-decoration-color: #83fce7;
     text-decoration-thickness: 0.05rem;
     transition: all 0.3s ease;
+  }
+
+  h2 {
+    text-decoration-thickness: 0.05rem;
+
+    &:hover {
+      color: #83fce7;
+      text-decoration-color: #83fce7;
+      transition: all 0.3s ease;
+    }
+  }
+
+  h4 {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0.05rem;
+
+    &:hover {
+      color: #83fce7;
+      text-decoration-color: #83fce7;
+      transition: all 0.3s ease;
+    }
   }
 }
 
 .italics {
   font-style: italic;
+}
+
+header {
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 nav {
@@ -122,17 +157,22 @@ nav {
   }
 }
 
-.more-stories .post {
-  a {
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-decoration-thickness: 0.05rem;
-    text-underline-offset: 0.25rem;
-    transition: all 0.3s ease;
+.more-stories {
+  color: white;
 
-    &:hover {
-      text-decoration-color: #0088ff;
+  .post {
+    a {
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-decoration-thickness: 0.05rem;
+      text-underline-offset: 0.25rem;
       transition: all 0.3s ease;
+
+      &:hover {
+        color: #83fce7;
+        text-decoration-color: #83fce7;
+        transition: all 0.3s ease;
+      }
     }
   }
 }
