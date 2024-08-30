@@ -64,8 +64,8 @@ export default function HomePost({
           </div>
           <div className="h-[22px] relative">
             <Link href={`/posts/${slug}`}>
-              <h4 className="left-0 top-0 absolute text-[#fbd784] text-lg font-normal">
-                read more {reverse ? "→" : "←"}
+              <h4 className="left-0 top-0 absolute pt-4 text-[#fbd784] text-lg font-normal">
+                read more
               </h4>
             </Link>
             <div className="w-4 h-6 left-[103px] top-[19px] absolute origin-top-left -rotate-90 flex-col justify-start items-start inline-flex" />
