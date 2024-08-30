@@ -36,8 +36,8 @@ export default function HomePost({
     <div
       className={`flex flex-col-reverse md:flex-row ${reverse ? "md:flex-row-reverse" : ""} gap-2 md:gap-10 relative pb-32 md:pb-20 pt-8`}
     >
-      <div className="relative w-full md:w-7/12 pt-32 flex-col justify-start items-start inline-flex">
-        <div className="top-5 absolute opacity-10">
+      <div className="relative w-full md:w-7/12 pt-8 md:pt-32 flex-col justify-start items-start inline-flex">
+        <div className="-top-32 md:top-5 -left-32 md:left-0 absolute opacity-10">
           <Image
             className="home__whirligig"
             src={mechanicalImage}
