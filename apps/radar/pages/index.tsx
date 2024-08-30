@@ -12,7 +12,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 
   return (
     <ContainerHome>
-      <section className="hero hero--home hero--radar-animation pb-8">
+      <section className="hero hero--home hero--radar-animation">
         <div className="mb-20 md:mb-28 px-5">
           <div className="hero__content">
             <h1 className="mb-3 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
@@ -49,7 +49,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           </div>
 
           <Image
-            className="fullscreen-image"
+            className="hero__fullscreen-bg"
             src="/radar/images/radar-juli-kosolapova_2880px.jpg"
             alt="NYSee.nyc"
             width={2880}
@@ -58,6 +58,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           />
           <HeroRadarAnimation />
         </div>
+        <div className="hero__gradient w-screen h-80" />
       </section>
       {morePosts.length > 0 && <HomeStories posts={morePosts} />}
     </ContainerHome>
