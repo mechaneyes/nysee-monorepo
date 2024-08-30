@@ -9,13 +9,47 @@
 
   h2 {
     color: white;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #83fce7;
+      transition: all 0.3s ease;
+    }
   }
 
   .hero {
     a {
+      color: black;
+      transition: all 0.3s ease;
+
+      h3 {
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: all 0.3s ease;
+      }
+
+      p {
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: all 0.3s ease;
+      }
+
       &:hover {
-        color: #83fce7;
-        text-decoration-color: #83fce7;
+        transition: all 0.3s ease;
+
+        h3 {
+          color: #83fce7;
+          text-decoration-color: transparent;
+          transition: all 0.3s ease;
+        }
+
+        p {
+          color: #83fce7;
+          text-decoration-color: #83fce7;
+          transition: all 0.3s ease;
+        }
       }
     }
 
@@ -46,14 +80,14 @@
 
       @include bp("small") {
         object-fit: none;
-        object-position: 100%;
+        object-position: 50% 66%;
       }
     }
 
     &__gradient {
       position: absolute;
       width: 100%;
-      bottom: -5vh;
+      bottom: -7vh;
       background: linear-gradient(
         180deg,
         rgba(11.48, 29.32, 38.25, 0) 0%,
