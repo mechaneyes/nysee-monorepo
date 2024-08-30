@@ -6,6 +6,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
+  NavigationMenuViewport,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,

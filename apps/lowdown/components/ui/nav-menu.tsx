@@ -69,7 +69,7 @@ export default function NavMenu() {
                 <li className="row-span-1">
                   <NavigationMenuLink asChild>
                     <div className="flex h-full w-full select-none flex-col justify-end items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-2no-underline outline-none focus:shadow-md">
-                      <div className="mb-2 mt-4 text-lg font-medium">
+                      <div className="nav__headline mb-2 mt-4 text-lg font-medium">
                         NYSee Home
                       </div>
                       {/* <Image
@@ -102,12 +102,12 @@ export default function NavMenu() {
           </NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
             <a href="/radar">
-              <ul className="nysee-radar grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="nysee-nav nysee-nav--radar grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 {" "}
                 <li className="row-span-1">
                   <NavigationMenuLink asChild>
                     <div className="flex h-full w-full select-none flex-col justify-end items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-2no-underline outline-none focus:shadow-md">
-                      <div className="mb-2 mt-4 text-lg font-medium">
+                      <div className="nav__headline mb-2 mt-4 text-lg font-medium">
                         NYSee Radar
                       </div>
                       <RadarSequence speed={0.9} />
@@ -129,7 +129,7 @@ export default function NavMenu() {
             href="/ray-weitzenberg"
             className="font-medium"
           >
-              Ray Weitzenberg
+              Ray
           </a>
         </NavigationMenuItem>
       </NavigationMenuList>
