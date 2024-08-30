@@ -27,7 +27,7 @@ export default function HomeStories({ posts }) {
   }, []);
 
   return (
-    <section className="home__stories pt-28 px-5 max-w-[1280px] mx-auto">
+    <section className="home__stories pt-8 md:pt-28 px-5 max-w-[1280px] mx-auto">
       {posts.map(({ node }, index) => {
         const titleCharacter = node.title.charAt(0);
         const imagePath = getImagePath(titleCharacter);

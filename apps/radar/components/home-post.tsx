@@ -18,7 +18,6 @@ export default function HomePost({
   slug,
   reverse,
 }) {
-
   const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
 
   useEffect(() => {
@@ -35,11 +34,12 @@ export default function HomePost({
   }, []);
   return (
     <div
-      className={`flex flex-col-reverse md:flex-row ${reverse ? "md:flex-row-reverse" : ""} gap-2 md:gap-10 relative pb-20 pt-8`}
+      className={`flex flex-col-reverse md:flex-row ${reverse ? "md:flex-row-reverse" : ""} gap-2 md:gap-10 relative pb-32 md:pb-20 pt-8`}
     >
       <div className="relative w-full md:w-7/12 pt-32 flex-col justify-start items-start inline-flex">
-        <div className="top-5 absolute opacity-10 text-white text-[240px] font-bold font-['Gilroy'] leading-[240px]">
+        <div className="top-5 absolute opacity-10">
           <Image
+            className="home__whirligig"
             src={mechanicalImage}
             alt={mechanicalCharacter}
             width={240}
@@ -59,7 +59,9 @@ export default function HomePost({
               {title}
             </h2>
           </Link>
-          <div className="w-full md:w-4/5 pt-4 text-white text-lg">{parse(excerpt)}</div>
+          <div className="w-full md:w-4/5 pt-4 text-white text-lg">
+            {parse(excerpt)}
+          </div>
           <div className="h-[22px] relative">
             <Link href={`/posts/${slug}`}>
               <h4 className="left-0 top-0 absolute text-[#fbd784] text-lg font-normal">

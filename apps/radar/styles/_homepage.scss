@@ -81,6 +81,16 @@
       z-index: 1;
     }
   }
+
+  &__whirligig {
+    width: 90vw;
+    opacity: 0.3;
+
+    @include bp("small") {
+      width: revert-layer;
+      opacity: initial;
+    }
+  }
 }
 
 .homepage {

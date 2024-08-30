@@ -20,10 +20,10 @@ export default function Index({ allPosts: { edges }, preview }) {
             </h1>
 
             <p className="text-xl text-black w-fit md:w-4/5 mt-2 px-0 md:px-3">
-              A hand picked selection of NYC art shows and their openings.
+              A hand picked selection art in NYC.
             </p>
 
-            <p className="hero__social text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
+            {/* <p className="hero__social text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
               Bluesky:{" "}
               <a href="https://bsky.app/profile/nysee.bsky.social">
                 @nysee.bsky.social
@@ -33,7 +33,7 @@ export default function Index({ allPosts: { edges }, preview }) {
               <a href="https://bsky.app/profile/nysee.bsky.social">
                 @nysee@hypermute.com
               </a>
-            </p>
+            </p> */}
 
             <div className="w-fit md:w-3/5 mt-3 px-0 md:px-3">
               <a href="/lowdown" className="grid grid-rows-2 gap-0 mb-4">
