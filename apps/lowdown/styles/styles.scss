@@ -79,6 +79,22 @@ header {
     }
   }
 
+  h1 {
+    a:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  nav {
+    li > button:hover {
+      cursor: initial;
+    }
+    
+    li > a:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
   .NavigationMenuList {
     position: relative;
     display: flex;

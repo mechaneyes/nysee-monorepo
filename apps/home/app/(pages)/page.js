@@ -28,12 +28,6 @@ export default function Home() {
           NYSee.nyc
         </h1>
         <div className="mb-4 px-0 md:px-3">
-          <Link href="/ray-weitzenberg" className="grid grid-rows-2 gap-0">
-            <h3 className="text-2xl">Ray Weitzenberg</h3>
-            <h4 className="text-xl">Let&apos;s dance: @mechaneyes</h4>
-          </Link>
-        </div>
-        <div className="mb-4 px-0 md:px-3">
           <Link href="/lowdown" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">NYSee Lowdown</h3>
             <h4 className="text-xl">Beyond the frame</h4>
@@ -43,6 +37,12 @@ export default function Home() {
           <Link href="/radar" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">NYSee Radar</h3>
             <h4 className="text-xl">Art pulse, curated</h4>
+          </Link>
+        </div>
+        <div className="mb-4 px-0 md:px-3">
+          <Link href="/ray-weitzenberg" className="grid grid-rows-2 gap-0">
+            <h3 className="text-2xl">Ray Weitzenberg</h3>
+            <h4 className="text-xl">Let&apos;s dance: @mechaneyes</h4>
           </Link>
         </div>
       </div>

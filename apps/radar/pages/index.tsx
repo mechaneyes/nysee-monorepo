@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { GetStaticProps } from "next";
 import Image from "next/image";
+import { GetStaticProps } from "next";
 import ContainerHome from "../components/container-home";
 import HomeStories from "../components/home-stories";
 import HeroRadarAnimation from "../components/hero-radar-animation";
@@ -36,14 +35,19 @@ export default function Index({ allPosts: { edges }, preview }) {
             </p> */}
 
             <div className="w-fit md:w-3/5 mt-3 px-0 md:px-3">
+              <a href="/" className="grid grid-rows-2 gap-0 mb-4">
+                <h3 className="text-2xl">NYSee</h3>
+                <h4 className="text-xl">Creative nexus</h4>
+              </a>
+
               <a href="/lowdown" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">NYSee Lowdown</h3>
                 <h4 className="text-xl">Beyond the frame</h4>
               </a>
 
-              <a href="/" className="grid grid-rows-2 gap-0">
-                <h3 className="text-2xl">NYSee</h3>
-                <h4 className="text-xl">Creative nexus</h4>
+              <a href="/" className="grid grid-rows-2 gap-0 mb-4">
+                <h3 className="text-2xl">Ray Weitzenberg</h3>
+                <h4 className="text-xl">Let&apos;s dance: @mechaneyes</h4>
               </a>
             </div>
           </div>
