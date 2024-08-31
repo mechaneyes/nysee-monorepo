@@ -51,20 +51,24 @@ export default function Index({ allPosts: { edges }, preview }) {
               </a>
             </div>
           </div>
-
-          <Image
-            className="hero__fullscreen-bg"
-            src="/radar/images/radar-juli-kosolapova_2880px.jpg"
-            alt="NYSee.nyc"
-            width={2880}
-            height={1913}
-            priority
-          />
-          <HeroRadarAnimation />
         </div>
-        <div className="hero__gradient h-80" />
+
+        <Image
+          className="hero__fullscreen-bg"
+          src="/radar/images/radar-juli-kosolapova_2880px.jpg"
+          alt="NYSee.nyc"
+          width={2880}
+          height={1913}
+          priority
+        />
+        <HeroRadarAnimation />
+
+        <div className="hero__gradient" />
       </section>
-      {morePosts.length > 0 && <HomeStories posts={morePosts} />}
+
+      <div className="home__stories home__stories--container">
+        {morePosts.length > 0 && <HomeStories posts={morePosts} />}
+      </div>
     </ContainerHome>
   );
 }

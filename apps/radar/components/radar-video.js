@@ -12,17 +12,15 @@ const RadarVideo = () => {
   }, []);
 
   return (
-    <div className="project project--radar">
-      <video
-        ref={videoRef}
-        className="video--radar-antenna"
-        autoPlay
-        loop
-        muted
-        width="340"
-        height="440"
-      />
-    </div>
+    <video
+      ref={videoRef}
+      className="video--radar-antenna"
+      autoPlay
+      loop
+      muted
+      width="340"
+      height="440"
+    />
   );
 };
 

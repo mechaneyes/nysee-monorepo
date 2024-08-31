@@ -42,7 +42,7 @@ export default function HomeStories({ posts }) {
             mechanicalImage={imagePath}
             slug={node.slug}
             excerpt={node.excerpt}
-            reverse={isReverse && index % 2 === 1}
+            reverse={isReverse && index % 2 !== 1}
           />
         );
       })}
