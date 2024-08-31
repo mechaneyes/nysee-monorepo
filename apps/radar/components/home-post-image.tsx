@@ -14,11 +14,13 @@ interface Props {
 export default function HomePostImage({ title, coverImage, slug }: Props) {
   const image = (
     <Image
-      fill
+      // fill
+      width='400'
+      height='500'
       alt={`Cover Image for ${title}`}
       src={coverImage?.node.sourceUrl}
       className="object-cover"
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
   );
 

@@ -34,10 +34,10 @@ export default function HomePost({
   }, []);
   return (
     <div
-      className={`post flex flex-col-reverse md:flex-row ${reverse ? "md:flex-row-reverse" : ""} gap-2 md:gap-10 relative pb-32 md:pb-20 pt-8`}
+      className={`post flex flex-col-reverse md:flex-row ${reverse ? "post--reverse md:flex-row-reverse" : ""} gap-2 md:gap-4 lg:gap-10 relative pb-32 md:pb-20 pt-8`}
     >
       <div className="relative w-full md:w-7/12 pt-8 md:pt-32 flex-col justify-start items-start inline-flex">
-        <div className="-top-32 md:top-5 -left-32 md:left-0 absolute opacity-10">
+        <div className="-top-28 md:top-11 xl:top-3 -left-32 md:left-0 absolute">
           <Image
             className="home__whirligig"
             src={mechanicalImage}
@@ -47,7 +47,7 @@ export default function HomePost({
           />
         </div>
 
-        <div className="post__content md:pl-32">
+        <div className={`post__content md:px-10 md:px-20 lg:px-8 `}>
           <div className="relative">
             <div className="left-[96px] top-0 absolute text-[#fbd784] text-lg font-normal uppercase">
               <Date dateString={date} />
@@ -59,7 +59,7 @@ export default function HomePost({
               {title}
             </h2>
           </Link>
-          <div className="w-full md:w-4/5 pt-4 text-white text-lg">
+          <div className="w-full pt-4 text-white text-lg ">
             {parse(excerpt)}
           </div>
           <div className="h-[22px] relative">
