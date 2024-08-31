@@ -66,7 +66,7 @@ export default function Index({ allPosts: { edges }, preview }) {
         <div className="hero__gradient" />
       </section>
 
-      <div className="home__stories home__stories--container">
+      <div className="home__stories--container pt-8">
         {morePosts.length > 0 && <HomeStories posts={morePosts} />}
       </div>
     </ContainerHome>

@@ -23,7 +23,7 @@ export default function HomePostImage({ title, coverImage, slug }: Props) {
   );
 
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden">
+    <div className="relative sm:aspect-[5/4] md:aspect-[4/5] w-full overflow-hidden">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}

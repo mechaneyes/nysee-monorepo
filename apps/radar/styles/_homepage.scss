@@ -106,7 +106,7 @@
       @include bp("max") {
         object-fit: none;
         object-position: 133% 143%;
-        object-position: 60% 113%;
+        object-position: 60% 93%;
         width: 115vw;
         height: auto;
       }
@@ -114,61 +114,51 @@
 
     &__gradient {
       position: absolute;
-      bottom: 0;
+      bottom: -30px;
       width: 100%;
       height: 43vh;
       background: linear-gradient(
         180deg,
-        rgba(11.48, 29.32, 38.25, 0) 0%,
-        #0b1d26 72%
+        rgba(11, 29, 38, 0) 0%,
+        rgba(11, 29, 38, 0.7) 70%,
+        #0b1d26 81%
       );
 
-      @include bp("xsmall") {
-        height: calc(80vh - 50vw);
-      }
+      // height: calc(15vh - 10vw);
 
-      @include bp("small") {
-        height: calc(80vh - 25vw);
-      }
+      // @include bp("small") {
+      //   height: calc(20vh - 8vw);
+      // }
+      
+      // @include bp("medium") {
+      //   height: calc(25vh - 6vw);
+      // }
+      
+      // @include bp("large") {
+      //   height: calc(30vh - 4vw);
+      // }
+      
+      // @include bp("xlarge") {
+      //   height: calc(35vh - 2vw);
+      // }
+      
+      // @include bp("max") {
+      //   height: calc(40vh);
+      // }
 
-      @include bp("medium") {
-        background: linear-gradient(
-          180deg,
-          rgba(11, 29, 38, 0) 0%,
-          rgba(11, 29, 38, 0.6) 60%,
-          #0b1d26 70%
-        );
-      }
-
-      @include bp("large") {
-        background: linear-gradient(
-          180deg,
-          rgba(11, 29, 38, 0) 0%,
-          rgba(11, 29, 38, 0.6) 40%,
-          #0b1d26 68%
-        );
-      }
-
-      @include bp("xlarge") {
-        height: calc(80vh - 17vw);
-      }
-
-      @include bp("max") {
-        height: calc(80vh - 15vw);
-        background: linear-gradient(
-          180deg,
-          rgba(11, 29, 38, 0) 0%,
-          rgba(11, 29, 38, 0.5) 40%,
-          #0b1d26 68%
-        );
-      }
+      height: clamp(calc(10vh - 10vw), calc(40vh - 2vw), calc(65vh));
     }
   }
 
   &__stories {
     position: relative;
-    background-color: #0b1d26;
     z-index: 1;
+
+    &--container {
+      position: relative;
+      top: 0;
+      background-color: #0b1d26;
+    }
   }
 
   .post {
@@ -177,6 +167,26 @@
 
       h4 {
         font-weight: 300;
+      }
+    }
+
+    &__image {
+      &--cover {
+        display: block;
+        width: 100%;
+        max-height: 90vh;
+        border-radius: 1rem;
+
+        @include bp("768") {
+          width: 41.666667%;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -219,7 +229,7 @@
   }
 
   @include bp("medium") {
-    bottom: 14vh;
+    bottom: 16vh;
     right: 11vw;
     width: 40vw;
   }
@@ -242,30 +252,11 @@
   bottom: 4rem;
   bottom: 0;
   right: 5vw;
-  width: 61vw;
+  width: clamp(325px, calc(35vw + 10%), 500px);
   height: auto;
+
 
   @include bp("small") {
     right: 10vw;
-    width: 50vw;
-  }
-
-  @include bp("medium") {
-    right: 10vw;
-    width: 40vw;
-  }
-
-  @include bp("large") {
-    bottom: 5rem;
-    right: 12vw;
-    width: 34vw;
-  }
-
-  @include bp("xlarge") {
-    width: 27vw;
-  }
-
-  @include bp("max") {
-    bottom: 6rem;
   }
 }
