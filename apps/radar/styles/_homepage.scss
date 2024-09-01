@@ -114,17 +114,27 @@
 
     &__gradient {
       position: absolute;
-      bottom: -30px;
+      bottom: 0;
       width: 100%;
       height: 43vh;
       background: linear-gradient(
         180deg,
         rgba(11, 29, 38, 0) 0%,
-        rgba(11, 29, 38, 0.7) 70%,
+        rgba(11, 29, 38, 0.6) 30%,
+        rgba(11, 29, 38, 1) 60%,
         #0b1d26 81%
       );
 
-      height: clamp(calc(10vh - 10vw), calc(40vh - 2vw), calc(65vh));
+      @include bp("small") {
+        height: clamp(calc(10vh - 10vw), calc(40vh - 2vw), calc(65vh));
+        bottom: -30px;
+        background: linear-gradient(
+          180deg,
+          rgba(11, 29, 38, 0) 0%,
+          rgba(11, 29, 38, 0.7) 70%,
+          #0b1d26 81%
+        );
+      }
     }
   }
 

@@ -61,12 +61,13 @@ export default function Index({ allPosts: { edges }, preview }) {
           height={1913}
           priority
         />
+        
         <HeroRadarAnimation />
 
         <div className="hero__gradient" />
       </section>
 
-      <div className="home__stories--container pt-8">
+      <div className="home__stories--container md:pt-16">
         {morePosts.length > 0 && <HomeStories posts={morePosts} />}
       </div>
     </ContainerHome>
