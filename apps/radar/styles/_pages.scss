@@ -67,10 +67,29 @@
 }
 
 .about {
+  h1 {
+    font-family: prometo, sans-serif;
+    color: #f3b451;
+  }
+
+  h4 {
+    color: #f3b451;
+  }
+
+  h3 {
+    color: #f3b451;
+  }
+
+  p {
+    color: #f3b451;
+  }
+
   blockquote {
     padding: 3rem 2rem;
+    color: #f3b451;
     border: 1px solid #f3b451;
     border-radius: 1rem;
-    box-shadow: 5px 5px 10px rgba(177, 79, 28, 0.125);
+    background-color: rgba(59, 44, 33, 0.5);
+    box-shadow: 5px 5px 10px rgba(177, 79, 28, 0.3);
   }
 }
