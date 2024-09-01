@@ -67,6 +67,11 @@
   figure + h3 {
     margin-top: 0.5rem;
   }
+
+  figure.wp-block-image,
+  figure.wp-block-video {
+    padding-bottom: 0.9375rem;
+  }
 }
 
 .hero {
