@@ -120,19 +120,29 @@ header {
     }
   }
 
-  .NavigationMenuItem + li {
-    text-align: center;
+  .NavigationMenuItem {
+    padding-left: 0.75rem;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    + li {
+      text-align: center;
+    }
   }
 
   .NavigationMenuTrigger {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    font-size: 1.125rem;
+    padding-left: 0.5rem;
+    padding-right: 0;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
 
     @include bp("medium") {
       padding-left: 1rem;
-      padding-right: 1rem;
-      font-size: 1.25rem;
+      padding-right: 0;
     }
   }
 
@@ -181,11 +191,5 @@ header {
         background-color: tomato;
       }
     }
-  }
-
-  h2 {
-    font-family: mobley-serif, serif;
-    font-size: 2rem;
-    line-height: 1;
   }
 }

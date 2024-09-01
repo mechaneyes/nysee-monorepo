@@ -59,7 +59,7 @@ export default function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger className="NavigationMenuTrigger">
+        <NavigationMenuTrigger className="NavigationMenuTrigger text-lg">
             NYSee
           </NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
@@ -97,7 +97,7 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger className="NavigationMenuTrigger">
+          <NavigationMenuTrigger className="NavigationMenuTrigger text-lg">
             NYSee Radar
           </NavigationMenuTrigger>
           <NavigationMenuContent className="NavigationMenuContent">
@@ -125,11 +125,8 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a
-            href="/ray-weitzenberg"
-            className="font-medium"
-          >
-              Ray
+          <a href="/ray-weitzenberg" className="pl-3 font-medium text-lg">
+            Ray
           </a>
         </NavigationMenuItem>
       </NavigationMenuList>
