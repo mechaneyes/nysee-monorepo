@@ -6,7 +6,6 @@ import HeroRadarAnimation from "../components/hero-radar-animation";
 import { getAllPostsForHome } from "../lib/api";
 
 export default function Index({ allPosts: { edges }, preview }) {
-  const heroPost = edges[0]?.node;
   const morePosts = edges;
 
   return (
@@ -19,7 +18,7 @@ export default function Index({ allPosts: { edges }, preview }) {
             </h1>
 
             <p className="text-xl text-black w-fit md:w-4/5 mt-4 px-0 md:px-3">
-              A hand picked selection art in NYC
+              A hand picked selection art worth seeing in NYC
             </p>
 
             {/* <p className="hero__social text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
@@ -39,15 +38,17 @@ export default function Index({ allPosts: { edges }, preview }) {
                 <h3 className="text-2xl">NYSee</h3>
                 <p className="text-xl">Creative nexus</p>
               </a>
-
               <a href="/lowdown" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">NYSee Lowdown</h3>
                 <p className="text-xl">Beyond the frame</p>
               </a>
-
               <a href="/" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">Ray Weitzenberg</h3>
                 <p className="text-xl">Let&apos;s dance: @mechaneyes</p>
+              </a>
+              <a href="/lowdown/about" className="grid grid-rows-2 gap-0 mb-4">
+                <h3 className="text-2xl">About</h3>
+                <p className="text-xl">WTF?!</p>
               </a>
             </div>
           </div>
@@ -61,7 +62,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           height={1913}
           priority
         />
-        
+
         <HeroRadarAnimation />
 
         <div className="hero__gradient" />
