@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/radar/(.*)",
-      "destination": "/radar/$1"
-    }
-  ]
-}
