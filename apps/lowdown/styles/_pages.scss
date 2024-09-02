@@ -68,9 +68,14 @@
 
 .about {
   blockquote {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem 2.25rem;
     border: 1px solid #f3b451;
     border-radius: 1rem;
+    background-color: #fff7ed;
     box-shadow: 5px 5px 10px rgba(177, 79, 28, 0.125);
+  }
+
+  &__max {
+    max-width: 768px;
   }
 }

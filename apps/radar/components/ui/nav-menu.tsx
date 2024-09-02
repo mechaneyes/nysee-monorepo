@@ -1,98 +1,37 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
-  NavigationMenuViewport,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import RadarSequence from "@/components/radar-sequence";
 
 export default function NavMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList className="NavigationMenuList">
-        <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger>NYSee</NavigationMenuTrigger>
-          <NavigationMenuContent className="NavigationMenuContent">
-            <a href="/">
-              <ul className="nysee-nav grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                {" "}
-                <li className="row-span-1">
-                  <NavigationMenuLink asChild>
-                    <div className="flex h-full w-full select-none flex-col justify-end items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-2no-underline outline-none focus:shadow-md">
-                      <div className="mb-2 mt-4 text-lg font-medium">
-                        NYSee Home
-                      </div>
-                      {/* <Image
-                        width={2000}
-                        height={2500}
-                        alt={`Cover Image for NYSee Home`}
-                        src="/lowdown/images/radar_052.png"
-                      /> */}
-                      <RadarSequence speed={0.9} nav={true} />
-                      {/* <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p> */}
-                    </div>
-                  </NavigationMenuLink>
-                </li>
-                <li className="text-sm">
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                  Beautifully designed components built with Radix UI and
-                  Tailwind CSS. Re-usable components built using Radix UI and
-                  Tailwind CSS. Beautifully designed components built with Radix
-                  UI and Tailwind CSS.
-                </li>
-              </ul>
-            </a>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="NavigationMenuItem">
-          <NavigationMenuTrigger>Lowdown</NavigationMenuTrigger>
-          <NavigationMenuContent className="NavigationMenuContent">
-            <a href="/lowdown">
-              <ul className="nysee-radar grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                {" "}
-                <li className="row-span-1">
-                  <NavigationMenuLink asChild>
-                    <div className="flex h-full w-full select-none flex-col justify-end items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-2no-underline outline-none focus:shadow-md">
-                      <div className="mb-2 mt-4 text-lg font-medium">
-                        NYSee Lowdown
-                      </div>
-                      <RadarSequence speed={0.9} nav={true} />
-                    </div>
-                  </NavigationMenuLink>
-                </li>
-                <li className="text-sm">
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                </li>
-              </ul>
-            </a>
-          </NavigationMenuContent>
+        <NavigationMenuItem>
+          <a href="/" className="pl-5 font-medium text-lg">
+            NYSee Home
+          </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link
-            href="https://nysee.nyc/ray-weitzenberg"
-            legacyBehavior
-            passHref
-          >
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Ray Weitzenberg
-            </NavigationMenuLink>
-          </Link>
+          <a href="/lowdown" className="pl-5 font-medium text-lg">
+            NYSee Lowdown
+          </a>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <a href="/ray-weitzenberg" className="pl-5 font-medium text-lg">
+            Ray
+          </a>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <a href="/radar/about" className="pl-5 font-medium text-lg">
+            About
+          </a>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
