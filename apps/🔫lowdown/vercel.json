@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/🔫lowdown/(.*)",
+      "destination": "/🔫lowdown/$1"
+    }
+  ]
+}

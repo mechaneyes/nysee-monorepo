@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/lowdown",
-      "destination": "/lowdown"
+      "source": "/🔫lowdown",
+      "destination": "/🔫lowdown"
     },
     {
-      "source": "/lowdown/:path*",
-      "destination": "/lowdown/:path*"
+      "source": "/🔫lowdown/:path*",
+      "destination": "/🔫lowdown/:path*"
     }
   ]
 }
