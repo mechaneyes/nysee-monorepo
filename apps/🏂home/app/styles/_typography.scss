@@ -48,9 +48,9 @@ h5 {
 }
 
 p {
-    padding-bottom: 0.75rem;
-    font-size: 1.125rem;
-    line-height: 1.375;
+  padding-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.375;
 }
 
 a {
@@ -63,6 +63,20 @@ a {
   &:hover {
     text-decoration-color: black;
     transition: text-decoration-color 0.3s ease;
+  }
+}
+
+.gallery {
+  a {
+    text-decoration-color: transparent;
+    
+    &:hover {
+      text-decoration-color: transparent;
+
+      h2 {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
