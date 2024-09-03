@@ -28,8 +28,8 @@ const GalleryObjects = () => {
             <p className="pt-4 text-xl">
               Out of all the exposures I made, it was the one directly below,
               the reflection in the Cadillac&apos;s hood, that struck me the most.
-              When Jessica Angel saw the image she said to me, "This exploration
-              has reached the next level."
+              When Jessica Angel saw the image she said to me, &quot;This exploration
+              has reached the next level.&quot;
             </p>
             <p className="pt-4 text-xl">
               That was the last pic I shot in the series.
