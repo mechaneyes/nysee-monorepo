@@ -32,7 +32,7 @@ export default function HeroSplit({
             <div className="flex items-center space-x-4">
               {author && <Avatar author={author} />}
             </div>
-            {excerpt && <div className="text-gray-900">{parse(excerpt)}</div>}
+            {excerpt && <div className="text-xl text-gray-900">{parse(excerpt)}</div>}
           </div>
         </div>
         {coverImage && (

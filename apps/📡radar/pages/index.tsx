@@ -42,7 +42,7 @@ export default function Index({ allPosts: { edges }, preview }) {
                 <h3 className="text-2xl">NYSee Lowdown</h3>
                 <p className="text-xl">Beyond the frame</p>
               </a>
-              <a href="/" className="grid grid-rows-2 gap-0 mb-4">
+              <a href="/ray-weitzenberg" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">Ray Weitzenberg</h3>
                 <p className="text-xl">Let&apos;s dance: @mechaneyes</p>
               </a>

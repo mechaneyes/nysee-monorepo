@@ -16,9 +16,9 @@ const GalleryObjects = () => {
         <div className="hero">
           <div className="w-5/6 max-w-screen-md mx-auto pt-24">
             <h1 className="text-3xl font-medium">Objects May Appear</h1>
-            {/* <h3 className="pt-4 text-2xl italic">
-              Raise the hair on your neck. Tune in to the city.
-            </h3> */}
+            <h3 className="pt-4 text-1xl italic">
+              Tuesday, 03 Sep 2024 14.01.50 PM EDT
+            </h3>
             <p className="pt-4 text-xl">
               Objects May Appear was started in 2015 and ran through 2018. Many
               summer evenings after work I&apos;d roam the city shooting just about
