@@ -21,13 +21,13 @@ const GalleryObjects = () => {
             </h3> */}
             <p className="pt-4 text-xl">
               Objects May Appear was started in 2015 and ran through 2018. Many
-              summer evenings after work I'd roam the city shooting just about
+              summer evenings after work I&apos;d roam the city shooting just about
               everything, but having a priority of finding these distortions in
               car windows.
             </p>
             <p className="pt-4 text-xl">
               Out of all the exposures I made, it was the one directly below,
-              the reflection in the Cadillac's hood, that struck me the most.
+              the reflection in the Cadillac&apos;s hood, that struck me the most.
               When Jessica Angel saw the image she said to me, "This exploration
               has reached the next level."
             </p>
@@ -37,13 +37,13 @@ const GalleryObjects = () => {
             <p className="pt-4 text-xl">
               Thinking about the feeling of finding and composing that last
               image, I realize now that one thing that hightened the experience
-              was finding this reflection in the Caddy's hood rather than as I
-              typically might in a car's windows. I think it was this departure
+              was finding this reflection in the Caddy&apos;s hood rather than as I
+              typically might in a car&apos;s windows. I think it was this departure
               that was most striking to me.
             </p>
             <p className="pt-4 text-xl">
-              Thinking further still, I'm reminded of my excitement 2 weeks ago
-              when shooting the fractured reflections in the Newschool's
+              Thinking further still, I&apos;m reminded of my excitement 2 weeks ago
+              when shooting the fractured reflections in the Newschool&apos;s
               University Center windows. Discovering those stopped me and sucked
               me into exploring them for not a short amount of time. Seems this
               project could be reanimated in a new form.
@@ -64,7 +64,7 @@ const GalleryObjects = () => {
               width={630}
               height={841}
               className="w-[100%] h-auto object-cover mt-4 sm:mt-32"
-              alt="33 Thomas' Negative Effects"
+              alt="Negative Effects of 33 Thomas"
             />
           </div>
           <div className="w-full flex-column sm:flex gap-4 md:gap-8 my-8 sm:my-24">
