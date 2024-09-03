@@ -1,99 +1,121 @@
 import Image from "next/image";
 import Link from "next/link";
-import Navigation from "@/components/nav";
+import Header from "@/components/header";
 
 export const metadata = {
-  title: "Gossamer | NYSee",
-  description: "Gossamer is the original idea I&apos;d had for the first project.",
+  title: "Objects May Appear | NYSee",
+  description:
+    "Gossamer is the original idea I&apos;d had for the first gallery.",
 };
 
-export default function Home() {
+const GalleryObjects = () => {
   return (
     <>
-      <Navigation />
-      <div className="project project--gossamer">
+      <Header />
+      <div className="gallery gallery--objects bg-white">
         <div className="hero">
-          <Image
-            src="/images/gossamer-poster-2.jpg"
-            width={1245}
-            height={1920}
-            className="gossamer-img gossamer-img--hero gossamer-img--poster"
-            alt="Gossamer Poster 3.6.2"
-          />
-          <div className="hero__copy">
-            <div className="hero__copy__title">
-              <h1>Gossamer</h1>
-              <h3>2003 - 2024</h3>
-            </div>
-            <p>
-              Gossamer is a project I started in 2003 while at Parsons. I
-              completely misunderstood the assignment, which was to bring in
-              something other than a negative to print from.
+          <div className="w-5/6 max-w-screen-md mx-auto pt-24">
+            <h1 className="text-3xl font-medium">Objects May Appear</h1>
+            {/* <h3 className="pt-4 text-2xl italic">
+              Raise the hair on your neck. Tune in to the city.
+            </h3> */}
+            <p className="pt-4 text-xl">
+              Objects May Appear was started in 2015 and ran through 2018. Many
+              summer evenings after work I'd roam the city shooting just about
+              everything, but having a priority of finding these distortions in
+              car windows.
             </p>
-            <p>
-              Rifiling through my stuff, the only thing I found was a harinet
-              that was holding some other photo gear. This seamed like a
-              stretch, but at that point I didn&apos;t have anything to loose.
-              And thus Gossamer was born.
+            <p className="pt-4 text-xl">
+              Out of all the exposures I made, it was the one directly below,
+              the reflection in the Cadillac's hood, that struck me the most.
+              When Jessica Angel saw the image she said to me, "This exploration
+              has reached the next level."
             </p>
-            <p>
-              Fast forward to June 2024 and I&apos;m back at it, revived as my
-              first single page zine.
+            <p className="pt-4 text-xl">
+              That was the last pic I shot in the series.
             </p>
-            <p>
-              Unfortunately, due to the very detailed line work, the file
-              isn&apos;t something that&apos;s at all reasonable to print on
-              Riso. I&apos;d been creating trapping to get the colors to print
-              in all their glory, but lining up the layers to accomodate this
-              became a nightmare.
+            <p className="pt-4 text-xl">
+              Thinking about the feeling of finding and composing that last
+              image, I realize now that one thing that hightened the experience
+              was finding this reflection in the Caddy's hood rather than as I
+              typically might in a car's windows. I think it was this departure
+              that was most striking to me.
             </p>
-            <p>
-              Ultimately I had to back out, starting over from scratch. In its
-              place stepped <Link href="/whirligrid">Whirligrid</Link>.
-            </p>
-            <Link href="https://winterwerk.one/posts/gossamer">
-              <p>Read about Gossamer on WinterWerk</p>
-            </Link>
-          </div>
-        </div>
-        <div className="project__iteration">
-          <Image
-            src="/images/gossamer-spread.jpg"
-            width={1670}
-            height={1080}
-            className="gossamer-img gossamer-img--spread"
-            alt="Gossamer Spread"
-          />
-          <div className="project__description">
-            <div className="project__description__title">
-              <h4>The Spread</h4>
-            </div>
-            <p>
-              As mentioned, it quckly became brutally obvious that this design
-              just wasn&apos;t going to print.
+            <p className="pt-4 text-xl">
+              Thinking further still, I'm reminded of my excitement 2 weeks ago
+              when shooting the fractured reflections in the Newschool's
+              University Center windows. Discovering those stopped me and sucked
+              me into exploring them for not a short amount of time. Seems this
+              project could be reanimated in a new form.
             </p>
           </div>
         </div>
-        <div className="project__iteration">
-          <Image
-            src="/images/gossamer-poster-1.jpg"
-            width={1245}
-            height={1920}
-            className="gossamer-img gossamer-img--poster"
-            alt="Gossamer Poster"
-          />
-          <div className="project__description">
-            <div className="project__description__title">
-              <h4>Early Version of the Poster</h4>
+        <div className="flex flex-col items-center w-full max-w-7xl mx-auto px-4">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-4 md:gap-8 mt-36">
+            <Image
+              src="/images/galleries/objects/deKadillac.jpg"
+              width={629}
+              height={785}
+              className="w-[100%] h-auto sm:mb-32"
+              alt="DeKadillac"
+            />
+            <Image
+              src="/images/galleries/objects/33thomas.jpg"
+              width={630}
+              height={841}
+              className="w-[100%] h-auto object-cover mt-4 sm:mt-32"
+              alt="33 Thomas' Negative Effects"
+            />
+          </div>
+          <div className="w-full flex-column sm:flex gap-4 md:gap-8 my-8 sm:my-24">
+            <Image
+              className="w-full sm:w-[40%] h-auto object-cover"
+              alt="Tix to Carlton"
+              src="/images/galleries/objects/carltonTix.jpg"
+              width={630}
+              height={630}
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4 md:gap-8 mt-8 sm:mt-0">
+              <Image
+                className="self-center w-full h-auto object-contain"
+                alt="Crosby Wiper"
+                src="/images/galleries/objects/crosbyWiper.jpg"
+                width={346}
+                height={346}
+              />
+              <Image
+                className="self-center w-full h-auto object-contain"
+                alt="Crosby Street Hotel"
+                src="/images/galleries/objects/crosbyStreetHotel.jpg"
+                width={346}
+                height={346}
+              />
             </div>
-            <p>
-              This is an earlier design which I iterated upon to accomplish
-              what&apos;s at the very top. Included here to offer a glimpse into
-              the process.
-            </p>
+          </div>
+          <div className="w-full flex flex-col sm:flex-row items-end gap-4 md:gap-8 mt-0 mb-32 pl-0 sm:pl-0 md:pl-0">
+            <div className="w-full sm:w-[40%] relative mb-4 sm:mb-0">
+              <div className="sm:absolute bottom-0 left-0 w-full sm:w-[calc(100%-5rem)] md:w-[calc(100%-8rem)] h-auto aspect-square">
+                <Image
+                  className="w-full h-full object-contain object-bottom"
+                  alt="First Object May Appear"
+                  src="/images/galleries/objects/firstObjectMayAppearFlipped.jpg"
+                  width={750}
+                  height={750}
+                />
+              </div>
+            </div>
+            <Image
+              className="w-full sm:w-[calc(60%-2rem)] h-auto object-contain"
+              alt="TITANPOINT (Concerned Citizen)"
+              src="/images/galleries/objects/titanpoint.jpg"
+              width={724}
+              height={906}
+            />
           </div>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default GalleryObjects;

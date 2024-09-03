@@ -15,7 +15,7 @@ export default function About() {
           className="object-cover pt-8"
         />
 
-        <div className="about__max w-5/6 mx-auto px-5">
+        <div className="w-5/6 max-w-screen-md mx-auto px-5">
           <h1 className="text-3xl font-bold pt-10">About NYSee</h1>
           <h3 className="pt-4 text-2xl italic">
             Raise the hair on your neck. Tune in to the city.

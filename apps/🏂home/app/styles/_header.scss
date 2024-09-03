@@ -1,0 +1,16 @@
+header {
+  a {
+    color: white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff8c26;
+      transition: color 0.3s ease;
+    }
+  }
+
+  h2 {
+    @include mobleySerif;
+    font-size: 4rem;
+  }
+}

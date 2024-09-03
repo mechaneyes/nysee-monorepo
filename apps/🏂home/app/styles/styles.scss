@@ -1,9 +1,12 @@
 @import "mixins";
+@import "typography";
+
+@import "gallery";
 @import "gossamer";
+@import "header";
 @import "homepage";
 @import "project";
 @import "scopus-ex-machina";
-@import "typography";
 @import "vcard";
 
 * {
