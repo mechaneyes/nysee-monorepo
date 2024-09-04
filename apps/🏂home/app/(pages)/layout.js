@@ -4,10 +4,15 @@ import "@/styles/styles.scss";
 
 export const metadata = {
   title: "NYSee | Ray Weitzenberg",
-  description: "Art + Tech + Riso",
-  url: "https://nysee.nyc/",
+  description: "Art + Technology + New York",
+  url: "https://nysee.nyc",
   openGraph: {
-    url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+    url: "https://nysee.nyc",
+    images: [
+      {
+        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+      },
+    ],
   },
   robots: "index, follow",
   keywords:

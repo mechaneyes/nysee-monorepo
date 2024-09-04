@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { GetStaticProps } from "next";
 import ContainerHome from "../components/container-home";
@@ -10,6 +11,12 @@ export default function Index({ allPosts: { edges }, preview }) {
 
   return (
     <ContainerHome>
+      <Head>
+        <title>NYSee Radar</title>
+        <meta property="og:title" content="NYSee Radar" key="title" />
+        <meta property="og:url" content="https://nysee.nyc/radar" />
+        <meta property="og:image" content="https://nysee.nyc/images/og-juli-kosolapova.jpg" />
+      </Head>
       <section className="hero hero--home hero--radar-animation">
         <div className="mb-20 md:mb-28 px-5">
           <div className="hero__content">
@@ -42,7 +49,10 @@ export default function Index({ allPosts: { edges }, preview }) {
                 <h3 className="text-2xl">NYSee Lowdown</h3>
                 <p className="text-xl">Beyond the frame</p>
               </a>
-              <a href="/ray-weitzenberg" className="grid grid-rows-2 gap-0 mb-4">
+              <a
+                href="/ray-weitzenberg"
+                className="grid grid-rows-2 gap-0 mb-4"
+              >
                 <h3 className="text-2xl">Ray Weitzenberg</h3>
                 <p className="text-xl">Let&apos;s dance: @mechaneyes</p>
               </a>

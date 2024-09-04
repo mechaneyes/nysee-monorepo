@@ -50,7 +50,8 @@ export default function Post({ post, posts, preview }) {
           <>
             <article className="post">
               <Head>
-                <title>{`${post.title} | NYSee Lowdown`}</title>
+                <title>{`${post.title} | NYSee Radar`}</title>
+                <meta property="og:title" content={post.title} key="title" />
                 <meta
                   property="og:image"
                   content={post.featuredImage?.node.sourceUrl}

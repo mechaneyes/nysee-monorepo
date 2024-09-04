@@ -4,9 +4,15 @@ import Header from "@/components/header";
 
 export const metadata = {
   title: "Projects | NYSee",
-  description: "The never static projects page.",
+  description: "Always be Creating —Glengarray Glen Ross",
+  url: "https://nysee.nyc/projects",
   openGraph: {
-    url: "https://nysee.nyc/images/galleries/objects/og-juli-kosolapova.jpg",
+    url: "https://nysee.nyc/projects",
+    images: [
+      {
+        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+      },
+    ],
   },
   robots: "index, follow",
   keywords:
