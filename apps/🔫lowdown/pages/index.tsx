@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import Container from "../components/container";
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
@@ -28,6 +29,15 @@ export default function Index({ allPosts: { edges }, preview }) {
 
   return (
     <Container>
+      <Head>
+        <title>NYSee Radar</title>
+        <meta property="og:title" content="NYSee Lowdown" key="title" />
+        <meta property="og:url" content="https://nysee.nyc/lowdown" />
+        <meta
+          property="og:image"
+          content="https://nysee.nyc/images/og-titanpoint.jpg"
+        />
+      </Head>
       <Masthead />
       {heroPost && isDesktopOrLaptop ? (
         <HeroSplit

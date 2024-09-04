@@ -1,11 +1,20 @@
+import Head from "next/head";
 import Image from "next/image";
 import Container from "@/components/container";
 import Masthead from "@/components/masthead";
 
 export default function About() {
-
   return (
     <Container>
+      <Head>
+        <title>NYSee Radar</title>
+        <meta property="og:title" content="NYSee Lowdown" key="title" />
+        <meta property="og:url" content="https://nysee.nyc/lowdown/about" />
+        <meta
+          property="og:image"
+          content="https://nysee.nyc/images/og-about.jpg"
+        />
+      </Head>
       <Masthead />
       <main className="about page page--about mx-auto px-5 pt-5 pb-24">
         <Image

@@ -125,6 +125,11 @@ export default function NavMenu() {
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <a href="/projects" className="pl-5 font-medium text-lg">
+            Projects
+          </a>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <a href="/ray-weitzenberg" className="pl-5 font-medium text-lg">
             Ray
           </a>
