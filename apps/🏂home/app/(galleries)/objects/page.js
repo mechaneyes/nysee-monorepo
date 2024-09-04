@@ -8,7 +8,12 @@ export const metadata = {
     "The first gallery up on NYSee. Objects in mirror are closer than they appear",
   url: "https://nysee.nyc/objects",
   openGraph: {
-    url: "https://nysee.nyc/images/galleries/objects/og-objects.jpg",
+    url: "https://nysee.nyc/objects",
+    images: [
+      {
+        url: "https://nysee.nyc/images/galleries/objects/og-objects.jpg",
+      },
+    ],
   },
   robots: "index, follow",
   keywords:
