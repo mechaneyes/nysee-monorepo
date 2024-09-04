@@ -14,27 +14,27 @@ export default function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem>
-          <a href="/radar" className="pl-5 font-medium text-lg">
-            NYSee Radar
+          <a href="/radar" className="font-medium text-lg">
+            Radar
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/lowdown" className="pl-5 font-medium text-lg">
-            NYSee Lowdown
+          <a href="/lowdown" className="sm:pl-5 font-medium text-lg">
+            Lowdown
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/projects" className="pl-5 font-medium text-lg">
+          <a href="/projects" className="sm:pl-5 font-medium text-lg">
             Projects
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/ray-weitzenberg" className="pl-5 font-medium text-lg">
+          <a href="/ray-weitzenberg" className="sm:pl-5 font-medium text-lg">
             Ray
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/lowdown/about" className="pl-5 font-medium text-lg">
+          <a href="/lowdown/about" className="sm:pl-5 font-medium text-lg">
             About
           </a>
         </NavigationMenuItem>

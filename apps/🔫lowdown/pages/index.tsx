@@ -7,6 +7,7 @@ import HeroPost from "../components/hero-post";
 import HeroSplit from "../components/hero-split";
 import Masthead from "../components/masthead";
 import { getAllPostsForHome } from "../lib/api";
+import Header from "@/components/header";
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node;
@@ -38,7 +39,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           content="https://nysee.nyc/images/og-titanpoint.jpg"
         />
       </Head>
-      <Masthead />
+      {isDesktopOrLaptop ? <Masthead /> : <Header />}
       {heroPost && isDesktopOrLaptop ? (
         <HeroSplit
           title={heroPost.title}

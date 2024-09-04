@@ -15,12 +15,17 @@ export default function NavMenu() {
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem>
           <a href="/" className="pl-5 font-medium text-lg">
-            NYSee Home
+            Home
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <a href="/lowdown" className="pl-5 font-medium text-lg">
-            NYSee Lowdown
+            Lowdown
+          </a>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <a href="/projects" className="sm:pl-5 font-medium text-lg">
+            Projects
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>

@@ -115,13 +115,13 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem> */}
         <NavigationMenuItem>
-          <a href="/" className="pl-5 font-medium text-lg">
-            NYSee Home
+          <a href="/" className="font-medium text-lg">
+            Home
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <a href="/radar" className="pl-5 font-medium text-lg">
-            NYSee Radar
+            Radar
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
