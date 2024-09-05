@@ -69,7 +69,7 @@ export default async function GalleryObjects() {
           </p>
           <p className="pt-4 text-xl">
             I did a farily quick p5.js sketch to assemble a design similar to
-            what you see below. But what's actually below is several of the
+            what you see below. But what&apos;s actually below is several of the
             variations the app produced. Coming across these, I thought it might
             be good fodder for my first mini-project using Framer Motion. This
             is super simple, but I&apos;m happy to have this raw material to do
@@ -97,7 +97,7 @@ export default async function GalleryObjects() {
             The colors you see below are the colors that are available at
             RisoLAB. There are two systems with their own sets of colors. There
             are methods for working in Photoshop in order to approximate those
-            colors while you're constructing your artwork.
+            colors while you&apos;re constructing your artwork.
           </p>
           <SyntaxHighlighter language="javascript" style={dracula}>
             {p5sketch}
