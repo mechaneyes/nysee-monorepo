@@ -6,4 +6,16 @@
   p {
     padding-bottom: 0;
   }
+
+  &--riso-one {
+    padding-bottom: 4rem;
+
+    .image-fader {
+      aspect-ratio: 1024 / 791;
+    }
+  }
+}
+
+.image-fader {
+  aspect-ratio: 1024 / 791;
 }

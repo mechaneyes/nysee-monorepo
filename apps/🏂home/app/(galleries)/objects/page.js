@@ -26,8 +26,8 @@ const GalleryObjects = () => {
       <Header />
       <div className="gallery gallery--objects bg-white">
         <div className="hero">
-          <div className="sm:w-5/6 max-w-screen-md mx-4 sm:mx-auto pt-8 sm:pt-24">
-            <h1 className="text-3xl font-medium">Objects May Appear</h1>
+          <div className="sm:w-5/6 max-w-screen-md mx-4 sm:mx-auto pt-8 sm:pt-16">
+            <h1 className="text-4xl font-medium">Objects May Appear</h1>
             <h3 className="pt-4 text-1xl italic">
               Tuesday, 03 Sep 2024 14.01.50 PM EDT
             </h3>
