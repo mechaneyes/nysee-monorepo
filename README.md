@@ -1,5 +1,6 @@
-# NYSee Monorepo
+# NYSee
 
+![No Ordinary Dancer](https://nysee.nyc/lowdown/_next/image?url=https://wordpress-1313045-4791931.cloudwaysapps.com/wp-content/uploads/2024/08/no-ordinary-dancer-1.0.0-1920px72dpi50q.jpg&w=1920&q=75)
 
 NYSee.nyc has become my home for the latest creative projects I'm working on. 
 
@@ -26,7 +27,9 @@ The WordPress blogs are setup using [Cloudways](https://unified.cloudways.com/) 
 
 ## NYSee Radar
 
-On deck, is the NYSee Radar. This app (WordPress based) is focused on NYC galleries and museums. More on that later.
+NYSee Radar is another WordPress-based app focused on NYC galleries and museums.
+
+## [More Details on both here](https://nysee.nyc/lowdown/about)
 
 
 
@@ -62,13 +65,42 @@ All of the Turborepo noise is still there atm, but if you want to take a peek at
 If you'd like to experiment with something similar, to spare yourself the rat's nest, just go straight to the official example: https://github.com/vercel/next.js/tree/canary/examples/with-zones
 
 
-<br>
+<br><br>
 
 # Mechaneyes Notes
 
+## React Syntax Highlighter
+
+#### Friday, 06 Sep 2024 11.06.23 AM EDT
+
+https://github.com/react-syntax-highlighter/react-syntax-highlighter
+
+```js
+import { promises as fs } from "fs";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+async function getCodeString(theFile) {
+  const filePath = path.join(process.cwd(), theFile);
+  return await fs.readFile(filePath, "utf8");
+}
+
+const imageFater = await getCodeString(
+  "app/(galleries)/riso-motion/image-fader.js"
+);
+const p5sketch = await getCodeString(
+  "app/(galleries)/riso-motion/p5sketch.js"
+);
+
+<SyntaxHighlighter language="javascript" style={dracula}>
+  {imageFater}
+</SyntaxHighlighter>
+```
+<br><br>
+
 ## Radar Antenna Video v Background Image
 
-You can see the effect at https://nysee.nyc/
+You can see the effect at https://nysee.nyc/radar
 
 ### Radar Antenna Video w Alpha
 
@@ -110,9 +142,11 @@ This two-step process (Premiere Pro export to ProRes, then FFmpeg conversion to 
 
 ### Background Image
 
-![Juili](./apps/home/public/images/radar-juli-kosolapova_2880px.jpg)
+![Juili](./apps/🏂home/public/images/radar-juli-kosolapova_2880px.jpg)
 
 Photo by [Juli Kosolapova](https://unsplash.com/@yuli_superson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/mountains-under-white-clouds-at-daytime-pZ-XFIrJMtE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+
+<br><br>
 
 ## favicon-cheat-sheet
 
@@ -124,9 +158,9 @@ https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
 
 <br><br>
 
-# Image Carousel
+## Image Carousel
 
-## Image Carousel via Framer Motion
+### Image Carousel via Framer Motion
 
 https://www.freecodecamp.org/news/build-an-image-carousel-with-react-and-framer-motion/
 

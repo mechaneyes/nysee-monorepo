@@ -5,6 +5,8 @@ import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import Header from "@/components/header";
 import ImageFader from "./image-fader";
 
+// read the contents of files for inclusion in code block on page
+// 
 async function getCodeString(theFile) {
   const filePath = path.join(process.cwd(), theFile);
   return await fs.readFile(filePath, "utf8");
@@ -19,7 +21,7 @@ export const metadata = {
     url: "https://nysee.nyc/riso-one",
     images: [
       {
-        url: "https://nysee.nyc/images/og-image.png",
+        url: "https://nysee.nyc/images/galleries/riso-one/riso-one_001.jpg",
       },
     ],
   },

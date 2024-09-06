@@ -6,13 +6,13 @@ import { faderImages } from "@/(galleries)/riso-motion/page";
 
 export const metadata = {
   title: "Projects | NYSee",
-  description: "Always be Creating —Glengarray Glen Ross",
+  description: "As heard on Glengarray Glen Ross, 'Always be Creating'",
   url: "https://nysee.nyc/projects",
   openGraph: {
     url: "https://nysee.nyc/projects",
     images: [
       {
-        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+        url: "https://nysee.nyc/images/og-no-ordinary-duotone-000.jpg",
       },
     ],
   },
