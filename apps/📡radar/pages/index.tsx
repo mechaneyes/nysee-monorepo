@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { GetStaticProps } from "next";
+import Footer from "../components/footer";
 import ContainerHome from "../components/container-home";
 import HomeStories from "../components/home-stories";
 import HeroRadarAnimation from "../components/hero-radar-animation";
@@ -81,6 +82,7 @@ export default function Index({ allPosts: { edges }, preview }) {
       <div className="home__stories--container md:pt-16">
         {morePosts.length > 0 && <HomeStories posts={morePosts} />}
       </div>
+      <Footer />
     </ContainerHome>
   );
 }

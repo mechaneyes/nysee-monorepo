@@ -97,7 +97,7 @@
 }
 
 .gallery h2 + h3 {
-  @apply mt-0;
+  @apply mt-0 italic;
 }
 
 .gallery iframe {
