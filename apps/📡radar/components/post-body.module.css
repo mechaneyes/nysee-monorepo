@@ -83,3 +83,23 @@
 .content audio {
   @apply w-full;
 }
+
+.content :global(.show) {
+  @apply mt-2 mb-24;
+}
+
+.gallery h2 {
+  @apply text-3xl mt-4 mb-0 leading-snug;
+}
+
+.gallery h3 {
+  @apply text-2xl font-light mt-4 mb-1 leading-snug;
+}
+
+.gallery h2 + h3 {
+  @apply mt-0;
+}
+
+.gallery iframe {
+  @apply mt-4;
+}
