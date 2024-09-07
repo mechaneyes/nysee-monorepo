@@ -18,16 +18,17 @@ export default function Footer() {
   }, []);
 
   const handleClick = () => {
-    setCrossingLineIndex(crossingLineIndex + 1);
-    setCrossingLine(crossingBrooklynFerry[crossingLineIndex + 1]);
+    const nextIndex = (crossingLineIndex + 1) % crossingBrooklynFerry.length;
+    setCrossingLineIndex(nextIndex);
+    setCrossingLine(crossingBrooklynFerry[nextIndex]);
   };
 
   return (
-    <footer className="px-5 bg-accent-1 border-t border-accent-2">
+    <footer className="lg:min-h-[540px] px-5 bg-accent-1 border-t border-accent-2">
       <Container>
         <div className="py-28 flex flex-col flex-start">
           <h3
-            className="text-4xl lg:text-5xl text-white tracking-tighter leading-tight text-center lg:text-left mb-10 lg:pr-4 lg:w-1/2 cursor-pointer"
+            className="text-4xl lg:text-5xl text-white tracking-tighter leading-tight text-center lg:text-left mb-10 lg:pr-4 lg:w-2/3 cursor-pointer"
             onClick={handleClick}
           >
             {crossingLine}

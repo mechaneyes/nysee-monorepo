@@ -2,10 +2,9 @@
 
 ![No Ordinary Dancer](https://nysee.nyc/lowdown/_next/image?url=https://wordpress-1313045-4791931.cloudwaysapps.com/wp-content/uploads/2024/08/no-ordinary-dancer-1.0.0-1920px72dpi50q.jpg&w=1920&q=75)
 
-NYSee.nyc has become my home for the latest creative projects I'm working on. 
+NYSee.nyc has become my home for the latest creative projects I'm working on.
 
 This is setup via a monorepo so it can host distinct projects, allowing others to have access for collaboration.
-
 
 <br>
 
@@ -17,13 +16,11 @@ This is currently a simple Next.js app leveraging the App router. After posting 
 
 The top level app is a bit directionless atm. That will change. What I wanted is to have a site that I can customize very intentionally. While I'm definitely not looking to build a marketing type site, I'd like to customize it in various ways at various times. So a blog it isn't. That's where the Lowdown comes in.
 
-
 ## NYSee Lowdown
 
 One of the apps within this monorepo is this first blog for NYSee. That's right ... at the moment there's one, there will be more for projects already in development.
 
 The WordPress blogs are setup using [Cloudways](https://unified.cloudways.com/) which should take some of the hassle out of doing any of the sysadmin work I was more open to handling in the past. I'm trading a few 💸 in an attempt to hold onto what hair I've got left.
-
 
 ## NYSee Radar
 
@@ -31,14 +28,11 @@ NYSee Radar is another WordPress-based app focused on NYC galleries and museums.
 
 ## [More Details on both here](https://nysee.nyc/lowdown/about)
 
-
-
 <br>
 
 ## Wait. What did i just do?!!
 
 I don't think I've properly implemented Vercel's Turborepo. In fact, I don't know that I need it here at all. But in leaving myself breadcrumbs, here are the details on Vercel's Next.js [Turborepo starter](https://github.com/vercel/turbo/tree/main/examples/with-yarn). And another breadcrumb, [Deploying Turborepo to Vercel](https://vercel.com/docs/monorepos/turborepo).
-
 
 ### Multi-Zone Next.js Applications
 
@@ -64,10 +58,19 @@ All of the Turborepo noise is still there atm, but if you want to take a peek at
 
 If you'd like to experiment with something similar, to spare yourself the rat's nest, just go straight to the official example: https://github.com/vercel/next.js/tree/canary/examples/with-zones
 
-
 <br><br>
 
 # Mechaneyes Notes
+
+#### Saturday, 07 Sep 2024 16.13.56 PM EDT
+
+## ART_GALLERY
+Location of New York City Art Galleries
+
+
+https://data.cityofnewyork.us/Recreation/ART_GALLERY/43hw-uvdj/about_data
+
+<br><br>
 
 ## React Syntax Highlighter
 
@@ -88,14 +91,13 @@ async function getCodeString(theFile) {
 const imageFater = await getCodeString(
   "app/(galleries)/riso-motion/image-fader.js"
 );
-const p5sketch = await getCodeString(
-  "app/(galleries)/riso-motion/p5sketch.js"
-);
+const p5sketch = await getCodeString("app/(galleries)/riso-motion/p5sketch.js");
 
 <SyntaxHighlighter language="javascript" style={dracula}>
   {imageFater}
-</SyntaxHighlighter>
+</SyntaxHighlighter>;
 ```
+
 <br><br>
 
 ## Radar Antenna Video v Background Image
@@ -111,6 +113,7 @@ In order to achieve the spinning radar antenna video, I wanted to export the vid
 To export a file from Premiere Pro that's suitable for web use with transparency, you'll want to use a format that supports alpha channels. Here's a recommended approach:
 
 Export as QuickTime/MOV with the ProRes 4444 codec:
+
 - Go to File > Export > Media
 - In the Export Settings dialog, choose "QuickTime" as the Format
 - Under Video Codec, select "Apple ProRes 4444"
@@ -118,10 +121,10 @@ Export as QuickTime/MOV with the ProRes 4444 codec:
 - In the Video tab, make sure "Composite in Linear Color" is checked
 - Set your desired resolution and frame rate
 
-
 This will give you a high-quality .mov file with preserved alpha channel, which you can then convert to WebM using the FFmpeg command I provided earlier.
 
 Why this method:
+
 1. ProRes 4444 preserves the alpha channel and maintains high quality.
 2. It's widely supported and works well as an intermediate format.
 3. It avoids compression artifacts that might affect the alpha channel.
@@ -152,9 +155,9 @@ Photo by [Juli Kosolapova](https://unsplash.com/@yuli_superson?utm_content=credi
 
 https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
 
->A painfully obsessive cheat sheet to favicon sizes/types.
+> A painfully obsessive cheat sheet to favicon sizes/types.
 >
->For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file favicon.ico and place it in the root of your domain.
+> For the main favicon itself, it's best for cross-browser compatibility not to use any HTML. Just name the file favicon.ico and place it in the root of your domain.
 
 <br><br>
 
@@ -164,3 +167,14 @@ https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
 
 https://www.freecodecamp.org/news/build-an-image-carousel-with-react-and-framer-motion/
 
+## Radar Gallery Posts
+
+```html
+<div class="show">
+  <h2>Amanda Ba</h2>
+  <h3>Developing Desire</h3>
+  <h3>Jeffrey Deitch</h3>
+  <p>18 Wooster Street</p>
+  <a href="https://deitch"><p>https://deitch</p></a>
+</div>
+```
