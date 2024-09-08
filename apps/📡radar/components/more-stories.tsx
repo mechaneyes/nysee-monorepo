@@ -21,12 +21,12 @@ export default function MoreStories({ posts }) {
         <div className="post post--preview">
           <div className="mb-3">
             <div className="post__image--cover">
-              <Link href={`/`} aria-label="Back to NYSee Lowdown">
+              <Link href={`/`} aria-label="Back to NYSee Radar">
                 <Image
                   width={2000}
                   height={2500}
-                  alt="Back to NYSee Lowdown"
-                  src="/radar/images/mo-lowdown.jpg"
+                  alt="Back to NYSee Radar"
+                  src="/radar/images/mo-radar.jpg"
                   className={cn("shadow-small", {
                     "hover:shadow-medium transition-shadow duration-200":
                       "back-to-lowdown",
@@ -38,7 +38,7 @@ export default function MoreStories({ posts }) {
           <h3 className="post__title post__title--preview text-3xl">
             <Link href={`/`}>Return to Base</Link>
           </h3>
-          <div className="post__excerpt">Back to NYSee Lowdown</div>
+          <div className="post__excerpt">Back to NYSee Radar</div>
         </div>
       </div>
     </section>
