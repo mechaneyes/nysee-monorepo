@@ -9,10 +9,8 @@ export default function HomeStories({ posts }) {
   const getImagePath = (character) => {
     const basePath = "/radar/images/whirligigCharacters/";
     if (character === character.toUpperCase()) {
-      console.log("upper:", character.toLowerCase());
       return `${basePath}caps/${character.toLowerCase()}.png`;
     } else {
-      console.log("lower:", character);
       return `${basePath}lower/${character.toLowerCase()}.png`;
     }
   };

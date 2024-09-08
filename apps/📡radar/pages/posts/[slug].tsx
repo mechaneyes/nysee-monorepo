@@ -19,6 +19,8 @@ export default function Post({ post, posts, preview }) {
   const router = useRouter();
   const morePosts = posts?.edges;
 
+  console.log('post:', post);
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
@@ -76,7 +78,7 @@ export default function Post({ post, posts, preview }) {
                   excerpt={undefined}
                 />
               )}
-              <PostBody content={post.content} />
+              <PostBody content={[post.content, post.events.eventDate]} />
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>
