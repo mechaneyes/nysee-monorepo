@@ -15,7 +15,7 @@ export default function NavMenu() {
       <NavigationMenuList className="NavigationMenuList">
         <NavigationMenuItem>
           <a href="/" className="pl-5 font-medium text-lg">
-            Home
+            NYSee
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>

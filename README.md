@@ -65,8 +65,8 @@ If you'd like to experiment with something similar, to spare yourself the rat's 
 #### Saturday, 07 Sep 2024 16.13.56 PM EDT
 
 ## ART_GALLERY
-Location of New York City Art Galleries
 
+Location of New York City Art Galleries
 
 https://data.cityofnewyork.us/Recreation/ART_GALLERY/43hw-uvdj/about_data
 
@@ -167,14 +167,31 @@ https://github.com/audreyfeldroy/favicon-cheat-sheet?tab=readme-ov-file
 
 https://www.freecodecamp.org/news/build-an-image-carousel-with-react-and-framer-motion/
 
+<br><br>
+
 ## Radar Gallery Posts
 
 ```html
 <div class="show">
-  <h2>Amanda Ba</h2>
-  <h3>Developing Desire</h3>
-  <h3>Jeffrey Deitch</h3>
-  <p>18 Wooster Street</p>
-  <a href="https://deitch"><p>https://deitch</p></a>
+  <h2>AmandaBa</h2>
+  <h3>DevelopingDesire</h3>
+  <h3>JeffreyDeitch</h3>
+  <p><a href="https">18WoosterStreet</a></p>
+  <a href="https"><p>https</p></a>
+</div>
+
+<div class="show">
+  <h4>September 12, 2024</h4>
+  <h2>Christian Marclay</h2>
+  <h3>Subtitled</h3>
+  <h3>Paula Cooper Gallery</h3>
+  <p>
+    <a href="https://maps.app.goo.gl/FyugWATot69fuFkj9"
+      >534 W 21st St, New York, NY 10011</a
+    >
+  </p>
+  <a href="https://www.paulacoopergallery.com/exhibitions/christian-marclay14"
+    ><p>https://www.paulacoopergallery.com/</p></a
+  >
 </div>
 ```
