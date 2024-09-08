@@ -25,7 +25,7 @@ export default function HomeStories({ posts }) {
   }, []);
 
   return (
-    <section className="home__stories px-5 max-w-[1040px] mx-auto">
+    <section className="home__stories px-5 max-w-[1280px] mx-auto">
       {posts.map(({ node }, index) => {
         const titleCharacter = node.title.charAt(0);
         const imagePath = getImagePath(titleCharacter);
@@ -35,7 +35,7 @@ export default function HomeStories({ posts }) {
             key={node.slug}
             title={node.title}
             coverImage={node.featuredImage}
-            date={node.date}
+            eventDate={node.events.eventDate}
             mechanicalCharacter={titleCharacter}
             mechanicalImage={imagePath}
             slug={node.slug}

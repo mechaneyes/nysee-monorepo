@@ -159,6 +159,14 @@
   }
 
   .post {
+    a {
+      text-decoration-color: transparent;
+
+      &:hover {
+        text-decoration-color: #83fce7;
+      }
+    }
+    
     &__content {
       z-index: 1;
 

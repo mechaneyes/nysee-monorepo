@@ -69,6 +69,9 @@ export async function getAllPostsForHome(preview) {
             excerpt
             slug
             date
+            events {
+              eventDate
+            }
             featuredImage {
               node {
                 sourceUrl

@@ -11,7 +11,7 @@ import HomePostImage from "./home-post-image";
 export default function HomePost({
   title,
   coverImage,
-  date,
+  eventDate,
   mechanicalCharacter,
   mechanicalImage,
   excerpt,
@@ -50,7 +50,7 @@ export default function HomePost({
         <div className={`post__content md:px-10 md:px-20 lg:px-8 `}>
           <div className="relative">
             <div className="left-[96px] top-0 absolute text-[#fbd784] text-lg font-normal uppercase">
-              <Date dateString={date} />
+              <Date dateString={eventDate} />
             </div>
             <div className="w-[72px] h-0.5 left-0 top-[12px] absolute bg-[#fbd784]" />
           </div>

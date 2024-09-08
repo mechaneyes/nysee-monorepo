@@ -3,11 +3,7 @@ import styles from "./post-body.module.css";
 
 export default function PostBody({ content }) {
   const [postContent, eventDate] = content;
-  const formattedDate = eventDate.split("T")[0];
-
   const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
-
-  console.log('formattedDate:', formattedDate);
 
   useEffect(() => {
     const handleResize = () => {
