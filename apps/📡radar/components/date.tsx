@@ -1,4 +1,7 @@
-import { parseISO } from "date-fns";
+"use client";
+
+import { useState, useEffect } from "react";
+import { parseISO, format } from "date-fns";
 
 function formatDate(dateString: string): string {
   const date = parseISO(dateString);
@@ -8,7 +11,9 @@ function formatDate(dateString: string): string {
     month: "long",
     year: "numeric",
   };
-  const formattedDate = new Intl.DateTimeFormat("en-US", options).formatToParts(date);
+  const formattedDate = new Intl.DateTimeFormat("en-US", options).formatToParts(
+    date
+  );
 
   const parts: { [key: string]: string } = {};
   formattedDate.forEach(({ type, value }) => {
@@ -18,17 +23,45 @@ function formatDate(dateString: string): string {
   return `${parts.weekday}, ${parts.day} ${parts.month} ${parts.year}`;
 }
 
-interface DateProps {
-  dateString: string;
+function formatDateForSubNav(dateString: string): string {
+  const date = parseISO(dateString);
+  return format(date, "MMM do");
 }
 
-export default function Date({ dateString }: DateProps) {
+interface DateProps {
+  dateString: string;
+  subNav?: boolean;
+}
+
+export default function Date({ dateString, subNav }: DateProps) {
+  const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktopOrLaptop(window.innerWidth >= 768);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   if (!dateString) {
-    return
+    return null;
   }
 
+  let formattedDate: string;
+
   dateString = dateString.split("T")[0];
-  const formattedDate = formatDate(dateString);
+
+  if (!isDesktopOrLaptop && subNav) {
+    formattedDate = formatDateForSubNav(dateString);
+  } else {
+    formattedDate = formatDate(dateString);
+  }
 
   return <time dateTime={dateString}>{formattedDate}</time>;
 }

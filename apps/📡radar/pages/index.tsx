@@ -101,9 +101,9 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
         <div className="hero__gradient" />
       </section>
 
-      <div id="home__stories--container" className="home__stories--container md:pt-16 px-5 max-w-[1280px] mx-auto">
+      <div id="home__stories--container" className="home__stories--container pt-6 md:pt-10 px-5 max-w-[1280px] mx-auto">
         <div className="home__sub-nav pb-4">
-          <ul className="home__sub-nav--list inline-flex justify-center gap-4 text-xl text-white">
+          <ul className="home__sub-nav--list inline-flex justify-center gap-3 text-xl text-white">
             <li className="home__sub-nav--item">
               <a
                 href="#"
@@ -146,7 +146,7 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
                           setSelectedDate(node.events.eventDate);
                         }}
                       >
-                        <Date dateString={node.events.eventDate} />
+                        <Date dateString={node.events.eventDate} subNav={true} />
                       </a>
                     </li>
                   </React.Fragment>
