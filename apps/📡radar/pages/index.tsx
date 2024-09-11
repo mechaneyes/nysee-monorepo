@@ -40,7 +40,7 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
           content="https://nysee.nyc/images/og-juli-kosolapova.jpg"
         />
       </Head>
-      <section className="hero hero--home hero--radar-animation">
+      <section className="hero hero--home hero--radar-animation overflow-hidden">
         <div className="mb-20 md:mb-28 px-5">
           <div className="hero__content">
             <h1 className="pt-7 px-0 md:px-3 text-6xl lg:text-6xl text-black leading-tight">
@@ -101,7 +101,7 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
         <div className="hero__gradient" />
       </section>
 
-      <div id="home__stories--container" className="home__stories--container pt-6 md:pt-10 px-5 max-w-[1280px] mx-auto">
+      <div id="home__stories--container" className="home__stories--container pt-6 md:pt-24 px-5 max-w-[1280px] mx-auto">
         <div className="home__sub-nav pb-4">
           <ul className="home__sub-nav--list inline-flex justify-center gap-3 text-xl text-white">
             <li className="home__sub-nav--item">
