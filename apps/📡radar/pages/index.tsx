@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { GetStaticProps } from "next";
@@ -24,6 +25,7 @@ interface IndexProps {
 }
 
 export default function Index({ allPosts: { edges }, preview }: IndexProps) {
+  const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const morePosts = edges;
   const displayedDates = new Set<string>();
 
@@ -99,13 +101,27 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
         <div className="hero__gradient" />
       </section>
 
-      <div className="home__stories--container md:pt-16">
-        <div className="home__sub-nav max-w-[1280px] mx-auto">
-          <ul className="home__sub-nav--list flex gap-4 text-white">
+      <div id="home__stories--container" className="home__stories--container md:pt-16 px-5 max-w-[1280px] mx-auto">
+        <div className="home__sub-nav pb-4">
+          <ul className="home__sub-nav--list inline-flex justify-center gap-4 text-xl text-white">
+            <li className="home__sub-nav--item">
+              <a
+                href="#"
+                className={`home__sub-nav--link ${
+                  selectedDate === null ? "home__sub-nav--link--active" : ""
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSelectedDate(null);
+                }}
+              >
+                All Events
+              </a>
+            </li>
             {morePosts.map(({ node }, index) => {
               const eventDate = new globalThis.Date(node.events.eventDate);
               const currentDate = new globalThis.Date();
-
+            
               if (
                 node.events.eventDate &&
                 !displayedDates.has(node.events.eventDate) &&
@@ -113,18 +129,46 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
               ) {
                 displayedDates.add(node.events.eventDate);
                 return (
-                  <li className="home__sub-nav--item" key={index}>
-                    <a href="/radar/art" className="home__sub-nav--link">
-                      <Date dateString={node.events.eventDate} />
-                    </a>
-                  </li>
+                  <React.Fragment key={index}>
+                    <li className="home__sub-nav--item">
+                      &middot;
+                    </li>
+                    <li className="home__sub-nav--item">
+                      <a
+                        href="#"
+                        className={`home__sub-nav--link ${
+                          selectedDate === node.events.eventDate
+                            ? "home__sub-nav--link--active"
+                            : ""
+                        }`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setSelectedDate(node.events.eventDate);
+                        }}
+                      >
+                        <Date dateString={node.events.eventDate} />
+                      </a>
+                    </li>
+                  </React.Fragment>
                 );
               }
               return null;
             })}
           </ul>
         </div>
-        {morePosts.length > 0 && <HomeStories posts={morePosts} />}
+        {morePosts.length > 0 && (
+          <>
+            {selectedDate ? (
+              <HomeStories
+                posts={morePosts.filter(
+                  ({ node }) => node.events.eventDate === selectedDate
+                )}
+              />
+            ) : (
+              <HomeStories posts={morePosts} />
+            )}
+          </>
+        )}
       </div>
       <Footer />
     </ContainerHome>

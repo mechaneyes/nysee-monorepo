@@ -166,7 +166,7 @@
         text-decoration-color: #83fce7;
       }
     }
-    
+
     &__content {
       z-index: 1;
 
@@ -208,6 +208,14 @@
     @include bp("large") {
       // width: revert-layer;
     }
+  }
+
+  &__sub-nav--link--active {
+    color: #83fce7;
+    text-decoration: underline;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.25rem;
+    transition: all 0.3s ease;
   }
 }
 

@@ -33,10 +33,10 @@ export default function Footer() {
           >
             {crossingLine}
           </h3>
+          <p className="pb-2 text-slate-400">via</p>
           <Link href="https://www.poetryfoundation.org/poems/45470/crossing-brooklyn-ferry">
-            <p className="pb-2 text-white text-slate-400">via</p>
-            <p className="text-white italic">Crossing Brooklyn Ferry</p>
-            <p className="text-white">By Walt Whitman</p>
+            <p className="italic">Crossing Brooklyn Ferry</p>
+            <p className="">By Walt Whitman</p>
           </Link>
         </div>
       </Container>

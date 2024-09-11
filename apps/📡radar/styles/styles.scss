@@ -28,9 +28,9 @@ body {
 
 header {
   color: white;
-  
+
   line-height: 1.25;
-  
+
   a {
     text-decoration: none;
 
@@ -41,7 +41,7 @@ header {
   }
 
   .cats {
-    left: -2rem
+    left: -2rem;
   }
 
   .NavigationMenuList {
@@ -110,5 +110,36 @@ header {
 .nysee-nav {
   .flex {
     position: relative;
+  }
+}
+
+footer {
+  h3 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+
+    &:hover {
+      color: #83fce7;
+      text-decoration-color: #83fce7;
+      text-decoration-thickness: 0.05rem;
+      text-underline-offset: 0.25rem;
+      transition: all 0.3s ease;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.25rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #83fce7;
+      text-decoration-color: #83fce7;
+      transition: all 0.3s ease;
+    }
   }
 }
