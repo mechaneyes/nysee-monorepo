@@ -30,7 +30,7 @@ function formatDateForSubNav(dateString: string): string {
 
 function formatDateForMobileSubNav(dateString: string): string {
   const date = parseISO(dateString);
-  return format(date, "MMM do");
+  return format(date, "MMM d");
 }
 
 interface DateProps {

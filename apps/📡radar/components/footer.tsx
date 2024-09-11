@@ -28,15 +28,15 @@ export default function Footer() {
       <Container>
         <div className="py-28 flex flex-col flex-start">
           <h3
-            className="text-4xl lg:text-5xl text-white tracking-tighter leading-tight text-center lg:text-left mb-10 lg:pr-4 lg:w-2/3 cursor-pointer"
+            className="text-4xl lg:text-5xl text-white tracking-tighter leading-tight lg:leading-tight text-center lg:text-left mb-10 lg:pr-4 lg:w-2/3 cursor-pointer"
             onClick={handleClick}
           >
             {crossingLine}
           </h3>
-          <p className="pb-2 text-slate-400">via</p>
+          <p className="text-slate-400">via</p>
           <Link href="https://www.poetryfoundation.org/poems/45470/crossing-brooklyn-ferry">
-            <p className="italic">Crossing Brooklyn Ferry</p>
-            <p className="">By Walt Whitman</p>
+            <p className="leading-normal italic">Crossing Brooklyn Ferry</p>
+            <p className="leading-normal">By Walt Whitman</p>
           </Link>
         </div>
       </Container>

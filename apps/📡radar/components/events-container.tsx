@@ -51,7 +51,7 @@ const EventDateList: React.FC<EventDateListProps> = ({ morePosts, onDateSelect }
 
   return (
     <ul className="home__sub-nav--list inline-flex justify-center gap-3 text-xl text-white">
-      <li className="home__sub-nav--item">
+      <li className="home__sub-nav--item flex items-center">
         <a
           href="#"
           className={`home__sub-nav--link ${
@@ -62,13 +62,13 @@ const EventDateList: React.FC<EventDateListProps> = ({ morePosts, onDateSelect }
             handleDateClick(null);
           }}
         >
-          All Events
+          All
         </a>
       </li>
       {orderedDates.map((dateString, index) => (
         <React.Fragment key={dateString}>
-          <li className="home__sub-nav--item">&middot;</li>
-          <li className="home__sub-nav--item">
+          <li className="home__sub-nav--item flex items-center justify-center">&middot;</li>
+          <li className="home__sub-nav--item flex items-center text-center">
             <a
               href="#"
               className={`home__sub-nav--link ${
