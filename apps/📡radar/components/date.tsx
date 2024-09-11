@@ -25,6 +25,11 @@ function formatDate(dateString: string): string {
 
 function formatDateForSubNav(dateString: string): string {
   const date = parseISO(dateString);
+  return format(date, "EEEE, MMM do");
+}
+
+function formatDateForMobileSubNav(dateString: string): string {
+  const date = parseISO(dateString);
   return format(date, "MMM do");
 }
 
@@ -58,7 +63,10 @@ export default function Date({ dateString, subNav }: DateProps) {
   dateString = dateString.split("T")[0];
 
   if (!isDesktopOrLaptop && subNav) {
+    formattedDate = formatDateForMobileSubNav(dateString);
+  } else if (subNav) {
     formattedDate = formatDateForSubNav(dateString);
+    // formattedDate = formatDate(dateString);
   } else {
     formattedDate = formatDate(dateString);
   }

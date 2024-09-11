@@ -4,8 +4,7 @@ import Image from "next/image";
 import { GetStaticProps } from "next";
 import Footer from "../components/footer";
 import ContainerHome from "../components/container-home";
-import HomeStories from "../components/home-stories";
-import Date from "@/components/date";
+import EventsContainer from "../components/events-container";
 import HeroRadarAnimation from "../components/hero-radar-animation";
 import { getAllPostsForHome } from "../lib/api";
 
@@ -24,10 +23,8 @@ interface IndexProps {
   preview: boolean;
 }
 
-export default function Index({ allPosts: { edges }, preview }: IndexProps) {
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
+export default function Index({ allPosts: { edges } }: IndexProps) {
   const morePosts = edges;
-  const displayedDates = new Set<string>();
 
   return (
     <ContainerHome>
@@ -101,75 +98,8 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
         <div className="hero__gradient" />
       </section>
 
-      <div id="home__stories--container" className="home__stories--container pt-6 md:pt-24 px-5 max-w-[1280px] mx-auto">
-        <div className="home__sub-nav pb-4">
-          <ul className="home__sub-nav--list inline-flex justify-center gap-3 text-xl text-white">
-            <li className="home__sub-nav--item">
-              <a
-                href="#"
-                className={`home__sub-nav--link ${
-                  selectedDate === null ? "home__sub-nav--link--active" : ""
-                }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setSelectedDate(null);
-                }}
-              >
-                All Events
-              </a>
-            </li>
-            {morePosts.map(({ node }, index) => {
-              const eventDate = new globalThis.Date(node.events.eventDate);
-              const currentDate = new globalThis.Date();
-            
-              if (
-                node.events.eventDate &&
-                !displayedDates.has(node.events.eventDate) &&
-                eventDate >= currentDate
-              ) {
-                displayedDates.add(node.events.eventDate);
-                return (
-                  <React.Fragment key={index}>
-                    <li className="home__sub-nav--item">
-                      &middot;
-                    </li>
-                    <li className="home__sub-nav--item">
-                      <a
-                        href="#"
-                        className={`home__sub-nav--link ${
-                          selectedDate === node.events.eventDate
-                            ? "home__sub-nav--link--active"
-                            : ""
-                        }`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setSelectedDate(node.events.eventDate);
-                        }}
-                      >
-                        <Date dateString={node.events.eventDate} subNav={true} />
-                      </a>
-                    </li>
-                  </React.Fragment>
-                );
-              }
-              return null;
-            })}
-          </ul>
-        </div>
-        {morePosts.length > 0 && (
-          <>
-            {selectedDate ? (
-              <HomeStories
-                posts={morePosts.filter(
-                  ({ node }) => node.events.eventDate === selectedDate
-                )}
-              />
-            ) : (
-              <HomeStories posts={morePosts} />
-            )}
-          </>
-        )}
-      </div>
+      <EventsContainer allPosts={{ edges: morePosts }} />
+
       <Footer />
     </ContainerHome>
   );
