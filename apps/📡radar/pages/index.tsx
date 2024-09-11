@@ -4,11 +4,28 @@ import { GetStaticProps } from "next";
 import Footer from "../components/footer";
 import ContainerHome from "../components/container-home";
 import HomeStories from "../components/home-stories";
+import Date from "@/components/date";
 import HeroRadarAnimation from "../components/hero-radar-animation";
 import { getAllPostsForHome } from "../lib/api";
 
-export default function Index({ allPosts: { edges }, preview }) {
+interface PostNode {
+  node: {
+    events: {
+      eventDate: string;
+    };
+  };
+}
+
+interface IndexProps {
+  allPosts: {
+    edges: PostNode[];
+  };
+  preview: boolean;
+}
+
+export default function Index({ allPosts: { edges }, preview }: IndexProps) {
   const morePosts = edges;
+  const displayedDates = new Set<string>();
 
   return (
     <ContainerHome>
@@ -16,7 +33,10 @@ export default function Index({ allPosts: { edges }, preview }) {
         <title>NYSee Radar</title>
         <meta property="og:title" content="NYSee Radar" key="title" />
         <meta property="og:url" content="https://nysee.nyc/radar" />
-        <meta property="og:image" content="https://nysee.nyc/images/og-juli-kosolapova.jpg" />
+        <meta
+          property="og:image"
+          content="https://nysee.nyc/images/og-juli-kosolapova.jpg"
+        />
       </Head>
       <section className="hero hero--home hero--radar-animation">
         <div className="mb-20 md:mb-28 px-5">
@@ -80,6 +100,30 @@ export default function Index({ allPosts: { edges }, preview }) {
       </section>
 
       <div className="home__stories--container md:pt-16">
+        <div className="home__sub-nav max-w-[1280px] mx-auto">
+          <ul className="home__sub-nav--list flex gap-4 text-white">
+            {morePosts.map(({ node }, index) => {
+              const eventDate = new globalThis.Date(node.events.eventDate);
+              const currentDate = new globalThis.Date();
+
+              if (
+                node.events.eventDate &&
+                !displayedDates.has(node.events.eventDate) &&
+                eventDate >= currentDate
+              ) {
+                displayedDates.add(node.events.eventDate);
+                return (
+                  <li className="home__sub-nav--item" key={index}>
+                    <a href="/radar/art" className="home__sub-nav--link">
+                      <Date dateString={node.events.eventDate} />
+                    </a>
+                  </li>
+                );
+              }
+              return null;
+            })}
+          </ul>
+        </div>
         {morePosts.length > 0 && <HomeStories posts={morePosts} />}
       </div>
       <Footer />
