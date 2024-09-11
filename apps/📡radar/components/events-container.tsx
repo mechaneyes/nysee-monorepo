@@ -100,8 +100,8 @@ const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({ allPosts }
   }, [morePosts, selectedDate]);
 
   return (
-    <div id="home__stories--container" className="home__stories--container pt-6 md:pt-24 px-5 max-w-[1280px] mx-auto">
-      <div className="home__sub-nav pb-4">
+    <div className="home__stories--container px-5 max-w-[1280px] mx-auto">
+      <div id="stories" className="home__sub-nav pt-12 pb-4">
         <EventDateList morePosts={morePosts} onDateSelect={setSelectedDate} />
       </div>
       {filteredPosts.length > 0 && <HomeStories posts={filteredPosts} />}
