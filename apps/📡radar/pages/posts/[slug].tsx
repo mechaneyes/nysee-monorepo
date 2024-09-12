@@ -19,7 +19,7 @@ export default function Post({ post, posts, preview }) {
   const router = useRouter();
   const morePosts = posts?.edges;
 
-  console.log('post:', post);
+  console.log("post:", post);
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -29,7 +29,7 @@ export default function Post({ post, posts, preview }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktopOrLaptop(window.innerWidth >= 768);
+      setIsDesktopOrLaptop(window.innerWidth > 768);
     };
 
     handleResize();
@@ -39,8 +39,6 @@ export default function Post({ post, posts, preview }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-
 
   return (
     <Layout preview={preview}>
@@ -63,8 +61,6 @@ export default function Post({ post, posts, preview }) {
                 <HeroSplit
                   title={post.title}
                   coverImage={post.featuredImage}
-                  date={post.date}
-                  author={post.author}
                   slug={post.slug}
                   excerpt={undefined}
                 />
@@ -72,8 +68,6 @@ export default function Post({ post, posts, preview }) {
                 <HeroPost
                   title={post.title}
                   coverImage={post.featuredImage}
-                  date={post.date}
-                  author={post.author}
                   slug={post.slug}
                   excerpt={undefined}
                 />

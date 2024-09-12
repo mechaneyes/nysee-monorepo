@@ -45,11 +45,6 @@ export default function PostHero({
                 <Date dateString={date} /> &middot;{" "}
                 <Categories categories={categories} />
               </p>
-
-              {/* <div className="post__excerpt">{parse(excerpt)}</div> */}
-              <div className="flex items-center space-x-4">
-                <Avatar author={author} />
-              </div>
             </div>
           </div>
         </main>
@@ -62,11 +57,6 @@ export default function PostHero({
                 <Date dateString={date} /> &middot;{" "}
                 <Categories categories={categories} />
               </p>
-
-              {/* <div className="post__excerpt">{parse(excerpt)}</div> */}
-              <div className="flex items-center space-x-4">
-                <Avatar author={author} />
-              </div>
             </div>
           </div>
           {featuredImage && (

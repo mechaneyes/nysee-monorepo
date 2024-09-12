@@ -19,7 +19,7 @@ export default function PostBody({ content }) {
   }, []);
 
   return (
-    <div className={`post__body max-w-3xl ml-[13%] ${!isDesktopOrLaptop && "px-5"}`}>
+    <div className={`post__body max-w-3xl lg:ml-[13%] px-5`}>
       <div
         className={`${styles.content} ${styles.gallery}`}
         dangerouslySetInnerHTML={{ __html: postContent }}

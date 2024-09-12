@@ -1,17 +1,8 @@
-import Image from 'next/image'; // Ensure this import is correct
-import cn from 'classnames';
-import Avatar from './avatar';
-import Date from './date';
-import Link from 'next/link';
+import Image from "next/image";
+import cn from "classnames";
+import Link from "next/link";
 
-export default function HeroPost({
-  title,
-  coverImage,
-  date,
-  author,
-  excerpt,
-  slug,
-}) {
+export default function HeroPost({ title, coverImage, excerpt, slug }) {
   return (
     <section className="post__hero">
       <div className="mb-3 pt-5 px-5">
@@ -27,7 +18,7 @@ export default function HeroPost({
           />
         )}
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-8 md:mb-28 px-5">
+      <div className="mb-12 px-5">
         <h1 className="mb-0 pt-4 text-5xl lg:text-6xl leading-tight">
           <Link
             href={`/posts/${slug}`}
@@ -35,12 +26,6 @@ export default function HeroPost({
             dangerouslySetInnerHTML={{ __html: title }}
           ></Link>
         </h1>
-        <div className="mb-1 pt-5 text-lg text-gray-500">
-          <Date dateString={date} />
-        </div>
-        <div className="flex items-center space-x-4 pt-3">
-          {author && <Avatar author={author} />}
-        </div>
         <div
           className="text-lg leading-relaxed mb-4"
           dangerouslySetInnerHTML={{ __html: excerpt }}
