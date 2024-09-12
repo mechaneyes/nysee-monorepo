@@ -33,20 +33,25 @@ const EventDateList: React.FC<EventDateListProps> = ({
       return date >= currentDate && date <= currentWeekEnd;
     };
 
+    const adjustToLocalTimezone = (dateString: string) => {
+      const date = new Date(dateString);
+      return new Date(date.getTime() + date.getTimezoneOffset() * 60000);
+    };
+
     return morePosts
       .map(({ node }) => node.events.eventDate)
       .filter((dateString) => {
-        const date = new Date(dateString);
+        const localDate = adjustToLocalTimezone(dateString);
         return (
-          date >= currentDate &&
+          localDate >= currentDate &&
           !displayedDates.has(dateString) &&
           displayedDates.add(dateString)
         );
       })
-      .sort((a, b) => new Date(a).getTime() - new Date(b).getTime())
+      .sort((a, b) => adjustToLocalTimezone(a).getTime() - adjustToLocalTimezone(b).getTime())
       .sort((a, b) => {
-        const dateA = new Date(a);
-        const dateB = new Date(b);
+        const dateA = adjustToLocalTimezone(a);
+        const dateB = adjustToLocalTimezone(b);
         const aInCurrentWeek = isWithinCurrentWeek(dateA);
         const bInCurrentWeek = isWithinCurrentWeek(dateB);
         if (aInCurrentWeek && !bInCurrentWeek) return -1;
