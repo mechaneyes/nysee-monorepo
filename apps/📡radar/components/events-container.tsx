@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo } from "react";
 import CustomDate from "@/components/date";
 import HomeStories from "../components/home-stories";
 
@@ -15,22 +15,33 @@ interface EventDateListProps {
   onDateSelect: (date: string | null) => void;
 }
 
-const EventDateList: React.FC<EventDateListProps> = ({ morePosts, onDateSelect }) => {
+const EventDateList: React.FC<EventDateListProps> = ({
+  morePosts,
+  onDateSelect,
+}) => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
 
   const orderedDates = useMemo(() => {
     const displayedDates = new Set<string>();
     const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); // Set to start of day
     const currentWeekEnd = new Date(currentDate);
     currentWeekEnd.setDate(currentDate.getDate() + (6 - currentDate.getDay()));
+    currentWeekEnd.setHours(23, 59, 59, 999); // Set to end of day
 
-    const isWithinCurrentWeek = (date: Date) => date <= currentWeekEnd;
+    const isWithinCurrentWeek = (date: Date) => {
+      return date >= currentDate && date <= currentWeekEnd;
+    };
 
     return morePosts
       .map(({ node }) => node.events.eventDate)
-      .filter(dateString => {
+      .filter((dateString) => {
         const date = new Date(dateString);
-        return date >= currentDate && !displayedDates.has(dateString) && displayedDates.add(dateString);
+        return (
+          date >= currentDate &&
+          !displayedDates.has(dateString) &&
+          displayedDates.add(dateString)
+        );
       })
       .sort((a, b) => new Date(a).getTime() - new Date(b).getTime())
       .sort((a, b) => {
@@ -67,7 +78,9 @@ const EventDateList: React.FC<EventDateListProps> = ({ morePosts, onDateSelect }
       </li>
       {orderedDates.map((dateString, index) => (
         <React.Fragment key={dateString}>
-          <li className="home__sub-nav--item flex items-center justify-center">&middot;</li>
+          <li className="home__sub-nav--item flex items-center justify-center">
+            &middot;
+          </li>
           <li className="home__sub-nav--item flex items-center text-center">
             <a
               href="#"
@@ -88,7 +101,9 @@ const EventDateList: React.FC<EventDateListProps> = ({ morePosts, onDateSelect }
   );
 };
 
-const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({ allPosts }) => {
+const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({
+  allPosts,
+}) => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const morePosts = allPosts.edges;
 
@@ -96,7 +111,9 @@ const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({ allPosts }
     if (selectedDate === null) {
       return morePosts;
     }
-    return morePosts.filter(({ node }) => node.events.eventDate === selectedDate);
+    return morePosts.filter(
+      ({ node }) => node.events.eventDate === selectedDate
+    );
   }, [morePosts, selectedDate]);
 
   return (
