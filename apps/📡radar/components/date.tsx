@@ -3,24 +3,29 @@
 import { useState, useEffect } from "react";
 import { parseISO, format } from "date-fns";
 
+// function formatDate(dateString: string): string {
+//   const date = parseISO(dateString);
+//   const options: Intl.DateTimeFormatOptions = {
+//     weekday: "long",
+//     day: "numeric",
+//     month: "long",
+//     year: "numeric",
+//   };
+//   const formattedDate = new Intl.DateTimeFormat("en-US", options).formatToParts(
+//     date
+//   );
+
+//   const parts: { [key: string]: string } = {};
+//   formattedDate.forEach(({ type, value }) => {
+//     parts[type] = value;
+//   });
+
+//   return `${parts.weekday}, ${parts.day} ${parts.month} ${parts.year}`;
+// }
+
 function formatDate(dateString: string): string {
   const date = parseISO(dateString);
-  const options: Intl.DateTimeFormatOptions = {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  };
-  const formattedDate = new Intl.DateTimeFormat("en-US", options).formatToParts(
-    date
-  );
-
-  const parts: { [key: string]: string } = {};
-  formattedDate.forEach(({ type, value }) => {
-    parts[type] = value;
-  });
-
-  return `${parts.weekday}, ${parts.day} ${parts.month} ${parts.year}`;
+  return format(date, "MMM d, yyyy");
 }
 
 function formatDateForSubNav(dateString: string): string {
@@ -68,7 +73,7 @@ export default function Date({ dateString, subNav }: DateProps) {
     formattedDate = formatDateForSubNav(dateString);
     // formattedDate = formatDate(dateString);
   } else {
-    formattedDate = formatDate(dateString);
+    formattedDate = formatDateForSubNav(dateString);
   }
 
   return <time dateTime={dateString}>{formattedDate}</time>;
