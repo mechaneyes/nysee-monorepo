@@ -70,7 +70,7 @@ const EventDateList: React.FC<EventDateListProps> = ({
   };
 
   return (
-    <ul className="home__sub-nav--list inline-flex justify-center gap-3 text-xl text-white">
+    <ul className="home__sub-nav--list inline-flex justify-center gap-2 text-xl text-white">
       <li className="home__sub-nav--item flex items-center">
         <a
           href="#"
@@ -126,8 +126,8 @@ const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({
   }, [morePosts, selectedDate]);
 
   return (
-    <div className="home__stories--container px-5 max-w-[1280px] mx-auto">
-      <div id="stories" className="home__sub-nav pt-12 pb-4">
+    <div className="home__stories--container px-5 max-w-[1280px] mx-auto -mt-8">
+      <div id="stories" className="home__sub-nav pb-4">
         <EventDateList morePosts={morePosts} onDateSelect={setSelectedDate} />
       </div>
       {filteredPosts.length > 0 && <HomeStories posts={filteredPosts} />}

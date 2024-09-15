@@ -10,6 +10,10 @@ import { getAllPostsForHome } from "../lib/api";
 
 interface PostNode {
   node: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    featuredImage: string;
     events: {
       eventDate: string;
     };
@@ -74,7 +78,7 @@ export default function Index({ allPosts: { edges } }: IndexProps) {
                 className="grid grid-rows-2 gap-0 mb-4"
               >
                 <h3 className="text-2xl">Ray Weitzenberg</h3>
-                <p className="text-xl">Let&apos;s dance: @mechaneyes</p>
+                <p className="text-xl">Let&apos;s dance</p>
               </a>
               <a href="/lowdown/about" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">About</h3>
