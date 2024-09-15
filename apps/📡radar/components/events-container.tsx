@@ -126,7 +126,7 @@ const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({
   }, [morePosts, selectedDate]);
 
   return (
-    <div className="home__stories--container px-5 max-w-[1280px] mx-auto -mt-8">
+    <div className="home__stories--container px-5 max-w-[1280px] mx-auto -mt-8 sm:mt-0">
       <div id="stories" className="home__sub-nav pb-4">
         <EventDateList morePosts={morePosts} onDateSelect={setSelectedDate} />
       </div>
