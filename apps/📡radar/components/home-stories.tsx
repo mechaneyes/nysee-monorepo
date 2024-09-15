@@ -1,28 +1,32 @@
-import { useEffect, useState } from "react";
 import HomePost from "./home-post";
-import { getChapterTextPruned } from "./get-reproduction";
 
-export default function HomeStories({ posts }) {
-  const [isReverse, setIsReverse] = useState(false);
-  const [mechanicalText, setMechanicalText] = useState("");
-
-  const getImagePath = (character) => {
-    const basePath = "/radar/images/whirligigCharacters/";
-    if (character === character.toUpperCase()) {
-      return `${basePath}caps/${character.toLowerCase()}.png`;
-    } else {
-      return `${basePath}lower/${character.toLowerCase()}.png`;
-    }
+interface PostNode {
+  node: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    featuredImage: string;
+    events: {
+      eventDate: string;
+    };
   };
+}
 
-  useEffect(() => {
-    setIsReverse(true);
-  }, []);
+interface HomeStoriesProps {
+  posts: PostNode[];
+}
 
-  useEffect(() => {
-    const text = getChapterTextPruned();
-    setMechanicalText(text);
-  }, []);
+const getImagePath = (character: string) => {
+  const basePath = "/radar/images/whirligigCharacters/";
+  if (character === character.toUpperCase()) {
+    return `${basePath}caps/${character.toLowerCase()}.png`;
+  } else {
+    return `${basePath}lower/${character.toLowerCase()}.png`;
+  }
+};
+
+export default function HomeStories({ posts }: HomeStoriesProps) {
+  const isReverse = true;
 
   return (
     <section className="home__stories">

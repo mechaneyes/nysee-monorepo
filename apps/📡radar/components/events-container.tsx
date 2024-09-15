@@ -4,6 +4,10 @@ import HomeStories from "../components/home-stories";
 
 interface Post {
   node: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    featuredImage: string;
     events: {
       eventDate: string;
     };
