@@ -47,6 +47,7 @@ const RadarSequence = ({ speed = 0.5, nav = false }) => {
         className="radar-antenna"
         width={340}
         height={440}
+        quality={100}
         priority
       />
     </div>

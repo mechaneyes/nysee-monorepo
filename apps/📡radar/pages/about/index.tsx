@@ -10,6 +10,7 @@ export default function About() {
         <Image
           width="3840"
           height="2160"
+          quality={100}
           alt={`Disco Elysium screenshot`}
           src="/radar/images/about_discoElysium.jpg"
           className="object-cover pt-8"

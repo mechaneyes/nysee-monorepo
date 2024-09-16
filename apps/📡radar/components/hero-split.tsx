@@ -22,6 +22,7 @@ export default function HeroSplit({ title, coverImage, excerpt, slug }) {
             <Image
               width={2000}
               height={2500}
+              quality={100}
               alt={`Cover Image for ${title}`}
               src={coverImage.node.sourceUrl}
               className={cn("shadow-small", {

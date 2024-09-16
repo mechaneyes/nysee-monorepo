@@ -25,6 +25,7 @@ export default function MoreStories({ posts }) {
                 <Image
                   width={2000}
                   height={2500}
+                  quality={100}
                   alt="Back to NYSee Radar"
                   src="/radar/images/mo-radar.jpg"
                   className={cn("shadow-small", {

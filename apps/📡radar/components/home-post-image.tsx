@@ -10,8 +10,9 @@ interface Props {
 export default function HomePostImage({ title, coverImage, slug }: Props) {
   const image = (
     <Image
-      width="400"
-      height="500"
+      width={400}
+      height={500}
+      quality={100}
       alt={`Cover Image for ${title}`}
       src={coverImage}
       className="object-cover"

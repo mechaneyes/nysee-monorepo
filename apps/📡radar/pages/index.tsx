@@ -82,6 +82,7 @@ export default function Index({ allPosts: { edges } }: IndexProps) {
           alt="NYSee.nyc"
           width={2880}
           height={1913}
+          quality={100}
           priority
         />
 

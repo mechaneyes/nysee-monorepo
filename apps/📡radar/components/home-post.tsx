@@ -45,6 +45,7 @@ export default function HomePost({
             alt={mechanicalCharacter}
             width={240}
             height={240}
+            quality={100}
           />
         </div>
 
