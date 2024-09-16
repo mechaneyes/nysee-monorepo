@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { GetStaticProps } from "next";
@@ -7,18 +6,7 @@ import ContainerHome from "../components/container-home";
 import EventsContainer from "../components/events-container";
 import HeroRadarAnimation from "../components/hero-radar-animation";
 import { getAllPostsForHome } from "../lib/api";
-
-interface PostNode {
-  node: {
-    title: string;
-    slug: string;
-    excerpt: string;
-    featuredImage: string;
-    events: {
-      eventDate: string;
-    };
-  };
-}
+import { PostNode } from "@/types/types";
 
 interface IndexProps {
   allPosts: {

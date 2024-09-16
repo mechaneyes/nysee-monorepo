@@ -1,21 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import CustomDate from "@/components/date";
 import HomeStories from "../components/home-stories";
-
-interface Post {
-  node: {
-    title: string;
-    slug: string;
-    excerpt: string;
-    featuredImage: string;
-    events: {
-      eventDate: string;
-    };
-  };
-}
+import { PostNode } from "@/types/types";
 
 interface EventDateListProps {
-  morePosts: Post[];
+  morePosts: PostNode[];
   onDateSelect: (date: string | null) => void;
 }
 
@@ -92,7 +81,7 @@ const EventDateList: React.FC<EventDateListProps> = ({ morePosts, onDateSelect }
   );
 };
 
-const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({ allPosts }) => {
+const EventsContainer: React.FC<{ allPosts: { edges: PostNode[] } }> = ({ allPosts }) => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const morePosts = allPosts.edges;
 

@@ -1,21 +1,10 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import CustomDate from "@/components/date";
 import HomeStories from "../components/home-stories";
-
-interface Post {
-  node: {
-    title: string;
-    slug: string;
-    excerpt: string;
-    featuredImage: string;
-    events: {
-      eventDate: string;
-    };
-  };
-}
+import { PostNode } from "@/types/types";
 
 interface EventDateListProps {
-  morePosts: Post[];
+  morePosts: PostNode[];
   onDateSelect: (date: string | null) => void;
 }
 
@@ -52,7 +41,11 @@ const EventDateList: React.FC<EventDateListProps> = ({
           displayedDates.add(dateString)
         );
       })
-      .sort((a, b) => adjustToLocalTimezone(a).getTime() - adjustToLocalTimezone(b).getTime())
+      .sort(
+        (a, b) =>
+          adjustToLocalTimezone(a).getTime() -
+          adjustToLocalTimezone(b).getTime()
+      )
       .sort((a, b) => {
         const dateA = adjustToLocalTimezone(a);
         const dateB = adjustToLocalTimezone(b);
@@ -67,6 +60,16 @@ const EventDateList: React.FC<EventDateListProps> = ({
   const handleDateClick = (dateString: string | null) => {
     setSelectedDate(dateString);
     onDateSelect(dateString);
+
+    // Update the URL with the dateString
+    const url = new URL(window.location.href);
+    if (dateString) {
+      const dateOnly = dateString.split("T")[0];
+      url.searchParams.set("date", dateOnly);
+    } else {
+      url.searchParams.delete("date");
+    }
+    window.history.pushState({}, "", url.toString());
   };
 
   return (
@@ -110,11 +113,20 @@ const EventDateList: React.FC<EventDateListProps> = ({
   );
 };
 
-const EventsContainer: React.FC<{ allPosts: { edges: Post[] } }> = ({
+const EventsContainer: React.FC<{ allPosts: { edges: PostNode[] } }> = ({
   allPosts,
 }) => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const morePosts = allPosts.edges;
+
+  useEffect(() => {
+    // Read the date parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = `${urlParams.get("date")}T00:00:00+00:00`;
+    if (urlParams.get("date")) {
+      setSelectedDate(dateParam);
+    }
+  }, []);
 
   const filteredPosts = useMemo(() => {
     if (selectedDate === null) {
