@@ -1,11 +1,17 @@
 import HomePost from "./home-post";
 
+interface ImageNode {
+  node: {
+    sourceUrl: string;
+  };
+}
+
 interface PostNode {
   node: {
     title: string;
     slug: string;
     excerpt: string;
-    featuredImage: string;
+    featuredImage: ImageNode;
     events: {
       eventDate: string;
     };

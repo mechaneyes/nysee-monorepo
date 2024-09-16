@@ -1,12 +1,25 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import parse from "html-react-parser";
-
 import Date from "./date";
 import HomePostImage from "./home-post-image";
+
+interface ImageNode {
+  node: {
+    sourceUrl: string;
+  };
+}
+
+interface HomePostProps {
+  title: string;
+  coverImage: ImageNode;
+  eventDate: string;
+  mechanicalCharacter: string;
+  mechanicalImage: string;
+  excerpt: string;
+  slug: string;
+  reverse: boolean;
+}
 
 export default function HomePost({
   title,
@@ -17,24 +30,12 @@ export default function HomePost({
   excerpt,
   slug,
   reverse,
-}) {
-  const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktopOrLaptop(window.innerWidth >= 768);
-    };
-
-    handleResize(); // Set initial value
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+}: HomePostProps) {
   return (
     <div
-      className={`post flex flex-col-reverse md:flex-row ${reverse ? "post--reverse md:flex-row-reverse" : ""} gap-2 md:gap-4 lg:gap-10 relative pb-32 md:pb-20 pt-8`}
+      className={`post flex flex-col-reverse md:flex-row ${
+        reverse ? "post--reverse md:flex-row-reverse" : ""
+      } gap-2 md:gap-4 lg:gap-10 relative pb-32 md:pb-20 pt-8`}
     >
       <div className="relative w-full md:w-7/12 pt-8 md:pt-32 flex-col justify-start items-start inline-flex">
         <div className="-top-28 md:top-11 xl:top-3 -left-32 md:left-0 absolute">
@@ -75,7 +76,7 @@ export default function HomePost({
 
       <div className="post__image post__image--cover w-full md:w-5/12">
         {coverImage && (
-          <HomePostImage title={title} coverImage={coverImage} slug={slug} />
+          <HomePostImage title={title} coverImage={coverImage.node.sourceUrl} slug={slug} />
         )}
       </div>
     </div>
