@@ -72,6 +72,15 @@ const EventDateList: React.FC<EventDateListProps> = ({
     window.history.pushState({}, "", url.toString());
   };
 
+  useEffect(() => {
+    // Read the date parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = `${urlParams.get("date")}T00:00:00+00:00`;
+    if (urlParams.get("date")) {
+      setSelectedDate(dateParam);
+    }
+  }, []);
+
   return (
     <ul className="home__sub-nav--list inline-flex justify-center gap-2 text-xl text-white">
       <li className="home__sub-nav--item flex items-center">
