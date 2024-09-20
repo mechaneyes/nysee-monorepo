@@ -5,11 +5,11 @@ import ImageFader from "@/(galleries)/riso-motion/image-fader";
 import { faderImages } from "@/(galleries)/riso-motion/page";
 
 export const metadata = {
-  title: "Projects | NYSee",
-  description: "As heard on Glengarray Glen Ross, 'Always be Creating'",
-  url: "https://nysee.nyc/projects",
+  title: "Werk | NYSee",
+  description: "'Always be Creating' —Glengarray Glen Ross",
+  url: "https://nysee.nyc/werk",
   openGraph: {
-    url: "https://nysee.nyc/projects",
+    url: "https://nysee.nyc/werk",
     images: [
       {
         url: "https://nysee.nyc/images/og-no-ordinary-duotone-000.jpg",
@@ -27,8 +27,13 @@ const GalleryObjects = () => {
       <Header />
       <div className="gallery gallery--objects bg-white sm:px-6">
         <div className="gallery__inner w-full sm:w-5/6 md:w-full max-w-screen-md mx-auto px-4">
-          <div className="hero pt-8 sm:pt-16">
-            <h1 className="text-4xl font-medium">Projects</h1>
+          <div className="hero mb-8 pt-8 sm:pt-16">
+            <h1 className="text-4xl font-medium">Werk</h1>
+            <p className="pt-4 text-xl">[vɛrk] n &lt;Werk(e)s; Werke&gt;</p>
+            <p className="pt-4 text-xl">
+              &lt;= Betrieb, Fabrik&gt; works sing or pl &lt;Brit&gt;, factory,
+              plant
+            </p>
           </div>
           <Link href="/riso-motion" className="">
             <div className="pt-10">

@@ -24,8 +24,8 @@ export default function NavMenu() {
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/projects" className="sm:pl-5 font-medium text-lg">
-            Projects
+          <a href="/werk" className="sm:pl-5 font-medium text-lg">
+            Werk
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>

@@ -42,13 +42,13 @@ export default function Home() {
         <div className="mb-4 px-0 md:px-3">
           <Link href="/ray-weitzenberg" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">Ray Weitzenberg</h3>
-            <h4 className="text-xl">Let&apos;s dance: @mechaneyes</h4>
+            <h4 className="text-xl">Let&apos;s dance</h4>
           </Link>
         </div>
         <div className="mb-4 px-0 md:px-3">
-          <Link href="/projects" className="grid grid-rows-2 gap-0">
-            <h3 className="text-2xl">Projects</h3>
-            <h4 className="text-xl">Wut I Done Did</h4>
+          <Link href="/werk" className="grid grid-rows-2 gap-0">
+            <h3 className="text-2xl">Werk</h3>
+            <h4 className="text-xl">Conjuring experience</h4>
           </Link>
         </div>
         <div className="mb-4 px-0 md:px-3">

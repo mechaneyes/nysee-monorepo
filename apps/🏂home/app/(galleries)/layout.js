@@ -5,9 +5,9 @@ import "@/styles/styles.scss";
 export const metadata = {
   title: "NYSee | Ray Weitzenberg",
   description: "Art + Technology + New York",
-  url: "https://nysee.nyc/projects",
+  url: "https://nysee.nyc/werk",
   openGraph: {
-    url: "https://nysee.nyc/projects",
+    url: "https://nysee.nyc/werk",
     images: [
       {
         url: "https://nysee.nyc/images/galleries/objects/og-objects.jpg",

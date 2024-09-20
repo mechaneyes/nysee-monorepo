@@ -116,7 +116,7 @@ export default function NavMenu() {
         </NavigationMenuItem> */}
         <NavigationMenuItem>
           <a href="/" className="font-medium text-lg">
-            Home
+            NYSee
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -125,8 +125,8 @@ export default function NavMenu() {
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/projects" className="pl-5 font-medium text-lg">
-            Projects
+          <a href="/werk" className="pl-5 font-medium text-lg">
+            Werk
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
