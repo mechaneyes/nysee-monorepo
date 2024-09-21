@@ -6,7 +6,7 @@ import PostPreview from "./post-preview";
 export default function MoreStories({ posts }) {
   return (
     <section className="more-stories">
-      <h2 className="px-5 pb-4 text-3xl">More Down Low</h2>
+      <h2 className="px-5 pb-4 text-3xl">Also on the Radar</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 gap-y-20 mb-32 px-5">
         {posts.map(({ node }) => (
           <PostPreview
