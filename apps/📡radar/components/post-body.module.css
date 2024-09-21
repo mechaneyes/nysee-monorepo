@@ -85,7 +85,7 @@
 }
 
 .content :global(.show) {
-  @apply mt-2 mb-8;
+  @apply mt-2 mb-24;
 }
 
 .gallery :global(.show) h2 {

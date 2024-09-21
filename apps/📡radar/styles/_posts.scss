@@ -176,3 +176,7 @@ article {
     min-height: 555px;
   }
 }
+
+.post__body figure ~ figure:not(:last-of-type):not(:has(+ .show)) img {
+  margin-bottom: 1rem;
+}
