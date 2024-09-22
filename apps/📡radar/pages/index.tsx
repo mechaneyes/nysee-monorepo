@@ -26,7 +26,7 @@ export default function Index({ allPosts: { edges } }: IndexProps) {
         <meta property="og:url" content="https://nysee.nyc/radar" />
         <meta
           property="og:image"
-          content="https://nysee.nyc/images/og-juli-kosolapova.jpg"
+          content="https://nysee.nyc/images/og-radar.jpg"
         />
       </Head>
       <section className="hero hero--home hero--radar-animation overflow-hidden">
