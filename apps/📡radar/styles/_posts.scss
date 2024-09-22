@@ -71,6 +71,22 @@
 
   &__body {
     color: white;
+
+    .show {
+      margin-bottom: 3rem;
+    }
+
+    p + figure {
+      margin-top: 3rem;
+    }
+
+    figure + .show {
+      margin-bottom: 0.5rem;
+    }
+    
+    figure:not(:has(+ .show)) {
+      margin-bottom: 2rem;
+    }
   }
 
   &--preview {
@@ -176,6 +192,8 @@ article {
     min-height: 555px;
   }
 }
+
+
 
 .post__body figure ~ figure:not(:last-of-type):not(:has(+ .show)) img {
   margin-bottom: 1rem;

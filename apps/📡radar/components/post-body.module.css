@@ -2,16 +2,13 @@
   @apply text-lg leading-relaxed;
 }
 
-.content p,
 .content ul,
-.content ol,
-.content blockquote {
+.content ol {
   @apply my-6;
 }
 
 .content p {
-  margin: 0;
-  padding-bottom: 0.5rem;
+  @apply mt-0 mb-4;
 }
 
 .content figure {
@@ -85,7 +82,7 @@
 }
 
 .content :global(.show) {
-  @apply mt-2 mb-24;
+  @apply mt-2;
 }
 
 .gallery :global(.show) h2 {

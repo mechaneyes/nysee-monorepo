@@ -28,7 +28,7 @@ export default function Footer() {
       <Container>
         <div className="py-28 flex flex-col flex-start">
           <h3
-            className="text-4xl lg:text-5xl text-white tracking-tighter leading-tight lg:leading-tight text-center lg:text-left mb-10 lg:pr-4 lg:w-2/3 cursor-pointer"
+            className="text-4xl lg:text-5xl text-white tracking-tighter leading-tight lg:leading-tight text-left mb-10 lg:pr-4 lg:w-2/3 cursor-pointer"
             onClick={handleClick}
           >
             {crossingLine}
