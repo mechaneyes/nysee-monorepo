@@ -2,6 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Container from "@/components/container";
 import Masthead from "@/components/masthead";
+import ImageFader from "@/components/image-fader";
+
+export const faderImages = [
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-1.jpg",
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-2.jpg",
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-3.jpg",
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-4.jpg",
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-5.jpg",
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-6.jpg",
+  "/lowdown/images/whirligrid/whirligrid-sacred-mystery-7.jpg",
+];
 
 export default function About() {
   return (
@@ -17,13 +28,8 @@ export default function About() {
       </Head>
       <Masthead />
       <main className="about page page--about mx-auto px-5 pt-5 pb-24">
-        <Image
-          width="3840"
-          height="2160"
-          alt={`Disco Elysium screenshot`}
-          src="/lowdown/images/about_discoElysium.jpg"
-          className="object-cover"
-        />
+
+        <ImageFader images={faderImages} interval={3000} />
 
         <div className="about__max w-5/6 mx-auto px-5">
           <h1 className="text-3xl font-bold pt-10">About NYSee</h1>
@@ -87,10 +93,10 @@ export default function About() {
             my points into Shivers. (That's homework for you if you don't
             already know).
           </p>
-          <blockquote className="flex justify-center w-3/4 mx-auto mt-12 text-xl italic">
+          <blockquote className="flex justify-center w-3/4 mx-auto mt-12 text-xl italic bg-neutral-50">
             Raise the hair on your neck. Tune in to the city.
           </blockquote>
-          <blockquote className="flex flex-col justify-center w-3/4 mx-auto mt-10 text-xl italic">
+          <blockquote className="flex flex-col justify-center w-3/4 mx-auto mt-10 text-xl italic bg-neutral-50">
             Shivers come when the temperature drops and you become more keenly
             aware of your surroundings. It enables you to hear the city itself,
             to truly belong to the streets. It is a supra-natural ability; old
