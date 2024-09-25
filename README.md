@@ -30,31 +30,23 @@ NYSee Radar is another WordPress-based app focused on NYC galleries and museums.
 
 <br>
 
-## Wait. What did i just do?!!
+## Multi-Zone Next.js Applications
 
-I don't think I've properly implemented Vercel's Turborepo. In fact, I don't know that I need it here at all. But in leaving myself breadcrumbs, here are the details on Vercel's Next.js [Turborepo starter](https://github.com/vercel/turbo/tree/main/examples/with-yarn). And another breadcrumb, [Deploying Turborepo to Vercel](https://vercel.com/docs/monorepos/turborepo).
+I've currently got the single repo, but am using the multi-zone pattern to nest data/content from one app within another. Behind the scenes there's a lot of redirection slight of hand sending electrons in different directions.
 
-### Multi-Zone Next.js Applications
+I leveraged the [Multi-Zone Next.js Applications](https://github.com/vercel/next.js/tree/canary/examples/with-zones) Vercel example.
 
-What's' actually in play is the [Multi-Zone Next.js Applications](https://github.com/vercel/next.js/tree/canary/examples/with-zones) example.
-
-I've currently got the single repo, but am using the multi-zone pattern to nest data/content from one app within another. Well, it's just a bunch of redirection slight of hand sending electrons in different directions.
-
-#### Waaat??
+### Waaat??
 
 The root address is: https://nysee.nyc/
 
 That is a simple Next.js app that has a couple pages setup with the App router.
 
-Within that, or at least revealed by a specific path, is a headless WordPress app's UI living at https://nysee.nyc/lowdown
+Within that, or at least revealed by a specific path, is a Next.js headless WordPress app's UI living at https://nysee.nyc/lowdown. Then another Next.js headless WordPress app at https://nysee.nyc/radar.
 
 Fancy.
 
-The bubblegum holding the whole thing together happens within the `next.config.js` and `vercel.json` files within each app. Again, both apps live in a single repo, but it's not clear that's even necessary here. 🤔
-
-The key ingredient allowing the the thing to stand up is the alignment of the 4 files spread between the 2 apps.
-
-All of the Turborepo noise is still there atm, but if you want to take a peek at the setup it's here: [mechaneyes / nysee-monorepo](https://github.com/mechaneyes/nysee-monorepo)
+The bubblegum holding the whole thing together happens within the `next.config.js` and `vercel.json` files within each app. The three apps live in a single repo, for organizational purposes. I'll explore sharing React components between the apps at some point.
 
 If you'd like to experiment with something similar, to spare yourself the rat's nest, just go straight to the official example: https://github.com/vercel/next.js/tree/canary/examples/with-zones
 
