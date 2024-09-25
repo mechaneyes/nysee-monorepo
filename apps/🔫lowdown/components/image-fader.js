@@ -4,9 +4,10 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const ImageFader = ({ images, interval = 3000 }) => {
+const ImageFader = ({ images, interval = 3500 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isForward, setIsForward] = useState(true);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const duration = (interval * 0.95) / 1000;
 
@@ -19,10 +20,21 @@ const ImageFader = ({ images, interval = 3000 }) => {
     return () => clearInterval(timer);
   }, [images, interval]);
 
+  useEffect(() => {
+    setIsImageLoaded(false);
+  }, []);
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  };
+
+  const backgroundColor = isImageLoaded ? '#753400' : 'white';
+
+
   return (
     <div
       className="aspect-video relative w-3/5 mx-auto"
-      style={{ backgroundColor: "#753400", width: "80%", maxWidth: "1200px", aspectRatio: "16 / 9" }}
+      style={{ backgroundColor, width: "80%", maxWidth: "1200px", aspectRatio: "16 / 9" }}
     >
       <AnimatePresence initial={false} custom={isForward}>
         <motion.div
@@ -55,6 +67,7 @@ const ImageFader = ({ images, interval = 3000 }) => {
             width={1476}
             height={830}
             className="object-cover w-full h-full"
+            onLoad={handleImageLoad}
           />
         </motion.div>
       </AnimatePresence>
