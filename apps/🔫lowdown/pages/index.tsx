@@ -31,7 +31,7 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Container>
       <Head>
-        <title>NYSee Radar</title>
+        <title>NYSee Lowdown</title>
         <meta property="og:title" content="NYSee Lowdown" key="title" />
         <meta property="og:url" content="https://nysee.nyc/lowdown" />
         <meta

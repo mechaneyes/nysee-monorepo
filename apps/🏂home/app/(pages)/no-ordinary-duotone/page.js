@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import Navigation from "@/components/nav";
+import Header from "@/components/header";
 
 export const metadata = {
   title: "No Ordinary Duotone | NYSee",
@@ -10,15 +9,15 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <div className="project project--duotone">
+      <Header />
+      <div className="project project--duotone bg-white">
         <div className="hero">
           <Image
-            src="/images/no-ordinary-duotone-001-1.1.0.jpg"
-            width={1920}
-            height={1458}
-            className="project__img"
-            alt="No Ordinary Duotone printed image"
+            src="/images/no-ordinary-duotone-1.0.0.jpg"
+            width={1080}
+            height={1080}
+            className="h-auto sm:mb-32"
+            alt="Design with abstract eye on checkerboard background"
           />
           <div className="hero__copy">
             <div className="hero__copy__title">
@@ -62,9 +61,7 @@ export default function Home() {
               <h4>Original</h4>
               <h5>2005.09.16</h5>
             </div>
-            <p>
-              As seen that night, the shot starting it all.
-            </p>
+            <p>As seen that night, the shot starting it all.</p>
           </div>
         </div>
         <div className="project__iteration">
@@ -80,7 +77,12 @@ export default function Home() {
               <h4>PSD for Print Up Top</h4>
             </div>
             <p>The PSD file used to produce the print up top.</p>
-            <p><span className="italics">Photoshop &gt; Image &gt; Mode &gt; Duotone</span> is your friend.</p>
+            <p>
+              <span className="italics">
+                Photoshop &gt; Image &gt; Mode &gt; Duotone
+              </span>{" "}
+              is your friend.
+            </p>
             {/* <p>
               In Photoshop, I use layer masks to approximate the color that the
               Risograph is going to produce. It&apos;s not at all accurate, but

@@ -35,6 +35,27 @@ const GalleryObjects = () => {
               plant
             </p>
           </div>
+          <Link href="/no-ordinary-duotone" className="">
+            <div className="pt-10">
+              <h2 className="text-3xl font-medium">
+              No Ordinary Duotone
+              </h2>
+              <h3 className="pt-4 text-2xl">https://nysee.nyc/no-ordinary-duotone</h3>
+              <p className="pt-4 text-xl">
+                No Ordinary Monkey v Risography
+              </p>
+            </div>
+          </Link>
+          <div className="flex flex-col items-center w-1/2 pt-8">
+            <Image
+              src="/images/no-ordinary-duotone-1.0.0.jpg"
+              width={1080}
+              height={1080}
+              className="h-auto sm:mb-24"
+              alt="Design with abstract eye on checkerboard background"
+            />
+          </div>
+
           <Link href="/riso-motion" className="">
             <div className="pt-10">
               <h2 className="text-3xl font-medium">
@@ -50,8 +71,7 @@ const GalleryObjects = () => {
               </p>
             </div>
           </Link>
-
-          <div className="image-fader flex flex-col items-center w-1/2 mt-4 mb-8 border-2">
+          <div className="image-fader flex flex-col items-center w-1/2 mt-4 mb-8 sm:mb-24 border-2">
             <ImageFader images={faderImages} interval={3000} />
           </div>
 
@@ -72,7 +92,7 @@ const GalleryObjects = () => {
               src="/images/galleries/objects-may-full-page.jpg"
               width={1080}
               height={1080}
-              className="h-auto sm:mb-32"
+              className="h-auto sm:mb-24"
               alt="Design with abstract eye on checkerboard background"
             />
           </div>
