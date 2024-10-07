@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+interface CarouselProps {
+  images: string[];
+}
+
 const slideVariants = {
   hiddenRight: {
     x: "100%",
@@ -16,19 +20,6 @@ const slideVariants = {
     transition: {
       duration: 1,
     },
-  },
-  //   exit: {
-  //     opacity: 0,
-  //     scale: 0.8,
-  //     transition: {
-  //       duration: 0.5,
-  //     },
-  //   },
-};
-
-const slidersVariants = {
-  hover: {
-    scale: 1.2,
   },
 };
 
@@ -47,26 +38,23 @@ const dotsVariants = {
   },
 };
 
-const Carousel = ({ images }) => {
+const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
+  const [direction, setDirection] = useState<"left" | "right">("right");
 
   const handleNext = () => {
     setDirection("right");
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrevious = () => {
     setDirection("left");
-
     setCurrentIndex((prevIndex) =>
       prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
-  const handleDotClick = (index) => {
+  const handleDotClick = (index: number) => {
     setDirection(index > currentIndex ? "right" : "left");
     setCurrentIndex(index);
   };
@@ -118,4 +106,5 @@ const Carousel = ({ images }) => {
     </div>
   );
 };
+
 export default Carousel;
