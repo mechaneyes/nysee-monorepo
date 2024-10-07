@@ -67,6 +67,19 @@
 }
 
 .about {
+  a {
+    color: #0088ff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #0088ff;
+      text-decoration: underline;
+      text-decoration-color: #0088ff;
+      text-decoration-thickness: 0.025rem;
+      transition: all 0.3s ease;
+    }
+  }
+
   blockquote {
     padding: 2rem 2rem 2.25rem;
     border: 1px solid #f3b451;
