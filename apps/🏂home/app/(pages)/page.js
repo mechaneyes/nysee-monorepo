@@ -1,29 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import RadarVideo from "../components/radar-video";
-import RadarSequence from "../components/radar-sequence";
 
 export default function Home() {
-  const [radarElement, setRadarElement] = useState(null);
-
-  useEffect(() => {
-    const isIOS =
-      /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    if (isIOS || isSafari) {
-      setRadarElement(<RadarSequence speed={0.9} />);
-    } else {
-      setRadarElement(<RadarVideo />);
-    }
-  }, []);
 
   return (
     <div className="homepage">
-      <div className="mb-20 md:mb-28 px-5">
+      <div className="mb-20 md:mb-28 px-5 z-20">
         <h1 className="mb-5 pt-7 px-0 md:px-3 text-6xl lg:text-6xl leading-tight">
           NYSee.nyc
         </h1>
@@ -54,13 +38,14 @@ export default function Home() {
         <div className="mb-4 px-0 md:px-3">
           <Link href="/lowdown/about" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">About</h3>
-            <h4 className="text-xl">WTF?!</h4>
+            <h4 className="text-xl">All 'bout this</h4>
           </Link>
         </div>
       </div>
+      <div className="homepage__gradient fixed w-screen h-screen bottom-0 z-10"></div>
       <Image
         className="fullscreen-image fullscreen-image--eruno"
-        src="/images/deepmind-eruno-1.0.0.jpg"
+        src="/images/atlanticTerminalRect.jpg"
         alt="NYSee.nyc"
         width={2880}
         height={1620}

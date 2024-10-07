@@ -4,6 +4,7 @@
   align-items: flex-start;
   justify-content: center;
   color: #143f9f;
+  color: #7ffff1;
 
   a {
     &:hover {
@@ -45,28 +46,12 @@
     }
   }
 
-  // h4 {
-  //   padding-bottom: 0.5rem;
-  //   color: #a8a8a8;
-  //   font-weight: 300;
-  // }
-
   &__header {
     padding-bottom: 2rem;
 
     h2 {
       padding: 0.5rem 0;
     }
-
-    // h3 {
-    //   color: black;
-    //   font-weight: 300;
-    // }
-
-    // h4 {
-    //   padding-bottom: 0.5rem;
-    //   color: black;
-    // }
 
     &__subheader {
       display: flex;
@@ -101,6 +86,20 @@
         }
       }
     }
+  }
+
+  &__gradient {
+    background: linear-gradient(
+      130deg,
+      rgba(7, 13, 26, 0.6),
+      rgba(11, 27, 47, 0.6),
+      rgba(13, 44, 70, 0.3),
+      rgba(18, 93, 108, 0.1),
+      rgba(16, 119, 146, 0),
+      rgba(13, 150, 165, 0),
+      rgba(9, 184, 180, 0),
+      rgba(4, 204, 177, 0)
+    );
   }
 
   .project {
@@ -181,62 +180,15 @@
     max-width: none;
     max-height: none;
     object-fit: none;
-    object-position: 57% 59%;
+    object-position: 58% 91%;
     transform: scaleX(-1);
     transform: scaleY(-1);
+    transform: none;
     z-index: -1;
 
     @include bp("medium") {
       object-fit: cover;
-      object-position: center;
       transform: none;
-    }
-  }
-
-  .video--radar-antenna {
-    position: fixed;
-    bottom: 4rem;
-    bottom: 0;
-    right: 5vw;
-    width: 61vw;
-    height: auto;
-
-    @include bp("small") {
-      right: 10vw;
-      width: 50vw;
-    }
-
-    @include bp("medium") {
-      right: 10vw;
-      width: 40vw;
-    }
-
-    @include bp("large") {
-      right: 12vw;
-      width: 34vw;
-    }
-
-    @include bp("xlarge") {
-      right: 12vw;
-      width: 27vw;
-    }
-  }
-
-  .project--radar-sequence {
-    position: fixed;
-    bottom: -3.5rem;
-    right: 8vw;
-    width: 60vw;
-    height: auto;
-
-    @include bp("small") {
-      bottom: -5rem;
-      right: 11vw;
-    }
-
-    @include bp("medium") {
-      right: 10vw;
-      width: 40vw;
     }
   }
 }
