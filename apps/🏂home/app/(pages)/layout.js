@@ -4,13 +4,13 @@ import "@/styles/styles.scss";
 
 export const metadata = {
   title: "NYSee | Ray Weitzenberg",
-  description: "Art + Technology + New York",
+  description: "Art + Technology + NYC",
   url: "https://nysee.nyc",
   openGraph: {
     url: "https://nysee.nyc",
     images: [
       {
-        url: "https://nysee.nyc/images/og-juli-kosolapova.jpg",
+        url: "https://nysee.nyc/images/og-nysee.png",
       },
     ],
   },
