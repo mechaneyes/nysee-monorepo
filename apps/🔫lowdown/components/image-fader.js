@@ -59,7 +59,7 @@ const ImageFader = ({ images, interval = 3500 }) => {
           transition={{
             opacity: { duration: duration },
           }}
-          className="absolute w-full h-full inset-0"
+          className="absolute top-0 w-full h-full inset-0"
         >
           <Image
             src={images[currentIndex]}
