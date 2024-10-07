@@ -38,7 +38,7 @@ export default function Home() {
         <div className="mb-4 px-0 md:px-3">
           <Link href="/lowdown/about" className="grid grid-rows-2 gap-0">
             <h3 className="text-2xl">About</h3>
-            <h4 className="text-xl">All 'bout this</h4>
+            <h4 className="text-xl">All &apos;bout this</h4>
           </Link>
         </div>
       </div>
