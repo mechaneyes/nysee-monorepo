@@ -24,11 +24,6 @@ export default function NavMenu() {
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="/werk" className="sm:pl-5 font-medium text-lg">
-            Werk
-          </a>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
           <a href="/ray-weitzenberg" className="pl-5 font-medium text-lg">
             Ray
           </a>
