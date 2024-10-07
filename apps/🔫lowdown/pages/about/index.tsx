@@ -32,12 +32,12 @@ export default function About() {
 
         <div className="about__max w-5/6 mx-auto px-5">
           <h1 className="text-3xl font-bold pt-10">About NYSee</h1>
-          <h3 className="pt-4 text-2xl italic">
+          <h3 className="pt-3 text-2xl italic">
             Raise the hair on your neck. Tune in to the city.
           </h3>
 
-          <h4 className="pt-6">NYSee Radar</h4>
-          <p className="pt-4 text-xl">
+          <h4 className="pt-6 text-2xl">NYSee Radar</h4>
+          <p className="pt-2 text-xl">
             I rabidly consume art, a large part of my time spent in galleries.
             For a long while now I've been compiling lists of shows worth seeing
             then sharing them with friends. The lives of these lists are often
@@ -50,7 +50,7 @@ export default function About() {
             bottled up.
           </p>
 
-          <h4 className="pt-6">NYSee Lowdown</h4>
+          <h4 className="pt-6 text-2xl">NYSee Lowdown</h4>
           <p className="pt-2 text-xl">
             NYSee Lowdown is currently a repository for loosely coupled
             information be it art, design, music, tech, nyc, etc. This is
