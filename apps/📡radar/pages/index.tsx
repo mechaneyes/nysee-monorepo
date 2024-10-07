@@ -40,18 +40,6 @@ export default function Index({ allPosts: { edges } }: IndexProps) {
               A hand picked selection art worth seeing in NYC
             </p>
 
-            {/* <p className="hero__social text-xl text-black w-fit md:w-3/5 mt-2 px-0 md:px-3">
-              Bluesky:{" "}
-              <a href="https://bsky.app/profile/nysee.bsky.social">
-                @nysee.bsky.social
-              </a>
-              <br />
-              Mastodon:{" "}
-              <a href="https://bsky.app/profile/nysee.bsky.social">
-                @nysee@hypermute.com
-              </a>
-            </p> */}
-
             <div className="w-fit md:w-3/5 mt-5 px-0 md:px-3 text-black">
               <a href="/" className="grid grid-rows-2 gap-0 mb-4">
                 <h3 className="text-2xl">NYSee</h3>
