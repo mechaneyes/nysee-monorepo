@@ -50,7 +50,6 @@ export default function Home() {
         width={2880}
         height={1620}
       />
-      {/* {radarElement} */}
     </div>
   );
 }

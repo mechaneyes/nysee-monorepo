@@ -7,8 +7,14 @@
   color: #7ffff1;
 
   a {
+    color: #7ffff1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
     &:hover {
-      text-decoration-color: #143f9f;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     &.link-colored {
