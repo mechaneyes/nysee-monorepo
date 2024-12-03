@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import hljs from "highlight.js";
+import hljs from "highlight.js/lib/core";
+// Import only the languages we need
+import javascript from "highlight.js/lib/languages/javascript";
+import typescript from "highlight.js/lib/languages/typescript";
+import python from "highlight.js/lib/languages/python";
+import json from "highlight.js/lib/languages/json";
+
 import styles from "./post-body.module.css";
 // import "highlight.js/styles/github-dark.css";
 // import "highlight.js/styles/agate.css";
@@ -30,9 +36,13 @@ export default function PostBody({ content }) {
         ref={(node) => {
           if (node) {
             // Demo various themes at https://highlightjs.org/demo
-            // 
+            //
             const codeBlocks = node.querySelectorAll("pre code");
             codeBlocks.forEach((block) => {
+              hljs.registerLanguage("javascript", javascript);
+              hljs.registerLanguage("typescript", typescript);
+              hljs.registerLanguage("python", python);
+              hljs.registerLanguage("json", json);
               hljs.highlightElement(block as HTMLElement);
 
               // custom theme classes
