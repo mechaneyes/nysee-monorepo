@@ -181,3 +181,15 @@ article {
     height: 100%;
   }
 }
+
+.post .gradient-nysee {
+  background-color: #652487;
+  background: linear-gradient(
+    160deg,
+    #001c2e,
+    #004d5b,
+    #005555,
+    #007766,
+    #199288
+  );
+}

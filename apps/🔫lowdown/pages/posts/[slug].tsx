@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
+
 import Container from "../../components/container";
 import HeroPost from "../../components/hero-post";
 import HeroSplit from "../../components/hero-split";
