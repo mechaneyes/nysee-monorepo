@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Launch NYSee",
+      "dependsOn": ["Terminal 1", "Terminal 2", "Terminal 3"],
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "Terminal 1",
+      "type": "shell",
+      "command": "cd ./apps/🏂home && yarn dev",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "terminals",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Terminal 2",
+      "type": "shell",
+      "command": "cd ./apps/📡radar && yarn dev",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "terminals",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Terminal 3",
+      "type": "shell",
+      "command": "cd ./apps/🔫lowdown && yarn dev",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "terminals",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
