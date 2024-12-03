@@ -57,6 +57,13 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      boxShadow: {
+        "nyshadow-10": "2px 4px 16px -6px rgba(0, 0, 0, 0.15)",
+        "nyshadow-20": "2px 4px 16px -6px rgba(0, 0, 0, 0.25)",
+        "nyshadow-30": "2px 4px 16px -6px rgba(0, 0, 0, 0.35)",
+        "nyshadow-40": "2px 4px 16px -6px rgba(0, 0, 0, 0.45)",
+        "nyshadow-50": "2px 4px 16px -6px rgba(0, 0, 0, 0.55)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
