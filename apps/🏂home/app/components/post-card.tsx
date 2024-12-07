@@ -34,19 +34,16 @@ export function PostCard({ post }: PostCardProps) {
       <p className="text-sm">{post.record.text}</p>
       {hasImages && (
         <div className="grid gap-2 grid-cols-2">
-          {post.record.embed.images.map((img, i) => {
-            console.log('Post author DID:', post.author.did)
-            console.log('Image data:', img.image)
-            return (
-              <div key={i} className="relative aspect-square">
-                <img
-                  src={`https://cdn.bsky.app/img/feed_thumbnail/plain/${post.author.did}/${img.image.ref.$link}@jpeg`}
-                  alt={img.alt || ''}
-                  className="object-cover rounded-lg w-full h-full"
-                />
-              </div>
-            )
-          })}
+          {post.record.embed.images.map((img, i) => (
+            <div key={i} className="relative aspect-square">
+              <Image
+                src={`https://cdn.bsky.app/img/feed_thumbnail/plain/${post.author.did}/${img.image.ref.$link}@jpeg`}
+                alt={img.alt || ''}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+          ))}
         </div>
       )}
       <div className="flex items-center gap-4 text-sm text-muted-foreground">
