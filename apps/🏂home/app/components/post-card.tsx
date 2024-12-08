@@ -27,7 +27,7 @@ export function PostCard({ post }: PostCardProps) {
           <div className="text-xl font-light text-white">{post.author.displayName || post.author.handle}</div>
           <div className="text-sm font-light text-white">@{post.author.handle}</div>
         </div>
-        <div className="ml-auto text-sm text-rose-200">
+        <div className="ml-auto text-sm text-namjunepaik-3-dark/90">
           {formatDistanceToNow(createdAt, { addSuffix: true })}
         </div>
       </div>
@@ -42,14 +42,14 @@ export function PostCard({ post }: PostCardProps) {
                 width={0}
                 height={0}
                 sizes="(max-width: 768px) 100vw, 42rem"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto pb-5 rounded-lg"
                 unoptimized
               />
             </div>
           ))}
         </div>
       )}
-      <div className="flex items-center gap-4 text-sm font-light text-rose-200">
+      <div className="flex items-center gap-4 text-sm font-light text-namjunepaik-3">
         <Link
           href={`https://bsky.app/profile/${post.author.handle}/post/${post.uri.split('/').pop()}`}
           target="_blank"

@@ -9,8 +9,8 @@ export default async function Page() {
   return (
     <main className="min-h-screen p-4 md:p-8 max-w-2xl mx-auto space-y-6">
       <header className="text-center mb-8">
-        <h1 className="text-5xl text-rose-100/95 mb-2 font-[cholla-unicase]">Bluesky via @nysee.nyc</h1>
-        <p className="text-xl font-light text-rose-100/90">Posts from ray@nysee.nyc</p>
+        <h1 className="text-5xl text-namjunepaik-3 mb-2 font-[cholla-unicase]">@nysee.nyc on Bluesky</h1>
+        <p className="text-xl font-light text-namjunepaik-5-light">Posts from ray@nysee.nyc</p>
       </header>
       <div className="space-y-6">
         {posts.map((post) => (
