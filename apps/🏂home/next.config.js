@@ -1,7 +1,33 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['cdn.bsky.app'],
+    domains: ["cdn.bsky.app"],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        has: [
+          {
+            type: "host",
+            value: "relay.nysee.nyc",
+          },
+        ],
+        destination: "https://nysee.nyc/relay",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "relay.nysee.nyc",
+          },
+        ],
+        destination: "https://nysee.nyc/relay/:path*",
+        permanent: true,
+      },
+    ];
   },
   async rewrites() {
     return [
@@ -20,14 +46,6 @@ const nextConfig = {
       {
         source: "/radar/:path+",
         destination: `${process.env.RADAR_DOMAIN}/radar/:path*`,
-      },
-      {
-        source: "/relay",
-        destination: `${process.env.RELAY_DOMAIN}/relay`,
-      },
-      {
-        source: "/relay/:path+",
-        destination: `${process.env.RELAY_DOMAIN}/relay/:path*`,
       },
     ];
   },
