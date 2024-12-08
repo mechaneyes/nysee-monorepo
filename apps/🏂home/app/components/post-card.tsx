@@ -12,7 +12,7 @@ export function PostCard({ post }: PostCardProps) {
   const createdAt = new Date(post.record.createdAt)
 
   return (
-    <div className="border rounded-lg border-rose-300/90 p-4 space-y-4 shadow-md shadow-rose-900/90">
+    <div className="border rounded-lg bg-namjunepaik-1-dark/30 border-namjunepaik-3-light p-4 space-y-4 shadow-shifted-md shadow-namjunepaik-4-dark/40 hover:shadow-namjunepaik-3-light">
       <div className="flex items-center gap-3">
         {post.author.avatar && (
           <Image

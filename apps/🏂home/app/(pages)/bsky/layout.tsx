@@ -15,5 +15,5 @@ export const metadata = {
     "Ray Weitzenberg, photographer, artist, technologist, new yorker, photography, design, risography, riso, NYSee, NYC, Sacto, Sacramento, ",
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="bg-rose-700/95 min-h-screen">{children}</div>;
+  return <div className="bg-namjunepaik-1-light min-h-screen">{children}</div>;
 }
