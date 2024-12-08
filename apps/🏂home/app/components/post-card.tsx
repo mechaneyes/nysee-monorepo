@@ -12,7 +12,7 @@ export function PostCard({ post }: PostCardProps) {
   const createdAt = new Date(post.record.createdAt)
 
   return (
-    <div className="border rounded-lg p-4 space-y-4">
+    <div className="border rounded-lg border-rose-300/90 p-4 space-y-4">
       <div className="flex items-center gap-3">
         {post.author.avatar && (
           <Image
@@ -24,14 +24,14 @@ export function PostCard({ post }: PostCardProps) {
           />
         )}
         <div>
-          <div className="font-semibold">{post.author.displayName || post.author.handle}</div>
-          <div className="text-sm text-muted-foreground">@{post.author.handle}</div>
+          <div className="text-xl font-light text-white">{post.author.displayName || post.author.handle}</div>
+          <div className="text-sm font-light text-white">@{post.author.handle}</div>
         </div>
-        <div className="ml-auto text-sm text-muted-foreground">
+        <div className="ml-auto text-sm text-rose-200">
           {formatDistanceToNow(createdAt, { addSuffix: true })}
         </div>
       </div>
-      <p className="text-sm">{post.record.text}</p>
+      <p className="text-base font-light text-white">{post.record.text}</p>
       {hasImages && (
         <div className="grid gap-4">
           {post.record.embed.images.map((img, i) => (
@@ -49,7 +49,7 @@ export function PostCard({ post }: PostCardProps) {
           ))}
         </div>
       )}
-      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+      <div className="flex items-center gap-4 text-sm font-light text-rose-200">
         <Link
           href={`https://bsky.app/profile/${post.author.handle}/post/${post.uri.split('/').pop()}`}
           target="_blank"
