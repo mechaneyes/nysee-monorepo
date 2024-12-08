@@ -42,7 +42,7 @@ export function PostCard({ post }: PostCardProps) {
                 width={0}
                 height={0}
                 sizes="(max-width: 768px) 100vw, 42rem"
-                className="w-full h-auto pb-5 rounded-lg"
+                className="w-full h-auto mb-5 rounded-lg"
                 unoptimized
               />
             </div>
