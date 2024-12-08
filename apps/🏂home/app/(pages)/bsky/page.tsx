@@ -12,7 +12,7 @@ export default async function Page() {
         <h1 className="text-5xl text-rose-100/90 mb-2 font-[cholla-unicase]">Bluesky Feed</h1>
         <p className="text-rose-100/90">Posts from ray@nysee.nyc</p>
       </header>
-      <div className="space-y-4">
+      <div className="space-y-6">
         {posts.map((post) => (
           <PostCard key={post.cid} post={post} />
         ))}
