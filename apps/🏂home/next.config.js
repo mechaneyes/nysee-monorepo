@@ -21,6 +21,14 @@ const nextConfig = {
         source: "/radar/:path+",
         destination: `${process.env.RADAR_DOMAIN}/radar/:path*`,
       },
+      {
+        source: "/relay",
+        destination: `${process.env.RELAY_DOMAIN}/relay`,
+      },
+      {
+        source: "/relay/:path+",
+        destination: `${process.env.RELAY_DOMAIN}/relay/:path*`,
+      },
     ];
   },
 };
