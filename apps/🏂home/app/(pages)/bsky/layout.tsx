@@ -1,3 +1,19 @@
+export const metadata = {
+  title: "🔗 NYSee Links",
+  description: "A link blog via @nysee.nyc",
+  url: "https://nysee.nyc/bsky",
+  openGraph: {
+    url: "https://nysee.nyc/bsky",
+    images: [
+      {
+        url: "https://nysee.nyc/images/og-link-blog.png",
+      },
+    ],
+  },
+  robots: "index, follow",
+  keywords:
+    "Ray Weitzenberg, photographer, artist, technologist, new yorker, photography, design, risography, riso, NYSee, NYC, Sacto, Sacramento, ",
+};
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="bg-rose-700/95 min-h-screen">{children}</div>
-} 
+  return <div className="bg-rose-700/95 min-h-screen">{children}</div>;
+}
