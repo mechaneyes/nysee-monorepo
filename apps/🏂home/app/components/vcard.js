@@ -1,15 +1,13 @@
 const SaveVCard = () => {
   return (
     <a
-      className="save-vcard"
+      className="save-vcard my-6"
       href="rayWeitzenberg.vcf"
       type="text/vcard"
       download="rayWeitzenberg.vcf"
     >
-      {" "}
       <div>
-        <p>Save to</p>
-        <p>Contacts</p>
+        <p>Save to Contacts</p>
       </div>
       <div className="save-vcard__icon">
         <div className="save-vcard__icon">
@@ -20,11 +18,11 @@ const SaveVCard = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             style={{
-              border: "1px solid white",
+              border: "1px solid #374793",
               borderRadius: "50%",
               paddingTop: "4px",
               paddingLeft: "8px",
-              backgroundColor: "rgba(0, 0, 0, 0.35)",
+              backgroundColor: "#374793",
             }}
           >
             <g id="Icon" clipPath="url(#clip0_1_124)">

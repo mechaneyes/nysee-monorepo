@@ -31,8 +31,8 @@ export default function Ray() {
               </div>
               <div className="main-container">
                 {/* // ————————————————————————————————————o————————————————————————————————————o contact section -->
-                  // ————————————————————————————————————o contact section —>
-              //  */}
+                    // ————————————————————————————————————o contact section —>
+                    //  */}
                 <section className="section section--title">
                   <div className="title">
                     <Image
@@ -77,8 +77,8 @@ export default function Ray() {
                 </section>
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o connect section -->
-                  // ————————————————————————————————————o connect section —>
-              //  */}
+                    // ————————————————————————————————————o connect section —>
+                    //  */}
                 <section className="section section--connect">
                   <div className="section-header">
                     <img
@@ -87,6 +87,7 @@ export default function Ray() {
                     />
                     <h2>Connect</h2>
                   </div>
+                  <SaveVCard />
                   <ul>
                     <li>
                       <h4>Name</h4>
@@ -117,13 +118,11 @@ export default function Ray() {
                       <p>Art+Tech</p>
                     </li>
                   </ul>
-
-                  <SaveVCard />
                 </section>
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o summary -->
-                  // ————————————————————————————————————o summary —>
-              //  */}
+                    // ————————————————————————————————————o summary —>
+                    //  */}
                 <section className="section">
                   <div className="section-header">
                     <img
@@ -140,8 +139,8 @@ export default function Ray() {
                 </section>
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o location -->
-                  // ————————————————————————————————————o location —>
-              //  */}
+                    // ————————————————————————————————————o location —>
+                    //  */}
                 <section className="section section--location">
                   <div className="section-header">
                     <img
@@ -188,10 +187,7 @@ export default function Ray() {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://vis.social/@mechaneyes"
-                        target="_blank"
-                      >
+                      <a href="https://vis.social/@mechaneyes" target="_blank">
                         Mastodon
                       </a>
                     </li>
@@ -212,7 +208,7 @@ export default function Ray() {
                 </section>
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o gallery -->
-                  // ————————————————————————————————————o gallery —>
+                    // ————————————————————————————————————o gallery —>
               //  */}
                 <section className="section section--gallery">
                   <Image
