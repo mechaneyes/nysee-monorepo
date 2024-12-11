@@ -22,7 +22,7 @@ const SaveVCard = () => {
               borderRadius: "50%",
               paddingTop: "4px",
               paddingLeft: "8px",
-              backgroundColor: "#374793",
+              // backgroundColor: "#374793",
             }}
           >
             <g id="Icon" clipPath="url(#clip0_1_124)">

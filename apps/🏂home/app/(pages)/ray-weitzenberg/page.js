@@ -113,10 +113,10 @@ export default function Ray() {
                       <h4>Company</h4>
                       <p>Mechaneyes</p>
                     </li>
-                    <li>
+                    {/* <li>
                       <h4>Department</h4>
                       <p>Art+Tech</p>
-                    </li>
+                    </li> */}
                   </ul>
                 </section>
 

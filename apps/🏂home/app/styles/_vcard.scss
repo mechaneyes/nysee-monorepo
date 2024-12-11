@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "cholla-sans", sans-serif;
+  font-family: "cholla-wide", sans-serif;
   font-size: 1.375rem;
   color: #374793;
   font-weight: 300;
@@ -81,7 +81,7 @@
   h2 {
     font-family: "cholla-wide", sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   h3 {
@@ -161,7 +161,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 1rem;
-    border-radius: 4px;
+    border-radius: 12px;
     background-color: #fff;
     border: 1px solid rgba(136, 136, 138, 0.1);
     box-shadow: 0px 0px 3px rgba(136, 136, 138, 0.23);
@@ -195,8 +195,9 @@
 
       img {
         width: 100%;
-        padding-bottom: 1.125rem;
+        margin-bottom: 1.125rem;
         border: 0;
+        border-radius: 12px;
       }
     }
 
@@ -206,6 +207,7 @@
         text-decoration: underline;
         text-decoration-thickness: 0.05em;
         text-underline-offset: 0.15em;
+        text-decoration: none;
 
         &:hover {
           color: #374893;
@@ -319,12 +321,16 @@
   @keyframes colorChange {
     0% {
       fill: white;
+      background-color: #374793;
     }
     50% {
-      fill: #1afe7c;
+      // fill: #1afe7c;
+      fill: #374793;
+      background-color: white;
     }
     100% {
       fill: white;
+      background-color: #374793;
     }
   }
 
@@ -373,8 +379,13 @@
       border-radius: 50%;
     }
 
+    svg {
+      background-color: #374793;
+      animation: colorChange 4s infinite;
+    }
+
     &__svg {
-      animation: colorChange 3s infinite;
+      // animation: colorChange 3s infinite;
     }
   }
 }
