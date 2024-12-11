@@ -93,16 +93,20 @@ export default function Ray() {
                       <p>Ray Weitzenberg</p>
                     </li>
                     <li>
-                      <h4>Mobile</h4>
-                      <p>718.682.2628</p>
-                    </li>
-                    <li>
                       <h4>Email</h4>
                       <p>
                         <a href="mailto:ray@nysee.nyc" target="_blank">
                           ray@nysee.nyc
                         </a>
                       </p>
+                    </li>
+                    <li>
+                      <h4>Signal</h4>
+                      <p>geist.404</p>
+                    </li>
+                    <li>
+                      <h4>Mobile</h4>
+                      <p>718.682.2628</p>
                     </li>
                     <li>
                       <h4>Company</h4>
@@ -177,7 +181,7 @@ export default function Ray() {
                     </li>
                     <li>
                       <a
-                        href="https://bsky.app/profile/mechaneyes.bsky.social"
+                        href="https://bsky.app/profile/nysee.nyc"
                         target="_blank"
                       >
                         Bluesky
@@ -185,7 +189,7 @@ export default function Ray() {
                     </li>
                     <li>
                       <a
-                        href="https://hypermute.com/@mechaneyes"
+                        href="https://vis.social/@mechaneyes"
                         target="_blank"
                       >
                         Mastodon

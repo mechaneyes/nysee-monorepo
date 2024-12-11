@@ -12,7 +12,7 @@ export function PostCard({ post }: PostCardProps) {
   const createdAt = new Date(post.record.createdAt)
 
   return (
-    <div className="border rounded-lg bg-namjunepaik-1-dark/30 border-namjunepaik-3-light p-4 space-y-4 shadow-shifted-md shadow-namjunepaik-4-dark/40 hover:shadow-namjunepaik-3-light">
+    <div className="border rounded-xl bg-namjunepaik-1-dark/30 border-namjunepaik-3-light p-4 space-y-4 shadow-shifted-md shadow-namjunepaik-4-dark/40 transition-shadow duration-300 ease-in-out [&:has(a:hover)]:shadow-namjunepaik-3-light">
       <div className="flex items-center gap-3">
         {post.author.avatar && (
           <Image
@@ -49,12 +49,11 @@ export function PostCard({ post }: PostCardProps) {
           ))}
         </div>
       )}
-      <div className="flex items-center gap-4 text-sm font-light text-namjunepaik-3">
+      <div className="text-sm font-light text-namjunepaik-3 mt-5">
         <Link
           href={`https://bsky.app/profile/${post.author.handle}/post/${post.uri.split('/').pop()}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
         >
           View on Bluesky
         </Link>
