@@ -94,7 +94,9 @@ export const getStaticProps: GetStaticProps = async ({
   preview = false,
   previewData,
 }) => {
-  const data = await getPostAndMorePosts(params?.slug, preview, previewData);
+  const originalSlug = params?.slug?.toString().replace(/-revision-v1$/, '');
+  
+  const data = await getPostAndMorePosts(originalSlug, preview, previewData);
 
   return {
     props: {

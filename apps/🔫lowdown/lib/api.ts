@@ -6,7 +6,14 @@ async function fetchAPI(query = "", { variables }: Record<string, any> = {}) {
   if (process.env.WORDPRESS_AUTH_REFRESH_TOKEN) {
     headers["Authorization"] =
       `Bearer ${process.env.WORDPRESS_AUTH_REFRESH_TOKEN}`;
+    console.log("Auth token is set");
+  } else {
+    console.log("No auth token found");
   }
+
+  console.log("API URL:", API_URL);
+  console.log("Query:", query);
+  console.log("Variables:", variables);
 
   // WPGraphQL Plugin must be enabled
   const res = await fetch(API_URL, {
@@ -20,7 +27,7 @@ async function fetchAPI(query = "", { variables }: Record<string, any> = {}) {
 
   const json = await res.json();
   if (json.errors) {
-    console.error(json.errors);
+    console.error("GraphQL Errors:", json.errors);
     throw new Error("Failed to fetch API");
   }
   return json.data;
@@ -34,13 +41,47 @@ export async function getPreviewPost(id, idType = "DATABASE_ID") {
         databaseId
         slug
         status
+        title
+        content
+        isRevision
+        isPreview
+        preview {
+          node {
+            databaseId
+            slug
+            status
+            content
+            title
+          }
+        }
+        revisions(first: 1) {
+          edges {
+            node {
+              databaseId
+              slug
+              status
+              content
+              title
+            }
+          }
+        }
       }
     }`,
     {
       variables: { id, idType },
-    },
+    }
   );
-  return data.post;
+
+  // If we have preview data, return that
+  if (data?.post?.preview?.node) {
+    return data.post.preview.node;
+  }
+  // If we have revision data, return that
+  if (data?.post?.revisions?.edges?.[0]?.node) {
+    return data.post.revisions.edges[0].node;
+  }
+  // Otherwise return the post itself
+  return data?.post;
 }
 
 export async function getAllPostsWithSlug() {
@@ -105,10 +146,11 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   // The slug may be the id of an unpublished post
   const isId = Number.isInteger(Number(slug));
   const isSamePost = isId
-    ? Number(slug) === postPreview.id
-    : slug === postPreview.slug;
+    ? Number(slug) === postPreview?.id
+    : slug === postPreview?.slug;
   const isDraft = isSamePost && postPreview?.status === "draft";
-  const isRevision = isSamePost && postPreview?.status === "publish";
+  const isRevision = isSamePost && postPreview?.status === "inherit";
+
   const data = await fetchAPI(
     `
     fragment AuthorFields on User {
@@ -153,10 +195,6 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
       post(id: $id, idType: $idType) {
         ...PostFields
         content
-        ${
-          // Only some of the fields of a revision are considered as there are some inconsistencies
-          isRevision
-            ? `
         revisions(first: 1, where: { orderby: { field: MODIFIED, order: DESC } }) {
           edges {
             node {
@@ -171,9 +209,6 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
             }
           }
         }
-        `
-            : ""
-        }
       }
       posts(first: 3, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
@@ -186,10 +221,10 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   `,
     {
       variables: {
-        id: isDraft ? postPreview.id : slug,
-        idType: isDraft ? "DATABASE_ID" : "SLUG",
+        id: isDraft || isRevision ? postPreview.id : slug,
+        idType: isDraft || isRevision ? "DATABASE_ID" : "SLUG",
       },
-    },
+    }
   );
 
   // Draft posts may not have an slug

@@ -7,8 +7,9 @@ export default async function preview(
 ) {
   const { secret, id, slug } = req.query;
 
+  console.log("Preview request:", { secret, id, slug });
+
   // Check the secret and next parameters
-  // This secret should only be known by this API route
   if (
     !process.env.WORDPRESS_PREVIEW_SECRET ||
     secret !== process.env.WORDPRESS_PREVIEW_SECRET ||
@@ -17,25 +18,36 @@ export default async function preview(
     return res.status(401).json({ message: "Invalid token" });
   }
 
-  // Fetch WordPress to check if the provided `id` or `slug` exists
-  const post = await getPreviewPost(id || slug, id ? "DATABASE_ID" : "SLUG");
+  try {
+    // Fetch WordPress to check if the provided `id` or `slug` exists
+    const post = await getPreviewPost(id || slug, id ? "DATABASE_ID" : "SLUG");
+    console.log("Preview post data:", post);
 
-  // If the post doesn't exist prevent preview mode from being enabled
-  if (!post) {
-    return res.status(401).json({ message: "Post not found" });
+    // If the post doesn't exist prevent preview mode from being enabled
+    if (!post) {
+      return res.status(401).json({ message: "Post not found" });
+    }
+
+    // Enable Preview Mode by setting the cookies
+    const previewData = {
+      post: {
+        id: post.databaseId,
+        slug: post.slug,
+        status: post.status,
+      },
+    };
+    console.log("Setting preview data:", previewData);
+
+    res.setPreviewData(previewData);
+
+    // Redirect to the path from the fetched post
+    const redirectPath = `/lowdown/posts/${post.databaseId}`;
+    console.log("Redirecting to:", redirectPath);
+
+    res.writeHead(307, { Location: redirectPath });
+    res.end();
+  } catch (error) {
+    console.error("Preview error:", error);
+    return res.status(500).json({ message: error.message });
   }
-
-  // Enable Preview Mode by setting the cookies
-  res.setPreviewData({
-    post: {
-      id: post.databaseId,
-      slug: post.slug,
-      status: post.status,
-    },
-  });
-
-  // Redirect to the path from the fetched post
-  // We don't redirect to `req.query.slug` as that might lead to open redirect vulnerabilities
-  res.writeHead(307, { Location: `/posts/${post.slug || post.databaseId}` });
-  res.end();
 }
