@@ -15,6 +15,10 @@ header {
     display: flex;
     justify-content: flex-end;
     z-index: 1;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .NavigationMenuTrigger {
@@ -79,6 +83,10 @@ header {
     font-family: mobley-serif, serif;
     font-size: 2rem;
     line-height: 1;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -106,6 +114,10 @@ header {
     display: flex;
     justify-content: flex-end;
     z-index: 1;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .NavigationMenuItem {

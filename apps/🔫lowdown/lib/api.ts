@@ -210,7 +210,7 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
           }
         }
       }
-      posts(first: 3, where: { orderby: { field: DATE, order: DESC } }) {
+      posts(first: 30, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
           node {
             ...PostFields
@@ -240,7 +240,7 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   // Filter out the main post
   data.posts.edges = data.posts.edges.filter(({ node }) => node.slug !== slug);
   // If there are still 3 posts, remove the last one
-  if (data.posts.edges.length > 2) data.posts.edges.pop();
+  // if (data.posts.edges.length > 2) data.posts.edges.pop();
 
   return data;
 }

@@ -14,9 +14,9 @@ import SectionSeparator from "../../components/section-separator";
 import Layout from "../../components/layout";
 import PostTitle from "../../components/post-title";
 import Tags from "../../components/tags";
-import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
+import { getAllPostsForHome, getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 
-export default function Post({ post, posts, preview }) {
+export default function Post({ post, posts, preview, allPosts }) {
   const router = useRouter();
   const morePosts = posts?.edges;
 
@@ -97,9 +97,11 @@ export const getStaticProps: GetStaticProps = async ({
   const originalSlug = params?.slug?.toString().replace(/-revision-v1$/, '');
   
   const data = await getPostAndMorePosts(originalSlug, preview, previewData);
+  const allPosts = await getAllPostsForHome(preview);
 
   return {
     props: {
+      allPosts,
       preview,
       post: data.post,
       posts: data.posts,

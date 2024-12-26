@@ -4,6 +4,7 @@
 
 ```
 http://localhost:3030/lowdown/api/preview?secret=WORDPRESS_PREVIEW_SECRET&id=185
+https://nysee.nyc/lowdown/api/preview?secret=WORDPRESS_PREVIEW_SECRET&id=185
 ```
 
 
