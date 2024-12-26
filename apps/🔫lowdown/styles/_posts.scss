@@ -75,6 +75,12 @@
 }
 
 .hero {
+  h2 {
+    @include fit;
+    font-variation-settings: "wdth" 400;
+    font-size: 5rem;
+    line-height: 1;
+  }
   &--split {
     position: relative;
     display: grid;

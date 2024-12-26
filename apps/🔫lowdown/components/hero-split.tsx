@@ -21,7 +21,7 @@ export default function HeroSplit({
       <main className="hero hero--split">
         <div className="hero__copy">
           <div className="hero__copy__inner">
-            <h2 className="pb-2 text-4xl text-gray-900">
+            <h2 className="p-0 text-4xl text-gray-900">
               <Link href={`/posts/${slug}`} className="hover:underline">
                 {title}
               </Link>
