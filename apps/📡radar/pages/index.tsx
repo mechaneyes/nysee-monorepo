@@ -28,6 +28,10 @@ export default function Index({ allPosts: { edges } }: IndexProps) {
           property="og:image"
           content="https://nysee.nyc/images/og-radar.jpg"
         />
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👁️</text></svg>"
+        />
       </Head>
       <section className="hero hero--home hero--radar-animation overflow-hidden">
         <div className="mb-20 md:mb-28 px-5">
