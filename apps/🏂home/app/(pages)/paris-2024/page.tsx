@@ -1,5 +1,5 @@
 import { getPhotosWithExif } from "@/utils/exif";
-import PhotoMapGallery from "@/components/photo-map-gallery";
+// import PhotoMapGallery from "@/components/photo-map-gallery";
 import path from "path";
 
 export default async function Paris2024() {
@@ -8,7 +8,7 @@ export default async function Paris2024() {
 
   return (
     <main>
-      <PhotoMapGallery initialPhotos={photos} />
+      {/* <PhotoMapGallery initialPhotos={photos} /> */}
     </main>
   );
 }
