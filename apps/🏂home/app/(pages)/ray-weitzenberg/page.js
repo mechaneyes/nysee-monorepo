@@ -103,7 +103,9 @@ export default function Ray() {
                     </li>
                     <li>
                       <h4>Signal</h4>
-                      <p>geist.404</p>
+                      <p>
+                        <a href="https://signal.me/#u/geist.404">geist.404</a>
+                      </p>
                     </li>
                     <li>
                       <h4>Mobile</h4>
@@ -138,9 +140,42 @@ export default function Ray() {
                   </p>
                 </section>
 
+                {/* // ————————————————————————————————————o————————————————————————————————————o links -->
+                  // ————————————————————————————————————o links —>
+              //  */}
+                <section className="section section--links">
+                  <div className="section-header">
+                    <img
+                      alt="Links icon: globe icon"
+                      src="images/webLinks.svg"
+                    />
+                    <h2>Digital Footprints</h2>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="https://nysee.nyc/" target="_blank">
+                        NYSee.nyc
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://mechaneyes.com/" target="_blank">
+                        Mechaneyes
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://bsky.app/profile/nysee.nyc"
+                        target="_blank"
+                      >
+                        Bluesky
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+
                 {/* // ————————————————————————————————————o————————————————————————————————————o location -->
-                    // ————————————————————————————————————o location —>
-                    //  */}
+    // ————————————————————————————————————o location —>
+    //  */}
                 <section className="section section--location">
                   <div className="section-header">
                     <img
@@ -159,52 +194,6 @@ export default function Ray() {
                       Show on Map
                     </a>
                   </div>
-                </section>
-
-                {/* // ————————————————————————————————————o————————————————————————————————————o links -->
-                  // ————————————————————————————————————o links —>
-              //  */}
-                <section className="section section--links">
-                  <div className="section-header">
-                    <img
-                      alt="Links icon: globe icon"
-                      src="images/webLinks.svg"
-                    />
-                    <h2>Digital Footprints</h2>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="https://mechaneyes.com/" target="_blank">
-                        Mechaneyes
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://bsky.app/profile/nysee.nyc"
-                        target="_blank"
-                      >
-                        Bluesky
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://vis.social/@mechaneyes" target="_blank">
-                        Mastodon
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/mechaneyes" target="_blank">
-                        GitHub
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/mechaneyes"
-                        target="_blank"
-                      >
-                        InstaFuckZuck
-                      </a>
-                    </li>
-                  </ul>
                 </section>
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o gallery -->

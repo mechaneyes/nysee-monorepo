@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="black" />
+
+    <!-- ASCII Art Grid -->
+    <g id="ascii-grid">
+        <!-- Sample pattern using rectangles for blocks -->
+        <g fill="white">
+            <!-- First row sample -->
+            <rect x="0" y="0" width="10" height="10" />
+            <rect x="10" y="0" width="10" height="10" />
+            <rect x="20" y="0" width="10" height="10" />
+            <!-- Adding some dots for variety -->
+            <circle cx="45" cy="5" r="2" />
+            <circle cx="75" cy="5" r="2" />
+        </g>
+    </g>
+</svg>

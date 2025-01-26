@@ -9,14 +9,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "fira-mono": "'Fira Mono'",
+        "input-mono": "'Input Mono'",
+        "jetbrains-mono": "'JetBrains Mono'",
+        "source-code-vf": ["source-code-variable", "sans-serif"]
+      },
       boxShadow: {
-        'shifted-sm': '2px 1px 2px rgb(0 0 0 / 0.05)',
-        'shifted': '2px 1px 3px rgb(0 0 0 / 0.1), 2px 1px 2px rgb(0 0 0 / 0.06)',
-        'shifted-md': '2px 4px 6px -1px rgb(0 0 0 / 0.1), 2px 2px 4px -1px rgb(0 0 0 / 0.06)',
-        'shifted-lg': '2px 10px 15px -3px rgb(0 0 0 / 0.1), 2px 4px 6px -2px rgb(0 0 0 / 0.05)',
-        'shifted-xl': '2px 20px 25px -5px rgb(0 0 0 / 0.1), 2px 10px 10px -5px rgb(0 0 0 / 0.04)',
-        'shifted-2xl': '2px 25px 50px -12px rgb(0 0 0 / 0.25)',
-        'shifted-inner': 'inset 2px 2px 4px rgb(0 0 0 / 0.05)',
+        "shifted-sm": "2px 1px 2px rgb(0 0 0 / 0.05)",
+        shifted: "2px 1px 3px rgb(0 0 0 / 0.1), 2px 1px 2px rgb(0 0 0 / 0.06)",
+        "shifted-md":
+          "2px 4px 6px -1px rgb(0 0 0 / 0.1), 2px 2px 4px -1px rgb(0 0 0 / 0.06)",
+        "shifted-lg":
+          "2px 10px 15px -3px rgb(0 0 0 / 0.1), 2px 4px 6px -2px rgb(0 0 0 / 0.05)",
+        "shifted-xl":
+          "2px 20px 25px -5px rgb(0 0 0 / 0.1), 2px 10px 10px -5px rgb(0 0 0 / 0.04)",
+        "shifted-2xl": "2px 25px 50px -12px rgb(0 0 0 / 0.25)",
+        "shifted-inner": "inset 2px 2px 4px rgb(0 0 0 / 0.05)",
       },
       borderRadius: {
         lg: "var(--radius)",

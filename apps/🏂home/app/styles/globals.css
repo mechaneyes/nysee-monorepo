@@ -1,4 +1,7 @@
 @import url('https://use.typekit.net/xgi8mni.css');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Input+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
