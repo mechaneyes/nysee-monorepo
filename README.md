@@ -2,25 +2,25 @@
 
 ![No Ordinary Dancer](https://nysee.nyc/lowdown/_next/image?url=https://wordpress-1313045-4791931.cloudwaysapps.com/wp-content/uploads/2024/08/no-ordinary-dancer-1.0.0-1920px72dpi50q.jpg&w=1920&q=75)
 
-NYSee.nyc has become my home for the latest creative projects I'm working on.
+NYSee.nyc has become a playground for creative projects I'm exploring.
 
-This is setup via a monorepo so it can host distinct projects, allowing others to have access for collaboration.
+This is setup via a monorepo so it can host distinct projects, allowing others to have as-needed access for collaboration.
 
 <br>
 
-# Sites
+# Under the Umbrella
 
 ## NYSee
 
-This is currently a simple Next.js app leveraging the App router. After posting several projects it quickly started resembling a blog. After a few weeks of manually building posts, I thought the domain would be better served with a proper blog. That's become the NYSee Lowdown, briefly outlined below.
+This is a basic Next.js app. After several projects went up, it quickly started resembling a blog. And after a few weeks of manually building posts, I thought the domain would be better served with a proper blog. That's become the NYSee Lowdown.
 
-The top level app is a bit directionless atm. That will change. What I wanted is to have a site that I can customize very intentionally. While I'm definitely not looking to build a marketing type site, I'd like to customize it in various ways at various times. So a blog it isn't. That's where the Lowdown comes in.
+The top level app is constantly in flux. It's something I can customize intentionally. Here today ....
 
 ## NYSee Lowdown
 
-One of the apps within this monorepo is this first blog for NYSee. That's right ... at the moment there's one, there will be more for projects already in development.
+Within the nysee monorepo is this first wp blog, the NYSee Lowdown.
 
-The WordPress blogs are setup using [Cloudways](https://unified.cloudways.com/) which should take some of the hassle out of doing any of the sysadmin work I was more open to handling in the past. I'm trading a few 💸 in an attempt to hold onto what hair I've got left.
+The WordPress blogs are setup using [Cloudways](https://unified.cloudways.com/) which takes some of the hassle out of doing any of the sysadmin work I was more open to handling in the past. I'm all for finicky, but choosing my battles.
 
 ## NYSee Radar
 
@@ -38,21 +38,42 @@ I leveraged the [Multi-Zone Next.js Applications](https://github.com/vercel/next
 
 ### Waaat??
 
-The root address is: https://nysee.nyc/
+The root address is: https://nysee.nyc/. It's a simple Next.js app with a couple pages within.
 
-That is a simple Next.js app that has a couple pages setup with the App router.
-
-Within that, or at least revealed by a specific path, is a Next.js headless WordPress app's UI living at https://nysee.nyc/lowdown. Then another Next.js headless WordPress app at https://nysee.nyc/radar.
+Inside it, or at least revealed by a specific path, is a Next.js headless WordPress app's UI living at https://nysee.nyc/lowdown. Then another at https://nysee.nyc/radar.
 
 Fancy.
 
-The bubblegum holding the whole thing together happens within the `next.config.js` and `vercel.json` files within each app. The three apps live in a single repo, for organizational purposes. I'll explore sharing React components between the apps at some point.
+The bubblegum holding the whole thing together happens within the `next.config.js` and `vercel.json` files each holds. The three apps live in that monorepo.
 
-If you'd like to experiment with something similar, to spare yourself the rat's nest, just go straight to the official example: https://github.com/vercel/next.js/tree/canary/examples/with-zones
+If you'd like to experiment with something similar: <br>
+https://github.com/vercel/next.js/tree/canary/examples/with-zones
 
 <br><br>
 
-# Mechaneyes Notes
+
+
+
+# Soundtrack
+
+###  Karnak On Acid @ The Lot Radio 12-13-2024 
+https://soundcloud.com/thelotradio/karnak-on-acid-the-lot-radio-12-13-2024
+
+
+### Ben Sims Presents: Run It Red · 24.03.24
+https://www.nts.live/shows/ben-sims/episodes/ben-sims-24th-march-2024
+
+
+### DISCWOMAN 40 x Octo Octa (Polyglamorous Year 3)
+https://soundcloud.com/discwoman/discwoman-40-x-octo-octa-polyglamorous-year-3
+
+
+
+
+
+<br><br>
+
+# Notes to self
 
 #### Saturday, 07 Sep 2024 16.13.56 PM EDT
 
