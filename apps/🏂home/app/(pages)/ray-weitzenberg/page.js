@@ -49,27 +49,41 @@ export default function Ray() {
                   <div className="connect-icons">
                     <div className="connect-icons__item">
                       <a href="tel:+17186822628">
-                        <img alt="phone icon" src="images/phone.svg" />
+                        <Image
+                          alt="phone icon"
+                          src="/images/phone.svg"
+                          width={24}
+                          height={24}
+                        />
                       </a>
                     </div>
                     <div className="connect-icons__item">
                       <a href="sms:+17186822628">
-                        <img alt="sms icon: text bubble" src="images/sms.svg" />
+                        <Image
+                          alt="sms icon: text bubble"
+                          src="/images/sms.svg"
+                          width={24}
+                          height={24}
+                        />
                       </a>
                     </div>
                     <div className="connect-icons__item">
                       <a href="mailto:ray@nysee.nyc">
-                        <img
+                        <Image
                           alt="email icon: envelope image"
-                          src="images/mail.svg"
+                          src="/images/mail.svg"
+                          width={24}
+                          height={24}
                         />
                       </a>
                     </div>
                     <div className="connect-icons__item">
                       <a href="https://www.google.com/maps/search/394+Myrtle+Ave%2C+%2399">
-                        <img
+                        <Image
                           alt="location icon: map pin"
-                          src="images/location.svg"
+                          src="/images/location.svg"
+                          width={24}
+                          height={24}
                         />
                       </a>
                     </div>
@@ -81,9 +95,11 @@ export default function Ray() {
                     //  */}
                 <section className="section section--connect">
                   <div className="section-header">
-                    <img
+                    <Image
                       alt="Connect icon: phone handset"
-                      src="images/contact.svg"
+                      src="/images/contact.svg"
+                      width={24}
+                      height={24}
                     />
                     <h2>Connect</h2>
                   </div>
@@ -127,9 +143,11 @@ export default function Ray() {
                     //  */}
                 <section className="section">
                   <div className="section-header">
-                    <img
+                    <Image
                       alt="Précis icon: speech bubble with 'i' inside"
-                      src="images/summary.svg"
+                      src="/images/summary.svg"
+                      width={24}
+                      height={24}
                     />
                     <h2>Précis</h2>
                   </div>
@@ -145,9 +163,11 @@ export default function Ray() {
               //  */}
                 <section className="section section--links">
                   <div className="section-header">
-                    <img
+                    <Image
                       alt="Links icon: globe icon"
-                      src="images/webLinks.svg"
+                      src="/images/webLinks.svg"
+                      width={24}
+                      height={24}
                     />
                     <h2>Digital Footprints</h2>
                   </div>
@@ -178,10 +198,12 @@ export default function Ray() {
     //  */}
                 <section className="section section--location">
                   <div className="section-header">
-                    <img
+                    <Image
                       className="location-icon"
                       alt="location icon: map pin"
-                      src="images/location.svg"
+                      src="/images/location.svg"
+                      width={24}
+                      height={24}
                     />
                     <h2>IRL</h2>
                   </div>
