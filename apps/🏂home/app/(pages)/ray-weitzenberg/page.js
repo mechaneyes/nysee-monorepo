@@ -137,7 +137,9 @@ export default function Ray() {
                     </li>
                     <li>
                       <h4>Mobile</h4>
-                      <p>718.682.2628</p>
+                      <p>
+                        <a href="tel:+17186822628">718.682.2628</a>
+                      </p>
                     </li>
                     {/* <li>
                       <h4>Department</h4>
