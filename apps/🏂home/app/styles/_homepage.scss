@@ -97,15 +97,19 @@
   &__gradient {
     background: linear-gradient(
       130deg,
-      rgba(7, 13, 26, 0.6),
-      rgba(11, 27, 47, 0.6),
-      rgba(13, 44, 70, 0.3),
-      rgba(18, 93, 108, 0.1),
-      rgba(16, 119, 146, 0),
+      rgba(3, 32, 38, 0.4),
+      rgba(3, 32, 38, 0.4),
+      rgba(3, 32, 38, 0.7),
+      rgba(3, 32, 38, 0.6),
+      rgba(3, 32, 38, 0.3),
       rgba(13, 150, 165, 0),
       rgba(9, 184, 180, 0),
       rgba(4, 204, 177, 0)
     );
+
+    @include bp("small") {
+      background: none;
+    }
   }
 
   .project {
