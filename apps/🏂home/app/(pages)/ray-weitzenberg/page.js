@@ -110,10 +110,22 @@ export default function Ray() {
                       <p>Ray Weitzenberg</p>
                     </li>
                     <li>
+                      <h4>Company</h4>
+                      <p>Mechaneyes</p>
+                    </li>
+                    <li>
                       <h4>Email</h4>
                       <p>
                         <a href="mailto:ray@nysee.nyc" target="_blank">
                           ray@nysee.nyc
+                        </a>
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Email</h4>
+                      <p>
+                        <a href="mailto:ray@mechaneyes.com" target="_blank">
+                          ray@mechaneyes.com
                         </a>
                       </p>
                     </li>
@@ -126,10 +138,6 @@ export default function Ray() {
                     <li>
                       <h4>Mobile</h4>
                       <p>718.682.2628</p>
-                    </li>
-                    <li>
-                      <h4>Company</h4>
-                      <p>Mechaneyes</p>
                     </li>
                     {/* <li>
                       <h4>Department</h4>
@@ -173,29 +181,41 @@ export default function Ray() {
                   </div>
                   <ul>
                     <li>
+                      <h4>Hella</h4>
                       <a href="https://nysee.nyc/" target="_blank">
                         NYSee.nyc
                       </a>
                     </li>
                     <li>
+                      <h4>Archive</h4>
                       <a href="https://mechaneyes.com/" target="_blank">
                         Mechaneyes
                       </a>
                     </li>
                     <li>
+                      <h4>Bluesky</h4>
                       <a
                         href="https://bsky.app/profile/nysee.nyc"
                         target="_blank"
                       >
-                        Bluesky
+                        @nysee.nyc
+                      </a>
+                    </li>
+                    <li>
+                      <h4>Bluesky</h4>
+                      <a
+                        href="https://bsky.app/profile/techno.cat"
+                        target="_blank"
+                      >
+                        @techno.cat
                       </a>
                     </li>
                   </ul>
                 </section>
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o location -->
-    // ————————————————————————————————————o location —>
-    //  */}
+                    // ————————————————————————————————————o location —>
+                    //  */}
                 <section className="section section--location">
                   <div className="section-header">
                     <Image
@@ -220,7 +240,7 @@ export default function Ray() {
 
                 {/* // ————————————————————————————————————o————————————————————————————————————o gallery -->
                     // ————————————————————————————————————o gallery —>
-              //  */}
+                    //  */}
                 <section className="section section--gallery">
                   <Image
                     alt="mechaneyes logo"
@@ -234,6 +254,23 @@ export default function Ray() {
                     height={300}
                     quality={100}
                   />
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="rounded-lg mb-5"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                  >
+                    <source
+                      src="/images/dekalb-station-glitch.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                   <Image
                     alt="untitled"
                     src="/images/untitled.jpg"
