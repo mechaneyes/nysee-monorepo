@@ -26,6 +26,10 @@ export const metadata = {
     "Ray Weitzenberg, photographer, artist, technologist, new yorker, NYSee, NYC, Sacto, Sacramento, ",
 };
 
+export const viewport = {
+  themeColor: "#374793",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
