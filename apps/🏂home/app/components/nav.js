@@ -2,7 +2,7 @@ const Navigation = () => {
   return (
     <nav className="w-full">
       <ul>
-        <li><a href="/">https://nysee.nyc</a></li>
+        <li><a href="https://nysee.nyc">https://nysee.nyc</a></li>
         {/* <li>&middot;</li>
         <li><a href="/lowdown">Lowdown</a></li>
         <li>&middot;</li>
