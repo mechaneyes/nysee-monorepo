@@ -319,6 +319,23 @@ export default function Ray() {
                     height={300}
                     quality={100}
                   />
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="rounded-lg mb-5"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                  >
+                    <source
+                      src="/images/portable-soho.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                   <Image
                     alt="distorted image with river wrapping around person in canoe"
                     src="/images/americanRiverVortex.jpg"
