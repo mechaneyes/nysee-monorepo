@@ -30,9 +30,10 @@ const Act = () => {
           </p>
         </div>
       </header>
+
       <div className="w-full max-w-[1200px] mx-auto pt-8">
         <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
-          <div className="text-3xl text-namjunepaik-3 font-[cholla-unicase]">
+          <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
             Dead Dinner
           </div>
           <p className="pt-1 leading-relaxed">
@@ -47,7 +48,7 @@ const Act = () => {
             introduces them to the app.
           </p>
         </div>
-        <div className="w-full grid grid-cols-4 justify-start gap-4 pt-4">
+        <div className="w-full grid grid-cols-4 justify-start gap-4 pt-8">
           <Image
             src="/images/act/dd-mob-1.png"
             alt="Dead Dinner"
@@ -73,7 +74,7 @@ const Act = () => {
             height={1062}
           />
         </div>
-        <div className="w-full pt-4">
+        <div className="w-full pt-8">
           <Image
             src="/images/act/dd-1.png"
             alt="Dead Dinner"
@@ -88,6 +89,40 @@ const Act = () => {
           />
           <Image
             src="/images/act/dd-3.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+        </div>
+      </div>
+
+      <div className="w-full max-w-[1200px] mx-auto pt-24">
+        <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+          <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
+            Thirdeyes
+          </div>
+          <p className="pt-1 leading-relaxed">
+            Thirdeyes aids music journalists in writing artist bios. Leveraging
+            multiple LLMs writers can step through and develop the core elements
+            of a bio. Assiting the writers, information is contextually
+            generated as they interact with the app.
+          </p>
+        </div>
+        <div className="w-full pt-4">
+          <Image
+            src="/images/act/thirdeyes-1.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+          <Image
+            src="/images/act/thirdeyes-2.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+          <Image
+            src="/images/act/thirdeyes-3.png"
             alt="Dead Dinner"
             width={1200}
             height={743}
