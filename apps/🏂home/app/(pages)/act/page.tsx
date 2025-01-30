@@ -20,7 +20,7 @@ const Act = () => {
             recent projects.
           </p>
           <p>
-            I'm happy to discuss any of these in more detail:{" "}
+            I&apos;m happy to discuss any of these in more detail:{" "}
             <a
               href="https://nysee.nyc/ray-weitzenberg"
               className="text-namjunepaik-3-light"
@@ -38,7 +38,7 @@ const Act = () => {
           </div>
           <p className="pt-1 leading-relaxed">
             Dead Dinner focuses on creating an engaging, interactive exploration
-            of important historical figures' lives through an interactive
+            of important historical figures&apos; lives through an interactive
             timeline with integrated narrative elements and a contextual
             conversation interface. The first subject is Malcolm X. The project
             is very young and currently under active development.
@@ -100,6 +100,74 @@ const Act = () => {
         <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
           <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
             Thirdeyes
+          </div>
+          <p className="pt-1 leading-relaxed">
+            Thirdeyes aids music journalists in writing artist bios. Leveraging
+            multiple LLMs writers can step through and develop the core elements
+            of a bio. Assiting the writers, information is contextually
+            generated as they interact with the app.
+          </p>
+        </div>
+        <div className="w-full pt-4">
+          <Image
+            src="/images/act/thirdeyes-1.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+          <Image
+            src="/images/act/thirdeyes-2.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+          <Image
+            src="/images/act/thirdeyes-3.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+        </div>
+      </div>
+
+      <div className="w-full max-w-[1200px] mx-auto pt-24">
+        <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+          <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
+            NYSee
+          </div>
+          <p className="pt-1 leading-relaxed">
+            Thirdeyes aids music journalists in writing artist bios. Leveraging
+            multiple LLMs writers can step through and develop the core elements
+            of a bio. Assiting the writers, information is contextually
+            generated as they interact with the app.
+          </p>
+        </div>
+        <div className="w-full pt-4">
+          <Image
+            src="/images/act/thirdeyes-1.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+          <Image
+            src="/images/act/thirdeyes-2.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+          <Image
+            src="/images/act/thirdeyes-3.png"
+            alt="Dead Dinner"
+            width={1200}
+            height={743}
+          />
+        </div>
+      </div>
+
+      <div className="w-full max-w-[1200px] mx-auto pt-24">
+        <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+          <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
+            Mechaneyes
           </div>
           <p className="pt-1 leading-relaxed">
             Thirdeyes aids music journalists in writing artist bios. Leveraging
