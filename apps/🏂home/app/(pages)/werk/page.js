@@ -251,7 +251,7 @@ const Werk = () => {
           </div>
           <div className="w-full pt-4">
             <Image
-              src="/images/act/mechaneyes-1-1920vh.jpg"
+              src="/images/act/mechaneyes-1.jpg"
               alt="Dead Dinner"
               width={1920}
               height={1080}
