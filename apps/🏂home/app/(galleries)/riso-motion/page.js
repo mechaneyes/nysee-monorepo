@@ -27,20 +27,6 @@ export const metadata = {
   },
 };
 
-export const faderImages = [
-  "/images/galleries/riso-one/riso-one_001.jpg",
-  "/images/galleries/riso-one/riso-one_002.jpg",
-  "/images/galleries/riso-one/riso-one_003.jpg",
-  "/images/galleries/riso-one/riso-one_004.jpg",
-  "/images/galleries/riso-one/riso-one_005.jpg",
-  "/images/galleries/riso-one/riso-one_006.jpg",
-  "/images/galleries/riso-one/riso-one_007.jpg",
-  "/images/galleries/riso-one/riso-one_008.jpg",
-  "/images/galleries/riso-one/riso-one_009.jpg",
-  "/images/galleries/riso-one/riso-one_010.jpg",
-  "/images/galleries/riso-one/riso-one_011.jpg",
-];
-
 export default async function GalleryObjects() {
   const imageFater = await getCodeString(
     "app/(galleries)/riso-motion/image-fader.js"
@@ -48,6 +34,20 @@ export default async function GalleryObjects() {
   const p5sketch = await getCodeString(
     "app/(galleries)/riso-motion/p5sketch.js"
   );
+
+  const faderImages = [
+    "/images/galleries/riso-one/riso-one_001.jpg",
+    "/images/galleries/riso-one/riso-one_002.jpg",
+    "/images/galleries/riso-one/riso-one_003.jpg",
+    "/images/galleries/riso-one/riso-one_004.jpg",
+    "/images/galleries/riso-one/riso-one_005.jpg",
+    "/images/galleries/riso-one/riso-one_006.jpg",
+    "/images/galleries/riso-one/riso-one_007.jpg",
+    "/images/galleries/riso-one/riso-one_008.jpg",
+    "/images/galleries/riso-one/riso-one_009.jpg",
+    "/images/galleries/riso-one/riso-one_010.jpg",
+    "/images/galleries/riso-one/riso-one_011.jpg",
+  ];
 
   return (
     <>
