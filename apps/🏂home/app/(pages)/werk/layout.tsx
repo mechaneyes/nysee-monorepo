@@ -1,12 +1,12 @@
 export const metadata = {
-  title: "Werk | NYSee",
+  title: "Werk | Ray Weitzenberg | NYSee",
   description: "'Always be Creating' —Glengarray Glen Ross",
   url: "https://nysee.nyc/werk",
   openGraph: {
     url: "https://nysee.nyc/werk",
     images: [
       {
-        url: "https://nysee.nyc/images/og-no-ordinary-duotone-000.jpg",
+        url: "https://nysee.nyc/images/og-werk.jpg",
       },
     ],
   },
