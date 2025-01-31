@@ -8,7 +8,7 @@ const Werk = () => {
       <div className="bg-slate-900/90">
         <Header />
       </div>
-      <main className="min-h-screen p-4 md:p-8 md:pt-12 mx-auto space-y-6">
+      <main className="min-h-screen p-4 md:p-8 md:pt-12 mx-auto pb-12 lg:pb-24 space-y-6">
         <header className="w-full max-w-[1200px] mx-auto">
           <h1 className="text-5xl text-namjunepaik-3 font-[cholla-unicase]">
             Ray Weitzenberg
@@ -17,7 +17,7 @@ const Werk = () => {
             Artist + Technologist + NYC
           </h2>
 
-          <div className="w-2/3 pt-2 text-xl font-light text-namjunepaik-5">
+          <div className="w-full lg:w-2/3 pt-2 text-xl font-light text-namjunepaik-5">
             <p className="leading-relaxed">
               Below are screenshots and very brief descriptions of some of my
               recent projects. I&apos;m happy to discuss any of these in more
@@ -33,7 +33,7 @@ const Werk = () => {
         </header>
 
         <div className="w-full max-w-[1200px] mx-auto pt-8">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4-light">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Scopus Ex Machina
             </div>
@@ -88,8 +88,8 @@ const Werk = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto pt-24">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4">
+        <div className="w-full max-w-[1200px] mx-auto pt-12 lg:pt-24">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Dead Dinner
             </div>
@@ -98,14 +98,16 @@ const Werk = () => {
               exploration of important historical figures&apos; lives through an
               interactive timeline with integrated narrative elements and a
               contextual conversation interface. The first subject is Malcolm X.
+            </p>
+            <p className="pt-1 leading-relaxed">
               The project is very young and currently under active development.
             </p>
             <p className="pt-1 leading-relaxed">
-              These screenshots show the narrator who greets the user and
-              introduces them to the experience.
+              Below is the onboarding experience with the narrator who greets
+              the user and introduces them to the app.
             </p>
           </div>
-          <div className="w-full grid grid-cols-4 justify-start gap-4 pt-8">
+          <div className="w-full grid grid-cols-2 md:grid-cols-4 justify-start gap-4 pt-8">
             <Image
               src="/images/act/dd-mob-1.png"
               alt="Dead Dinner"
@@ -153,8 +155,8 @@ const Werk = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto pt-24">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+        <div className="w-full max-w-[1200px] mx-auto pt-12 lg:pt-24">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4-light">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Thirdeyes
             </div>
@@ -189,8 +191,8 @@ const Werk = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto pt-24">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+        <div className="w-full max-w-[1200px] mx-auto pt-12 lg:pt-24">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4-light">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               NYSee
             </div>
@@ -233,14 +235,14 @@ const Werk = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto pt-24">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+        <div className="w-full max-w-[1200px] mx-auto pt-12 lg:pt-24">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4-light">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               mechaneyes.com
             </div>
             <p className="pt-2 leading-relaxed">
-              A portfolio site collecting the array of work I&apos;ve done
-              over the years. <br />
+              A portfolio site collecting the array of work I&apos;ve done over
+              the years. <br />
               <Link
                 href="https://mechaneyes.com"
                 className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
@@ -263,7 +265,7 @@ const Werk = () => {
               width={1280}
               height={712}
               quality={100}
-              className="pt-14"
+              className="pt-8 lg:pt-14"
             />
             <Image
               src="/images/act/mechaneyes-3.jpg"
@@ -271,7 +273,7 @@ const Werk = () => {
               width={1280}
               height={712}
               quality={100}
-              className="pt-14"
+              className="pt-8 lg:pt-14"
             />
             <Image
               src="/images/act/mechaneyes-4.jpg"
@@ -279,13 +281,13 @@ const Werk = () => {
               width={1280}
               height={712}
               quality={100}
-              className="pt-14"
+              className="pt-8 lg:pt-14"
             />
           </div>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto pt-24">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+        <div className="w-full max-w-[1200px] mx-auto pt-12 lg:pt-24">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4-light">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Riso: No Ordinary Duotone
             </div>
@@ -304,14 +306,14 @@ const Werk = () => {
               src="/images/no-ordinary-duotone-1.0.0.jpg"
               width={1920}
               height={1435}
-              className="w-4/5 h-auto sm:mb-32"
+              className="w-full lg:w-4/5 h-auto"
               alt="Design with abstract eye on checkerboard background"
             />
           </div>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto pt-24">
-          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+        <div className="w-full max-w-[1200px] mx-auto pt-12 lg:pt-24">
+          <div className="w-full lg:w-2/3 text-xl font-light text-namjunepaik-4-light">
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Objects May Appear
             </div>
@@ -325,15 +327,13 @@ const Werk = () => {
               First photo gallery on NYSee.
             </p>
           </div>
-          <div className="w-1/2 pt-4">
-            <Image
-              src="/images/galleries/objects-may-full-page.jpg"
-              width={1024}
-              height={2199}
-              className="h-auto"
-              alt="Design with abstract eye on checkerboard background"
-            />
-          </div>
+          <Image
+            src="/images/galleries/objects-may-full-page.jpg"
+            width={1024}
+            height={2199}
+            className="w-auto h-full max-h-[90vh]"
+            alt="Design with abstract eye on checkerboard background"
+          />
         </div>
       </main>
     </>
