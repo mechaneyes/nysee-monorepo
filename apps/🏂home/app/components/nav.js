@@ -1,6 +1,6 @@
 const Navigation = () => {
   return (
-    <nav className="w-full max-w-[390px]">
+    <nav className="w-full">
       <ul>
         <li><a href="https://nysee.nyc">https://nysee.nyc</a></li>
         {/* <li>&middot;</li>

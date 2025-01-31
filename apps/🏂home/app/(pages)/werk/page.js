@@ -14,7 +14,7 @@ const Werk = () => {
             Ray Weitzenberg
           </h1>
           <h2 className="pt-2 text-4xl text-namjunepaik-5 font-[cholla-unicase]">
-            Artist + Technologist + NYC
+            Artist + Technologist + New Yorker
           </h2>
 
           <div className="w-full lg:w-2/3 pt-2 text-xl font-light text-namjunepaik-5">

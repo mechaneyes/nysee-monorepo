@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import SaveVCard from "@/components/vcard";
-import Navigation from "@/components/nav";
 
 import "@/styles/styles.scss";
 
@@ -10,8 +9,14 @@ export default function Ray() {
   return (
     <>
       <div className="ray">
-        <Navigation />
-        <div className="vcard">
+        <nav className="w-full max-w-[750px]">
+          <ul>
+            <li>
+              <a href="/">https://nysee.nyc</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="vcard w-full">
           <div className="vcard__outer">
             <div className="vcard__inner">
               <div className="hero">
@@ -332,10 +337,7 @@ export default function Ray() {
                       height: "auto",
                     }}
                   >
-                    <source
-                      src="/images/portable-soho.mp4"
-                      type="video/mp4"
-                    />
+                    <source src="/images/portable-soho.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <Image

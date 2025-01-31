@@ -34,9 +34,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
       </Head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-[#374793] md:bg-black`}>
         {children}
         <Analytics />
       </body>
