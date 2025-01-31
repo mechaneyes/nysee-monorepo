@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, easeInOut } from "framer-motion";
 
 interface CarouselProps {
   images: string[];
@@ -18,7 +18,8 @@ const slideVariants = {
     x: "0",
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.6,
+      ease: [0.32, 0.72, 0, 1],
     },
   },
 };
