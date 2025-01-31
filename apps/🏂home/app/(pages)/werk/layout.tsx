@@ -6,7 +6,7 @@ export const metadata = {
     url: "https://nysee.nyc/werk",
     images: [
       {
-        url: "https://nysee.nyc/images/og-werk.jpg",
+        url: "https://nysee.nyc/images/og-nysee.png",
       },
     ],
   },
