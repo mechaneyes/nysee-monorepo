@@ -1,105 +1,244 @@
 import Image from "next/image";
-import Link from "next/link";
 import Header from "@/components/header";
-import ImageFader from "@/(galleries)/riso-motion/image-fader";
-import { faderImages } from "@/(galleries)/riso-motion/page";
 
-export const metadata = {
-  title: "Werk | NYSee",
-  description: "'Always be Creating' —Glengarray Glen Ross",
-  url: "https://nysee.nyc/werk",
-  openGraph: {
-    url: "https://nysee.nyc/werk",
-    images: [
-      {
-        url: "https://nysee.nyc/images/og-no-ordinary-duotone-000.jpg",
-      },
-    ],
-  },
-  robots: "index, follow",
-  keywords:
-    "Ray Weitzenberg, photographer, artist, technologist, new yorker, photography, design, risography, riso, NYSee, NYC, Sacto, Sacramento, ",
-};
-
-const GalleryObjects = () => {
+const Werk = () => {
   return (
     <>
-      <Header />
-      <div className="gallery gallery--objects bg-white sm:px-6">
-        <div className="gallery__inner w-full sm:w-5/6 md:w-full max-w-screen-md mx-auto px-4">
-          <div className="hero mb-8 pt-8 sm:pt-16">
-            <h1 className="text-4xl font-medium">Werk</h1>
-            <p className="pt-4 text-xl">[vɛrk] n &lt;Werk(e)s; Werke&gt;</p>
-            <p className="pt-4 text-xl">
-              &lt;= Betrieb, Fabrik&gt; works sing or pl &lt;Brit&gt;, factory,
-              plant
+      <div className="bg-slate-900/90">
+        <Header />
+      </div>
+      <main className="min-h-screen p-4 md:p-8 mx-auto space-y-6">
+        <header className="w-full max-w-[1200px] mx-auto">
+          <h1 className="text-5xl text-namjunepaik-3 font-[cholla-unicase]">
+            Ray Weitzenberg
+          </h1>
+          <h2 className="text-3xl text-namjunepaik-5 font-[cholla-unicase]">
+            Artist + Technologist + NYC
+          </h2>
+
+          <div className="w-2/3 pt-2 text-xl font-light text-namjunepaik-5">
+            <p className="leading-relaxed">
+              Below are screenshots and very brief descriptions of some of my
+              recent projects. I&apos;m happy to discuss any of these in more
+              detail:{" "}
+              <a
+                href="https://nysee.nyc/ray-weitzenberg"
+                className="text-namjunepaik-3"
+              >
+                nysee.nyc/ray-weitzenberg
+              </a>
             </p>
           </div>
-          <Link href="/no-ordinary-duotone" className="">
-            <div className="pt-10">
-              <h2 className="text-3xl font-medium">
-              No Ordinary Duotone
-              </h2>
-              <h3 className="pt-4 text-2xl">https://nysee.nyc/no-ordinary-duotone</h3>
-              <p className="pt-4 text-xl">
-                No Ordinary Monkey v Risography
-              </p>
+        </header>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-8">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+              Scopus Ex Machina
             </div>
-          </Link>
-          <div className="flex flex-col items-center w-1/2 pt-8">
+            <p className="pt-1 leading-relaxed">
+              Scopus Ex Machina is a project that I worked on at RisoLAB. It is
+              focused on interrogating the surveillance proliferating in our
+              society. Part of the project has involved the construction of a
+              facial recognition system running in my apt window.
+            </p>
+            <p className="pt-1 leading-relaxed">
+              <a
+                href="/lowdown/scopus-presentation"
+                className="text-namjunepaik-3"
+              >
+                This is the project presentation
+              </a>{" "}
+              that I gave to the Zines and Small Publishing class at RisoLAB.
+            </p>
+          </div>
+          <div className="w-full pt-4">
             <Image
-              src="/images/no-ordinary-duotone-1.0.0.jpg"
-              width={1080}
-              height={1080}
-              className="h-auto sm:mb-24"
-              alt="Design with abstract eye on checkerboard background"
+              src="/images/act/scopus-ex-machina.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
             />
-          </div>
-
-          <Link href="/riso-motion" className="">
-            <div className="pt-10">
-              <h2 className="text-3xl font-medium">
-                RisoLAB + p5.js + Framer Motion
-              </h2>
-              <h4 className="pt-1 text-1xl text-gray-500 italic">
-                Thursday, 05 Sep 2024 14.44.53 PM EDT
-              </h4>
-              <h3 className="pt-4 text-2xl">https://nysee.nyc/riso-motion</h3>
-              <p className="pt-4 text-xl">
-                Explorations into the worlds of Risography, p5.js, and Framer
-                Motion.
-              </p>
-            </div>
-          </Link>
-          <div className="image-fader flex flex-col items-center w-1/2 mt-4 mb-8 sm:mb-24 border-2">
-            <ImageFader images={faderImages} interval={3000} />
-          </div>
-
-          <Link href="/objects" className="">
-            <div className="pt-10">
-              <h2 className="text-3xl font-medium">Objects May Appear</h2>
-              <h4 className="pt-1 text-1xl text-gray-500 italic">
-                Tuesday, 03 Sep 2024 14.48.14 PM EDT
-              </h4>
-              <h3 className="pt-4 text-2xl">https://nysee.nyc/objects</h3>
-              <p className="pt-4 text-xl">
-                Laid out the first gallery today. Beware appearing objects.
-              </p>
-            </div>
-          </Link>
-          <div className="flex flex-col items-center w-1/2 pt-8">
             <Image
-              src="/images/galleries/objects-may-full-page.jpg"
-              width={1080}
-              height={1080}
-              className="h-auto sm:mb-24"
-              alt="Design with abstract eye on checkerboard background"
+              src="/images/act/scopus-2.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/scopus-3.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/scopus-4.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/scopus-5.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
             />
           </div>
         </div>
-      </div>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-24">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4">
+            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+              Dead Dinner
+            </div>
+            <p className="pt-1 leading-relaxed">
+              Dead Dinner focuses on creating an engaging, interactive
+              exploration of important historical figures&apos; lives through an
+              interactive timeline with integrated narrative elements and a
+              contextual conversation interface. The first subject is Malcolm X.
+              The project is very young and currently under active development.
+            </p>
+            <p className="pt-1 leading-relaxed">
+              These screenshots show the narrator who greets the user and
+              introduces them to the app.
+            </p>
+          </div>
+          <div className="w-full grid grid-cols-4 justify-start gap-4 pt-8">
+            <Image
+              src="/images/act/dd-mob-1.png"
+              alt="Dead Dinner"
+              width={535}
+              height={1062}
+            />
+            <Image
+              src="/images/act/dd-mob-2.png"
+              alt="Dead Dinner"
+              width={535}
+              height={1062}
+            />
+            <Image
+              src="/images/act/dd-mob-3.png"
+              alt="Dead Dinner"
+              width={535}
+              height={1062}
+            />
+            <Image
+              src="/images/act/dd-mob-4.png"
+              alt="Dead Dinner"
+              width={535}
+              height={1062}
+            />
+          </div>
+          <div className="w-full pt-8">
+            <Image
+              src="/images/act/dd-1.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/dd-2.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/dd-3.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-24">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+              Thirdeyes
+            </div>
+            <p className="pt-1 leading-relaxed">
+              Thirdeyes assists music journalists in writing artist bios.
+              Powered behind the scenes by an orchestration of multiple LLMs,
+              writers can step through and develop the core elements of a bio.
+              Further assiting the writers, information is contextually
+              generated as they interact with the app.
+            </p>
+          </div>
+          <div className="w-full pt-4">
+            <Image
+              src="/images/act/thirdeyes-1.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/thirdeyes-2.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/thirdeyes-3.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-24">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+              NYSee
+            </div>
+            <p className="pt-1 leading-relaxed">
+              Thirdeyes aids music journalists in writing artist bios.
+              Leveraging multiple LLMs writers can step through and develop the
+              core elements of a bio. Assiting the writers, information is
+              contextually generated as they interact with the app.
+            </p>
+            <p className="pt-1 leading-relaxed">
+              <a href="https://nysee.nyc" className="text-namjunepaik-3">
+                https://nysee.nyc/
+              </a>
+            </p>
+          </div>
+          <div className="w-full pt-4">
+            <Image
+              src="/images/act/nysee-nyc.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/nysee-radar.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/nysee-radar-scroll.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/nysee-radar-the-americans.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+            <Image
+              src="/images/act/nysee-lowdown.png"
+              alt="Dead Dinner"
+              width={1200}
+              height={743}
+            />
+          </div>
+        </div>
+      </main>
     </>
   );
 };
 
-export default GalleryObjects;
+export default Werk;
