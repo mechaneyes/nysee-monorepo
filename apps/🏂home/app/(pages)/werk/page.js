@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/header";
 
 const Werk = () => {
@@ -7,12 +8,12 @@ const Werk = () => {
       <div className="bg-slate-900/90">
         <Header />
       </div>
-      <main className="min-h-screen p-4 md:p-8 mx-auto space-y-6">
+      <main className="min-h-screen p-4 md:p-8 md:pt-12 mx-auto space-y-6">
         <header className="w-full max-w-[1200px] mx-auto">
           <h1 className="text-5xl text-namjunepaik-3 font-[cholla-unicase]">
             Ray Weitzenberg
           </h1>
-          <h2 className="text-3xl text-namjunepaik-5 font-[cholla-unicase]">
+          <h2 className="pt-2 text-4xl text-namjunepaik-5 font-[cholla-unicase]">
             Artist + Technologist + NYC
           </h2>
 
@@ -21,34 +22,35 @@ const Werk = () => {
               Below are screenshots and very brief descriptions of some of my
               recent projects. I&apos;m happy to discuss any of these in more
               detail:{" "}
-              <a
+              <Link
                 href="https://nysee.nyc/ray-weitzenberg"
-                className="text-namjunepaik-3"
+                className="text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
               >
                 nysee.nyc/ray-weitzenberg
-              </a>
+              </Link>
             </p>
           </div>
         </header>
 
         <div className="w-full max-w-[1200px] mx-auto pt-8">
           <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
-            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Scopus Ex Machina
             </div>
-            <p className="pt-1 leading-relaxed">
+            <p className="pt-2 leading-relaxed">
               Scopus Ex Machina is a project that I worked on at RisoLAB. It is
               focused on interrogating the surveillance proliferating in our
               society. Part of the project has involved the construction of a
               facial recognition system running in my apt window.
             </p>
             <p className="pt-1 leading-relaxed">
-              <a
+              This is{" "}
+              <Link
                 href="/lowdown/scopus-presentation"
-                className="text-namjunepaik-3"
+                className="text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
               >
-                This is the project presentation
-              </a>{" "}
+                the project presentation
+              </Link>{" "}
               that I gave to the Zines and Small Publishing class at RisoLAB.
             </p>
           </div>
@@ -72,7 +74,7 @@ const Werk = () => {
               height={743}
             />
             <Image
-              src="/images/act/scopus-4.png"
+              src="/images/act/scopus-4a.png"
               alt="Dead Dinner"
               width={1200}
               height={743}
@@ -88,10 +90,10 @@ const Werk = () => {
 
         <div className="w-full max-w-[1200px] mx-auto pt-24">
           <div className="w-2/3 text-xl font-light text-namjunepaik-4">
-            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Dead Dinner
             </div>
-            <p className="pt-1 leading-relaxed">
+            <p className="pt-2 leading-relaxed">
               Dead Dinner focuses on creating an engaging, interactive
               exploration of important historical figures&apos; lives through an
               interactive timeline with integrated narrative elements and a
@@ -100,7 +102,7 @@ const Werk = () => {
             </p>
             <p className="pt-1 leading-relaxed">
               These screenshots show the narrator who greets the user and
-              introduces them to the app.
+              introduces them to the experience.
             </p>
           </div>
           <div className="w-full grid grid-cols-4 justify-start gap-4 pt-8">
@@ -153,15 +155,16 @@ const Werk = () => {
 
         <div className="w-full max-w-[1200px] mx-auto pt-24">
           <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
-            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Thirdeyes
             </div>
-            <p className="pt-1 leading-relaxed">
+            <p className="pt-2 leading-relaxed">
               Thirdeyes assists music journalists in writing artist bios.
               Powered behind the scenes by an orchestration of multiple LLMs,
               writers can step through and develop the core elements of a bio.
               Further assiting the writers, information is contextually
-              generated as they interact with the app.
+              generated as they interact with the app to inform upon the
+              artist&apos;s life and work.
             </p>
           </div>
           <div className="w-full pt-4">
@@ -188,19 +191,18 @@ const Werk = () => {
 
         <div className="w-full max-w-[1200px] mx-auto pt-24">
           <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
-            <div className="text-4xl text-namjunepaik-3-light font-[cholla-unicase]">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               NYSee
             </div>
-            <p className="pt-1 leading-relaxed">
-              Thirdeyes aids music journalists in writing artist bios.
-              Leveraging multiple LLMs writers can step through and develop the
-              core elements of a bio. Assiting the writers, information is
-              contextually generated as they interact with the app.
-            </p>
-            <p className="pt-1 leading-relaxed">
-              <a href="https://nysee.nyc" className="text-namjunepaik-3">
-                https://nysee.nyc/
-              </a>
+            <p className="pt-2 leading-relaxed">
+              My home on the web, NYSee is a lot of things and those things are
+              always evolving. <br />
+              <Link
+                href="/lowdown/about"
+                className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
+              >
+                nysee.nyc/lowdown/about
+              </Link>
             </p>
           </div>
           <div className="w-full pt-4">
@@ -228,11 +230,108 @@ const Werk = () => {
               width={1200}
               height={743}
             />
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-24">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
+              mechaneyes.com
+            </div>
+            <p className="pt-2 leading-relaxed">
+              A portfolio site collecting the array of work I&apos;ve done
+              over the years. <br />
+              <Link
+                href="https://mechaneyes.com"
+                className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
+              >
+                mechaneyes.com
+              </Link>
+            </p>
+          </div>
+          <div className="w-full pt-4">
             <Image
-              src="/images/act/nysee-lowdown.png"
+              src="/images/act/mechaneyes-1-1920vh.jpg"
               alt="Dead Dinner"
-              width={1200}
-              height={743}
+              width={1920}
+              height={1080}
+              quality={100}
+            />
+            <Image
+              src="/images/act/mechaneyes-2.jpg"
+              alt="Dead Dinner"
+              width={1280}
+              height={712}
+              quality={100}
+              className="pt-14"
+            />
+            <Image
+              src="/images/act/mechaneyes-3.jpg"
+              alt="Dead Dinner"
+              width={1280}
+              height={712}
+              quality={100}
+              className="pt-14"
+            />
+            <Image
+              src="/images/act/mechaneyes-4.jpg"
+              alt="Dead Dinner"
+              width={1280}
+              height={712}
+              quality={100}
+              className="pt-14"
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-24">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
+              Riso: No Ordinary Duotone
+            </div>
+            <p className="pt-2 leading-relaxed">
+              Prints made in the summer of 2024 at RisoLAB. <br />
+              <Link
+                href="/no-ordinary-duotone"
+                className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
+              >
+                nysee.nyc/no-ordinary-duotone
+              </Link>
+            </p>
+          </div>
+          <div className="w-full pt-4">
+            <Image
+              src="/images/no-ordinary-duotone-1.0.0.jpg"
+              width={1920}
+              height={1435}
+              className="w-4/5 h-auto sm:mb-32"
+              alt="Design with abstract eye on checkerboard background"
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1200px] mx-auto pt-24">
+          <div className="w-2/3 text-xl font-light text-namjunepaik-4-light">
+            <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
+              Objects May Appear
+            </div>
+            <Link
+              href="/objects"
+              className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
+            >
+              https://nysee.nyc/objects
+            </Link>
+            <p className="pt-2 leading-relaxed">
+              First photo gallery on NYSee.
+            </p>
+          </div>
+          <div className="w-1/2 pt-4">
+            <Image
+              src="/images/galleries/objects-may-full-page.jpg"
+              width={1024}
+              height={2199}
+              className="h-auto"
+              alt="Design with abstract eye on checkerboard background"
             />
           </div>
         </div>
