@@ -18,12 +18,14 @@ const Werk = () => {
           </h2>
 
           <div className="w-full lg:w-2/3 pt-2 text-xl font-light text-namjunepaik-5">
+            <p className="pt-1 leading-relaxed">
+              Below are screenshots and brief descriptions of some of my
+              recent projects.
+            </p>
             <p className="leading-relaxed">
-              Below are screenshots and very brief descriptions of some of my
-              recent projects. I&apos;m happy to discuss any of these in more
-              detail:{" "}
+              Let&apos;s create something together:{" "}
               <Link
-                href="https://nysee.nyc/ray-weitzenberg"
+                href="/ray-weitzenberg"
                 className="text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
               >
                 nysee.nyc/ray-weitzenberg
@@ -37,7 +39,7 @@ const Werk = () => {
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Scopus Ex Machina
             </div>
-            <p className="pt-2 leading-relaxed">
+            <p className="pt-1 leading-relaxed">
               Scopus Ex Machina is a project that I worked on at RisoLAB. It is
               focused on interrogating the surveillance proliferating in our
               society. Part of the project has involved the construction of a
@@ -93,7 +95,7 @@ const Werk = () => {
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Dead Dinner
             </div>
-            <p className="pt-2 leading-relaxed">
+            <p className="pt-1 leading-relaxed">
               Dead Dinner focuses on creating an engaging, interactive
               exploration of important historical figures&apos; lives through an
               interactive timeline with integrated narrative elements and a
@@ -160,7 +162,7 @@ const Werk = () => {
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Thirdeyes
             </div>
-            <p className="pt-2 leading-relaxed">
+            <p className="pt-1 leading-relaxed">
               Thirdeyes assists music journalists in writing artist bios.
               Powered behind the scenes by an orchestration of multiple LLMs,
               writers can step through and develop the core elements of a bio.
@@ -196,9 +198,21 @@ const Werk = () => {
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               NYSee
             </div>
-            <p className="pt-2 leading-relaxed">
+            <p className="pt-1 leading-relaxed">
               My home on the web, NYSee is a lot of things and those things are
-              always evolving. <br />
+              ever evolving. <br />
+              <Link
+                href="/radar"
+                className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
+              >
+                nysee.nyc/radar
+              </Link> <br />
+              <Link
+                href="/lowdown"
+                className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
+              >
+                nysee.nyc/lowdown
+              </Link> <br />
               <Link
                 href="/lowdown/about"
                 className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
@@ -240,7 +254,7 @@ const Werk = () => {
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               mechaneyes.com
             </div>
-            <p className="pt-2 leading-relaxed">
+            <p className="pt-1 leading-relaxed">
               A portfolio site collecting the array of work I&apos;ve done over
               the years. <br />
               <Link
@@ -291,7 +305,7 @@ const Werk = () => {
             <div className="text-4xl text-namjunepaik-3 font-[cholla-unicase]">
               Riso: No Ordinary Duotone
             </div>
-            <p className="pt-2 leading-relaxed">
+            <p className="leading-relaxed">
               Prints made in the summer of 2024 at RisoLAB. <br />
               <Link
                 href="/no-ordinary-duotone"
