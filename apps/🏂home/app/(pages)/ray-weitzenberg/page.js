@@ -122,7 +122,7 @@ export default function Ray() {
                       </p>
                     </li>
                     <li>
-                      <h4>Email Silently</h4>
+                      <h4>Encrypted Email</h4>
                       <p>
                         <a href="mailto:nysee.nyc@proton.me" target="_blank">
                           nysee.nyc@proton.me
