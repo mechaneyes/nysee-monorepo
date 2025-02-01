@@ -223,28 +223,32 @@ const Werk = () => {
           </div>
           <div className="w-full pt-4">
             <Image
-              src="/images/act/nysee-nyc.png"
+              src="/images/act/nysee-nyc.jpg"
               alt="Dead Dinner"
               width={1200}
               height={743}
+              className="drop-shadow-2xl"
             />
             <Image
-              src="/images/act/nysee-radar.png"
+              src="/images/act/nysee-radar.jpg"
               alt="Dead Dinner"
               width={1200}
               height={743}
+              className="pt-8 lg:pt-14 drop-shadow-2xl"
             />
             <Image
-              src="/images/act/nysee-radar-scroll.png"
+              src="/images/act/nysee-radar-scroll.jpg"
               alt="Dead Dinner"
               width={1200}
               height={743}
+              className="pt-8 lg:pt-14 drop-shadow-2xl"
             />
             <Image
-              src="/images/act/nysee-radar-the-americans.png"
+              src="/images/act/nysee-lowdown.jpg"
               alt="Dead Dinner"
               width={1200}
               height={743}
+              className="pt-8 lg:pt-14 drop-shadow-2xl"
             />
           </div>
         </div>
@@ -272,6 +276,7 @@ const Werk = () => {
               width={1920}
               height={1080}
               quality={100}
+              className="drop-shadow-2xl"
             />
             <Image
               src="/images/act/mechaneyes-2.jpg"
@@ -279,7 +284,7 @@ const Werk = () => {
               width={1280}
               height={712}
               quality={100}
-              className="pt-8 lg:pt-14"
+              className="pt-8 lg:pt-14 drop-shadow-2xl"
             />
             <Image
               src="/images/act/mechaneyes-3.jpg"
@@ -287,7 +292,7 @@ const Werk = () => {
               width={1280}
               height={712}
               quality={100}
-              className="pt-8 lg:pt-14"
+              className="pt-8 lg:pt-14 drop-shadow-2xl"
             />
             <Image
               src="/images/act/mechaneyes-4.jpg"
@@ -295,7 +300,7 @@ const Werk = () => {
               width={1280}
               height={712}
               quality={100}
-              className="pt-8 lg:pt-14"
+              className="pt-8 lg:pt-14 drop-shadow-2xl"
             />
           </div>
         </div>
@@ -306,7 +311,7 @@ const Werk = () => {
               Riso: No Ordinary Duotone
             </div>
             <p className="leading-relaxed">
-              Prints made in the summer of 2024 at RisoLAB. <br />
+              Risograph prints made in the summer of 2024 at RisoLAB. <br />
               <Link
                 href="/no-ordinary-duotone"
                 className="pt-2 text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300"
@@ -321,7 +326,7 @@ const Werk = () => {
               width={1920}
               height={1435}
               className="w-full lg:w-4/5 h-auto"
-              alt="Design with abstract eye on checkerboard background"
+              alt="Design with abstract eye on checkerboard background drop-shadow-2xl"
             />
           </div>
         </div>
@@ -345,7 +350,7 @@ const Werk = () => {
             src="/images/galleries/objects-may-full-page.jpg"
             width={1024}
             height={2199}
-            className="w-auto h-full max-h-[90vh]"
+            className="w-auto h-full max-h-[90vh] pt-4 drop-shadow-2xl"
             alt="Design with abstract eye on checkerboard background"
           />
         </div>
