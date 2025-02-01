@@ -335,7 +335,6 @@ const Werk = () => {
               width={1920}
               height={1435}
               className="w-full lg:w-4/5 h-auto"
-              alt="Design with abstract eye on checkerboard background drop-shadow-2xl"
             />
           </div>
         </div>
