@@ -8,8 +8,8 @@ import "@/styles/styles.scss";
 export default function Ray() {
   return (
     <>
-      <div className="ray">
-        <nav className="w-full max-w-[750px]">
+      <div className="ray w-full max-w-[600px] mx-auto">
+        <nav className="w-full">
           <ul>
             <li>
               <a href="/">https://nysee.nyc</a>
