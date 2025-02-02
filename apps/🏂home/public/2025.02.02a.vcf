@@ -7,7 +7,7 @@ ORG:Mechaneyes;
 item1.EMAIL;type=INTERNET;type=pref:ray@nysee.nyc
 item1.X-ABLabel:＠
 item2.EMAIL;type=INTERNET:nysee.nyc@proton.me
-item2.X-ABLabel:🔒＠
+item2.X-ABLabel:＠ 🔒
 item3.TEL;type=pref:7186822628
 item3.X-ABLabel:📟
 item4.TEL:geist.404
