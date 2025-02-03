@@ -19,17 +19,25 @@ const Werk = () => {
 
           <div className="w-full lg:w-2/3 pt-2 text-xl font-light text-namjunepaik-5">
             <p className="pt-1 leading-relaxed">
-              Below are screenshots and brief descriptions of some of my recent
-              projects.
+              Below as a collection of work samples from some of my recent
+              projects. An archival collection of my work is available at{" "}
+              <Link
+                href="https://mechaneyes.com"
+                className="text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300 whitespace-nowrap"
+              >
+                mechaneyes.com
+              </Link>
+              .
             </p>
             <p className="leading-relaxed">
-              Let&apos;s create together:{" "}
+              Let&apos;s connect and create:{" "}
               <Link
                 href="/ray-weitzenberg"
                 className="text-namjunepaik-3 no-underline hover:text-[#ff8c26] hover:no-underline transition-colors duration-300 whitespace-nowrap"
               >
                 nysee.nyc/ray-weitzenberg
               </Link>
+              .
             </p>
           </div>
         </header>
